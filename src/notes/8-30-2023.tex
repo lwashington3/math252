@@ -1,0 +1,95 @@
+%! Author = Len Washington III
+%! Date = 8/30/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Aug 30, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{1}
+\chapter{First-Order Differential Equations}
+\setcounter{section}{2}
+%<*Section-2.3>
+\section[First Order Linear D.E.'s]{First Order Linear Differential Equations}\label{sec:first-order-linear-differential-equations}
+
+\begin{equation*}
+\begin{aligned}
+	a_{1}(x)\frac{dy}{dx}+a_{0}(x)y&=g(x)\\
+	\frac{dy}{dx}+\frac{a_{0}(x)}{a_{1}(x)}y&=\frac{g(x)}{a_{1}(x)}\\
+\end{aligned}
+\end{equation*}
+
+\[ \left. \frac{dy}{dx}+P(x)y=f(x) \right\} \mbox{  Standard form of a 1st-order linear DE} \]
+We will try to find a function $\mu(x)$ such that by multiplying the D.E. by an integrating factor (I.F.)\label{dfn:integrating-factor} $\mu(x)$: \[ \mu(x)\frac{dy}{dx}+\mu(x)P(x)y=\mu(x)f(x) \] such that the LHS is an exact derivative, Observe: \[ \frac{d}{dx}\left( \mu(x)y \right)=\mu(x)\frac{dy}{dx}+\frac{dy}{dx}y \] from which we see \begin{equation*}
+\begin{aligned}
+	\mu(x)P(x)&=\frac{d\mu}{dx}\\
+	P(x)dx&=\frac{d\mu}{\mu(x)}\\
+	\int P(x)dx&=\int\frac{d\mu}{\mu}\\
+	\int P(x)dx&=\ln\mu\\
+	\ln\mu&=\int P(x)dx\\
+	\mu&=e^{\int P(x)dx}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	x\frac{dy}{dx}-4y&=x^{6}e^{x}\\
+	\mbox{Standard form: } \frac{dy}{dx}-\frac{4}{x}y&=x^{5}e^{x}\\
+	P(x)&=-\frac{4}{x}\\
+	\mu&=e^{\int \frac{-4}{x}dx}\\
+	   &=e^{-4\ln x}\\
+	   &=e^{\ln x^{-4}}\\
+	   &=x^{-4}\\
+	\mbox{\hyperref[dfn:integrating-factor]{I.F.}}=\mu&=x^{-4}
+\end{aligned}
+\end{equation*}
+
+Now multiply the standard form of the given D.E. by $x^{-4}$.
+\begin{equation*}
+\begin{aligned}
+	x^{-4}\frac{dy}{dx}-x^{-4}\frac{4}{x}y&=x^{-4}x^{5}e^{x}\\
+	x^{-4}\frac{dy}{dx}-x^{-4}\frac{4}{x}y&=xe^{x}\\
+	\int \frac{d}{dx}\left( x^{-4}y \right)&=\int xe^{x}\\
+	x^{-4}y &=\int xe^{x}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\[ \left( x^{2}-9 \right)\frac{dy}{dx}+xy=0 \]
+\begin{equation*}
+\begin{aligned}
+	\left( x^{2}-9 \right)\frac{dy}{dx}+xy&=0\\
+	\frac{dy}{dx}+\frac{x}{x^{2}-9}y&=0\\
+	P(x)&=\frac{x}{x^{2}-9}\\
+	\int P(x)dx&=\int \frac{x}{x^{2}-9}dx\\
+	\int P(x)dx&=\int \frac{1}{u-9}\frac{du}{2}\\
+	\int P(x)dx&=\frac{1}{2}\int \frac{1}{u-9}du\\
+	\int P(x)dx&=\frac{1}{2}\ln|u-9|\\
+	\int P(x)dx&=\frac{1}{2}\ln|x^{2}-9|\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	\mu&=e^{\frac{1}{2}\ln|x^{2}-9|}\\
+	\mu&=e^{\ln|\left( x^{2}-9\right)^{\frac{1}{2}}|}\\
+	\mu&=\left( x^{2}-9\right)^{\frac{1}{2}}\\
+	\mu&=\sqrt{x^{2}-9}\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	\sqrt{x^{2}-9}\left( \frac{dy}{dx}+\frac{x}{x^{2}-9}y\right)&=\sqrt{x^{2}-9}(0)\\
+	\sqrt{x^{2}-9}\frac{dy}{dx}+\frac{x}{\sqrt{x^{2}-9}}y&=0\\
+	\int \frac{d}{dx}\left( y\sqrt{x^{2}-9} \right)&=\int 0\\
+	y\sqrt{x^{2}-9}&=C\\
+	y&=\frac{C}{\sqrt{x^{2}-9}}\\
+\end{aligned}
+\end{equation*}
+%</Section-2.3>
+
+\end{document}

@@ -1,0 +1,65 @@
+%! Package = math252notes
+%! Author = Len Washington III
+%! Date = 8/23/2023
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{math252notes}[2023/08/23 Len Washington III's Package]
+
+\author{Len Washington III}
+\date{\today}
+\RequirePackage{amsmath}
+\RequirePackage[pdftex,
+	bookmarks=true,
+	unicode=false,
+	pdftoolbar=false,
+	pdfmenubar=true,
+	pdffitwindow=false,
+	pdfstartview={FitH},
+	pdfauthor={\theauthor},
+	pdftitle={\thetitle},
+	pdfsubject={MATH 252 - Introduction to Differential Equations},
+	colorlinks=true,
+	urlcolor=url-blue]{hyperref}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{enumerate}
+\RequirePackage{enumitem}
+\RequirePackage{threeparttable}
+\RequirePackage{amsfonts}
+\RequirePackage{catchfilebetweentags}
+\RequirePackage{float}
+
+\RequirePackage{index}
+\makeindex{}
+
+\RequirePackage{graphicx}
+\RequirePackage{graphics}
+\graphicspath{{images}}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\theauthor\ - \thepage}
+
+\RequirePackage[x11names]{xcolor}
+\definecolor{url-blue}{RGB}{0, 0, 238}
+\newcommand{\definition}[2]{\textcolor{red}{#1} -- {#2}}
+
+\RequirePackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries}	% format
+{\arabic{chapter}.\arabic{section} }	% label
+{0em}	% sec
+{}	% before-code
+%[\vspace{-2em}\rule{\titlewidth}{1pt}]	% after-code
+
+\titleformat{\subsection}
+{\normalfont\large\bfseries}	% format
+{\arabic{chapter}.\arabic{section}.\arabic{subsection} -- }	% label
+{0em}	% sec
+{}	% before-code
+[] % after-code
+
+\newcommand{\theorem}[1]{\textbf{Theorem: } #1}
+
+\newcommand{\example}{\subsection{Example}}

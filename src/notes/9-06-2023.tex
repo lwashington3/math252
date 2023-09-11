@@ -1,0 +1,147 @@
+%! Author = Len Washington III
+%! Date = 9/06/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Sep 06, 2023 Notes}
+\usepackage{math252notes}
+\usepackage{hyperref}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{1}
+\chapter{First-Order Differential Equations}
+\setcounter{section}{4}
+%<*Section-2.5>
+\section{Substitution Methods}\label{sec:substitution-methods}
+Taking a D.E. that's not:
+\begin{itemize}
+	\item Separable
+	\item 1st Order Linear
+	\item Exact
+\end{itemize}
+and making a substitution to turn the new D.E. into one of these
+
+\theorem{Given a D.E. \[ M(x,y)dx + N(x,y)dy = 0 \] A function $f(x,y)$ is said to be homogenous of order $\alpha$ if $f(tx, ty)=t^{\alpha}f(x,y)$}.
+
+\example
+Given: \[f(x,y) = x^{3} + 5xy^{2} - y^{3}\] Then: \begin{equation*}
+\begin{aligned}
+	f(tx, ty) &= (tx)^{3} + 5(tx)(ty)^{2} - (ty)^{3}\\
+			  &= t^{3}x^{3} + 5t^{3}xy^{2} - t^{3}y^{3}\\
+			  &= t^{3}\left( x^{3} + 5xy^{2} - y^{3} \right)\\
+			  &= t^{3}f(x,y)\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	f(x,y) &= \frac{x+y}{x^{2}+y^{2}}\\
+	f(tx, ty) &= \frac{tx+ty}{(tx)^{2}+(ty)^{2}}\\
+	f(tx, ty) &= \frac{tx+ty}{x^{2}t^{2}+y^{2}t^{2}}\\
+	f(tx, ty) &= \frac{t}{t^{2}}\times\frac{x+y}{x^{2}+y^{2}}\\
+	f(tx, ty) &= \frac{t}{t^{2}}f(x,y)\\
+	f(tx, ty) &= \frac{1}{t}f(x,y)\\
+\end{aligned}
+\end{equation*} $f(x,y) = \frac{x+y}{x^{2}+y^{2}}$ is homogenous of order $\alpha=-1$
+
+\subsection{Substitution Rule}\label{subsec:substitution-rule}
+If $M(x,y)$ and $N(x,y)$ are homogenous, each of the same order, then $u=\frac{y}{x}$ i.e., $y=ux$ or $v=\frac{x}{y}$ (i.e. $x=vy$) will produce a separable D.E.
+
+\example
+Solve the separable D.E.~and then back-substitute
+\[ (x^{2} + y^{2})dx + (x^{2}-xy)dy = 0 \]
+\begin{equation*}
+\begin{aligned}
+	M(x,y) = x^{2} + y^{2} \mbox{   } & \mbox{   } N = x^{2}-xy \\
+	M_{y} = 2y \mbox{   } & \mbox{   } N_{x} = 2x-y \\
+	M_{y} &\neq N_{x}\\
+	M(tx,ty) &= (tx)^{2} + (ty)^{2}\\
+			 &= t^{2}x^{2} + t^{2}y^{2}\\
+			 &= t^{2}(x^{2} + y^{2})\\
+			 &= t^{2}M(x,y) \mbox{ $M$ is homogeneous of order 2 and so is $N$}\\ % TODO: Write proof the N is homogenous
+	u &= \frac{y}{x}\\
+	y &= ux\\
+	dy &= udx + xdu\\
+	(x^{2} + (ux)^{2})dx + (x^{2}-x(ux))(udx + xdu) &= 0\\
+	(x^{2} + u^{2}x^{2})dx + (x^{2}-ux^{2})(udx + xdu) &= 0\\
+	(1 + u^{2})x^{2}dx + x^{2}(1-u)(udx + xdu) &= 0\\
+	(1 + u^{2})x^{2}dx + x^{2} \left( udx + xdu - u^{2}dx - uxdu \right) &= 0\\
+	x^{2}\left( 1dx + u^{2}dx + udx + xdu - u^{2}dx - uxdu \right) &= 0\\
+	x^{2}\left( 1dx + u^{2}dx - u^{2}dx + udx + xdu - uxdu \right) &= 0\\
+	x^{2}\left( 1dx + udx + xdu - uxdu \right) &= 0\\
+	x^{2}(1 + u)dx + x^{3}(1 - u)du &= 0\\
+	\int \frac{1}{x}dx &= \int -\frac{1-u}{1+u}du\\
+					   &= \int \frac{u-1}{u+1}du\\
+					   &= \int \frac{u+(1-2)}{u+1}du\\
+					   &= \int \left( \frac{u+1}{u+1} - \frac{2}{u+1} \right) du\\
+					   &= \int \left( 1 - \frac{2}{u+1} \right) du\\
+	\ln|x| &= \int \left( 1 - \frac{2}{u+1} \right) du\\
+		   &= u - 2\ln|u+1|+C\\
+	\ln|x| &= \frac{y}{x} - 2\ln\bigg| \frac{y}{x}+1 \bigg| + C
+\end{aligned}
+\end{equation*}
+
+\theorem{An equation of the form \[ \frac{dy}{dx} + P(x)y = f(x)y^{n} \] where $n\neq0,1$ is called a Bernoulli Equation\label{dfn:bernoulli-equation}. The substitution \[ u=y^{1-n} \] will transform the D.E. into a 1st order linear.}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	x\frac{dy}{dx} + y &= x^{2}y^{2}\\
+	\frac{dy}{dx} + \frac{y}{x} &= xy^{2}\\
+\end{aligned}
+\end{equation*} is a \hyperref[dfn:bernoulli-equation]{Bernoulli equation} with $n=2$.
+\begin{equation*}
+\begin{aligned}
+	u &= y^{1-2}\\
+	  &= y^{-1}\\
+	  &= \frac{1}{y}\\
+	\frac{du}{dx} &= \frac{du}{dy} \times \frac{dy}{dx}\\
+				  &= -1y^{-2}\frac{dy}{dx}\\
+				  &= -\frac{1}{y^{2}}\frac{dy}{dx}\\
+	-y^{-2}\frac{dy}{dx} + -y^{-2}\times\frac{y}{x} &= -y^{-2}\times xy^{2}\\
+	-y^{-2}\frac{dy}{dx} + -\frac{1}{x}y^{-1} &= -x\\
+	\frac{du}{dx} - \frac{1}{x}u = -x& \\
+	\mbox{I.F.}=\mu &= e^{P(x)dx}\\
+					&= e^{-\int \frac{1}{x}dx}\\
+					&= e^{-\ln|x|}\\
+					&= e^{\ln|x^{-1}|}\\
+					&= x^{-1}\\
+	\frac{1}{x}\frac{du}{dx} - \frac{1}{x^{2}}u &= -1\\
+	\frac{d}{dx}\left( \frac{1}{x}u \right) &= -1\\
+	\int \frac{d}{dx}\left( \frac{1}{x}u \right) &= \int -1 dx\\
+	\frac{1}{x}u &= \int -1 dx\\
+	\frac{1}{x}u &= -x + C\\
+	\frac{1}{x}\times{1}{y} &= -x + C\\
+	\frac{1}{x(-x+C)} &= y\\
+	y &= \frac{1}{Cx-x^{2}}\\
+\end{aligned}
+\end{equation*}
+
+\theorem{If the D.E. can be expressed as \[ \frac{dy}{dx}=f(Ax+by+C) \] for particular numbers $A$, $B$, $C$, then let \[ u = Ax+By+C \] to get a separable D.E.}
+
+\example
+\[ \frac{dy}{dx}=(-2x+y)^{2}-7, y(0)=0 \]
+\begin{equation*}
+\begin{aligned}
+	u &= -2x+y\\
+	\frac{du}{dx} &= \frac{dy}{dx} \times \frac{du}{dy}\\
+				  &= -2 + \frac{dy}{dx}\\
+	\frac{du}{dx} + 2 &= \frac{dy}{dx}\\
+	\frac{du}{dx}+2 &= u^{2}-7\\
+	\frac{du}{dx} &= u^{2}-9\\
+	\frac{du}{u^{2}-9} &= dx\\
+	\int \frac{du}{u^{2}-9} &= \int dx\\
+	\int \frac{du}{(u+3)(u+9)} &= x+C\\
+	\int \frac{du}{(u+3)(u+9)} &= x+C\\
+\end{aligned}
+\end{equation*}
+
+%</Section-2.5>
+
+\end{document}

@@ -1,0 +1,66 @@
+%! Author = Len Washington III
+%! Date = 8/21/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Aug 21, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\chapter[Introduction to Diff-Eq]{Introduction to Differential Equations}
+%<*Section-1.1>
+\section{Terminology and Notation}\label{sec:terminology-and-notation}
+\definition{Differential equation (D.E.)}{An equation in which at least one derivative of an unknown function.}\\
+\definition{Order of the D.E.}{The highest order of derivative in the D.E.\\}
+Example:
+\[ 4y''+e^{x}y'-3yy'=\sin(x) \]\\
+An example of a partial differential equation is:
+\[ \frac{\partial T}{\partial x} + x^{2}\frac{\partial T}{\partial y}=x+y \]
+however, we won't study these in this course.
+
+\subsection{Linear vs Non-Linear DE's}\label{subsec:linear-vs-non-linear-des}
+\definition{Linear D.E.}{The dependent variable and all of its derivatives in the D.E. are in separate terms to the $1^{st}$ power. $y^{(n)}$ or $\frac{d^{n}y}{dx^{n}}$ where $n\neq1$ are non-first power.}
+
+\[ 4y''+e^{x}y'-3yy'=\sin(x) \] is a non-linear D.E. while \[ 4y''+e^{x}y'-3y=\sin(x) \] is linear.\\
+The general formula of a linear D.E. would look like \[ a_{n}(x)y^{(n)}+a_{n-1}(x)y^{(n-1)}+\dots+a_{1}(x)y'+a_{0}(x)=g(x) \]
+\definition{Solution}{a function $\phi(x)$ and an interval $I$ for which the D.E. is satisfied when $y=\phi(x)$ for all $x$ in $I$.}\\
+It may be the case that the natural domain of $\phi(x)$ is larger than $I$.
+Example: $y'=-\frac{1}{x^{2}}$ has a solution $\phi(x)=\frac{1}{x}$ on $I=\left( 0, \infty \right)$ but the domain of $\phi(x)=\left( -\infty, 0 \right) \cup \left(0, \infty\right)$.
+
+Practice:
+\[ \frac{d^{2}x}{dt^{2}}+16x=0 \] Show (\emph{Verify} not derive) $x(t)=c_{1}\sin(4t)$ is a solution on $\left( -\infty, \infty \right)$ where $c$ is any real parameter.
+\begin{equation*}
+\begin{aligned}
+	x&=c_{1}\sin(4t)\\
+	\frac{dx}{dt}&=4c_{1}\cos(4t)\\
+	\frac{d^{2}x}{dt^{2}}&=-16c_{1}\sin(4t)\\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	\mbox{LHS}&=\frac{d^{2}x}{dt^{2}}+16x\\
+			  &=-16c_{1}\sin(4t)+16(c_{1}\sin(4t))\\
+			  &=0=\mbox{RHS}
+\end{aligned}
+\end{equation*}
+But the equation $x=c_{2}\cos(4t)$ would also be a solution. If you have 2 equations that are both solutions, you could add them together and you would still have a solution. $x=c_{1}\sin(4t)+c_{2}\cos(4t)$ is a solution for all parameters $c_{1}$ and $c_{2}$. \emph{In fact, this is the general solution to the D.E.}\\\\
+The D.E. \[ \frac{dy}{dx}=xy^{\frac{1}{2}} \] Show $y=\left( \frac{1}{4}x^{2}+C \right)^{2}$ is a one parameter family of solutions
+\begin{equation*}
+\begin{aligned}
+	\mbox{LHS}=\frac{dy}{dx}&=2\left( \frac{1}{4}x^{2}+C \right)\times\frac{1}{2}x\\
+							&=x\left( \frac{1}{4}x^{2}+C \right)\\
+	\mbox{RHS}=xy^{\frac{1}{2}}&=x\left( \left( \frac{1}{4}x^{2}+C \right)^{2} \right)^{\frac{1}{2}}\\
+							   &=x \left(\frac{1}{4}x^{2}+C \right)\\
+	\mbox{LHS}&=\mbox{RHS}
+\end{aligned}
+\end{equation*}
+But there is another solution: namely $y(x)=0$ for all $x$. This is called the ``trivial solution''.
+%</Section-1.1>
+
+\end{document}

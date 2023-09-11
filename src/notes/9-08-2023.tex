@@ -1,0 +1,112 @@
+%! Author = Len Washington III
+%! Date = 9/08/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Sep 08, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{2}
+\chapter{Modeling using DE}\label{ch:modeling-using-de}
+%<*Section-3.1>
+\section{Linear DE Modeling}\label{sec:linear-de-modeling}
+\subsection{Standard Problems}\label{subsec:standard-de-modeling-problems}
+\begin{enumerate}[label=\arabic*)]
+    \item \hyperref[subsec:population-model]{Population Growth (or decline)}
+    \item \hyperref[subsec:radioactive-decay]{Radioactive Decay}
+    \item Newton's Law of Cooling
+    \item \hyperref[subsec:mixture-problems]{Mixture Problems}
+\end{enumerate}
+
+\subsection{Population Model}\label{subsec:population-model}
+Assume the rate of population change is proportional to the size of the population
+
+\[ P(t) = \mbox{ population at time }t \]
+\[ \frac{dP}{dt} = kP \]
+\[ \frac{\frac{dP}{dt}}{P} = k\mbox{ is the relative growth rate of the population } \]
+\begin{equation*}
+\begin{aligned}
+	\frac{dP}{dt} &= kP\\
+	\frac{dP}{P} &= kdt\\
+	\int \frac{dP}{P} &= \int kdt\\
+	ln|P| &= kt + C\\
+	|P| &= e^{kt + C}\\
+	|P| &= e^{kt}e^{C}\\
+	|P| &= Ae^{kt} \mbox{ where } A > 0\\
+	P &= \pm Ae^{kt}\\
+	P &= Be^{kt} \mbox{ where } B\neq 0\\
+	P &= De^{kt} \mbox { where } D \mbox{ can be any real number}
+\end{aligned}
+\end{equation*} The constant can become any number because 0 would be a valid rate of population change, it means that the population size isn't changing.
+
+\example
+If, initially at 2 p.m., there are 1,000 bacteria on a petri dish and at 4 p.m., there are 2,000 bacteria. Assuming constant relative growth rate, how many bacteria are there at 5 p.m.?\\
+$P(t)=$ population $t$ hours after 2 p.m.
+\begin{equation*}
+\begin{aligned}
+	P(t) &= Ae^{kt}\\
+	1000 &= Ae^{(0)k}\\
+	1000 &= Ae^{0}\\
+	1000 &= A(1)\\
+	A &= 1000\\
+	P(2) &= 2000\\
+	P(2) &= 1000e^{2k}\\
+	2000 &= 1000e^{2k}\\
+	2 &= e^{2k}\\
+	\ln(2) &= 2k\\
+	k &= \frac{\ln(2)}{2}\\
+	P(t) &= 1000e^{\frac{\ln(2)}{2}t}\\
+	P(3) &= 1000e^{\frac{\ln(2)}{2}(3)}\\
+		 &= 1000e^{1.5\ln(2)}\\
+		 &= 1000e^{\ln(2^{1.5})}\\
+		 &= 1000(2^{1.5})\\
+		 &= 2000(\sqrt{2})\\
+	P(3) &\approx 2828.427(\sqrt{2})\\
+	P(t) &= 1000e^{\frac{t}{2}\ln(2)}\\
+		 &= 1000e^{\frac{t}{2}\ln(2)}\\
+		 &= 1000e^{\ln(2^{\frac{t}{2}})}\\
+		 &= 1000\times2^{\frac{t}{2}}\\
+\end{aligned}
+\end{equation*}
+
+\subsection{Radioactive Decay}\label{subsec:radioactive-decay}
+\[ m(t) = m_{0}e^{kt}\mbox{ where } k < 0 \]
+The Half-Life is the amount of time it takes for half of the original amount to remain: \[ \frac{1}{2}A_{0} = A_{0}e^{kt} \Rightarrow \frac{1}{2} = e^{kt} \]
+
+\subsection{Mixture Problems}\label{subsec:mixture-problems}
+\subsubsection{Setup}
+Initially, the container has 200 gallons of brine solution (salt-water) of concentration $\frac{10 \mbox{ lbs}}{200 \mbox{ gallons}}=0.05 \frac{\mbox{lbs}}{\mbox{gallon}}$. A solution of $\frac{5 \mbox{ lbs}}{200 \mbox{ gallons}}0.025 \frac{\mbox{lbs}}{\mbox{gallon}}$ is poured into the initial container at a rate of $\frac{4 \mbox{ gallons}}{\mbox{min}}$. How many pounds of salt are there in the container after 2 hours.\\
+
+\noindent Let $y(t) = $ \# lbs of salt $t$ minutes after the precess starts
+$\frac{dy}{dt} = $ The rate of change of \# lbs of salt
+\begin{equation*}
+\begin{aligned}
+	\frac{dy}{dt} &= \left. 0.025\frac{\mbox{lbs}}{\mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate in}\\
+				  &\mbox{ }- \left. \frac{y(t)\mbox{lbs}}{200 \mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate out}\\
+				  &= (0.025)4\frac{\mbox{lbs}}{\mbox{min}} - \frac{4y(t)}{200}\frac{\mbox{lbs}}{\mbox{min}}\\
+				  &= 0.1\frac{\mbox{lbs}}{\mbox{min}} - \frac{y(t)}{50}\frac{\mbox{lbs}}{\mbox{min}}\\
+				  &= 0.1 - \frac{y(t)}{50}\\
+	\frac{dy}{dt} + \frac{1}{50}y &= 0.1\\
+	\mu &= e^{\int P(t) dt}\\
+		&= e^{\int \frac{1}{50} dt}\\
+		&= e^{\frac{t}{50}}\\
+	e^{\frac{t}{50}}\left(\frac{dy}{dt}\right) + e^{\frac{t}{50}}\left(\frac{1}{50}y\right) &= e^{\frac{t}{50}}(0.1)\\
+	\frac{d}{dt} \left( e^{\frac{t}{50}}y \right) &= e^{\frac{t}{50}}(0.1)\\
+	\int \frac{d}{dt} \left( e^{\frac{t}{50}}y \right) &= \int \frac{1}{10}e^{\frac{t}{50}}\\
+	e^{\frac{t}{50}}y &= \frac{1}{10} \times \frac{e^{\frac{t}{50}}}{\frac{1}{50}}+C\\
+	e^{\frac{t}{50}}y &= 5e^{\frac{t}{50}}+C\\
+	y &= 5 + Ce^{-\frac{t}{50}}\\
+	  &= 5 + Ce^{-0.02t}\\ % TODO: Solve for t like the photo
+	y(120)  &= 5 + Ce^{-0.02(120)}\\
+			&= 5 + Ce^{-2.4}
+\end{aligned}
+\end{equation*}
+%</Section-3.1>
+
+\end{document}

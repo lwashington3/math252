@@ -1,0 +1,91 @@
+%! Author = Len Washington III
+%! Date = 8/28/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Aug 28, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{1}
+\chapter{First-Order Differential Equations}
+\section{Test}
+%<*Section-2.2>
+\section[Separable D.E.s]{Separable Differential Equations}\label{sec:separable-differential-equations}
+Separable D.E.s\label{dfn:separable-de} are DE's $\frac{dy}{dx}=f(x,y)$ where $f(x,y)$ can be factored as $f(x,y)=g(x)h(y)$.
+
+\[ \frac{dy}{dx}=(1+y^{2})x^{3} \mbox{ is separable}\]
+\[ \frac{dy}{dx}=\sin(xy) \mbox{ is \emph{not} separable}\]
+\[ \frac{dy}{dx}=x^{3}y \mbox{ is \emph{not} separable}\]
+
+\begin{equation*}
+\begin{aligned}
+	\frac{5}{xy}\frac{dy}{dx}&=\left( x^{2}+y \right)e^{y}\\
+	\frac{dy}{dx}&=\frac{xy\left( x^{2}+y \right)e^{y}}{5}\\  % FIXME: The y should not be in the fraction
+				 &=\frac{x\left( x^{2}+y \right)}{5}\times ye^{y}\\
+\end{aligned}
+\end{equation*}
+
+\subsection{Method of Solution}\label{subsec:method-of-solution}
+``Separate the variable'' to get $\frac{1}{h(y)}dy=g(x)d$ or $p(y)dy=g(x)dx$ where $p(y)=\frac{1}{h(y)}$.
+
+\textbf{Integrate both sides}
+\[ \int p(y)dy=\int g(x)dx \mbox{ and if possible, solve for }y\]
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\frac{dy}{dx}&=\left( 1+y^{2} \right)x^{3}\\
+	\int \frac{1}{1+y^{2}}dy&=\int x^{3}dx\\
+	\tan^{-1}(y)+C_{1}&=\frac{x^{4}}{4}+C_{2}\\
+	\tan^{-1}(y)&=\frac{x^{4}}{4}+C_{2}-C_{1}\\
+	\tan^{-1}(y)&=\frac{x^{4}}{4}+C\\
+	y&=\tan\left(\frac{x^{4}}{4}+C\right)\\
+\end{aligned}
+\end{equation*}
+
+\example
+Problem 12 from the textbook.
+\begin{equation*}
+\begin{aligned}
+	\sin(3x)dx+2y\cos^{3}(3x)dy&=0\\
+	\int -2ydy &= \int \frac{\sin(3x)}{\cos^{3}(x)}dx\\
+			   &= \int \tan(3x)\sec^{2}(3x)dx\\
+			   &= \int u\mbox{ }\frac{1}{3}du \mbox{ where }u=\tan(3x),\mbox{ }du=3\sec^{2}(3x)dx\\
+	-2\int ydy &= \frac{1}{3}\int u\mbox{ }du + C\\
+	-y^{2} &= \frac{u^{2}}{6}+C\\
+		   &= \frac{ \tan^{2}(3x) }{6}+C\\
+	\frac{ \tan^{2}(3x) }{6}+y^{2} &= -C\\
+	\frac{ \tan^{2}(3x) }{6}+y^{2} &= C\\
+\end{aligned}
+\end{equation*}
+
+Problem 25 from the textbook.
+\[ x^{2}\frac{dy}{dx}=y-xy, y(-1)=-1 \]
+\begin{equation*}
+\begin{aligned}
+	x^{2}\frac{dy}{dx}&=y-xy\\
+	x^{2}\frac{dy}{dx}&=y(1-x)\\
+	\frac{dy}{y}&=\frac{(1-x)}{x^{2}}dx\\
+	\int \frac{dy}{y}&=\int \frac{(1-x)}{x^{2}}dx\\
+	\int \frac{dy}{y}&=\int \frac{1}{x^{2}}dx - \int \frac{x}{x^{2}}dx\\
+	\int \frac{dy}{y}&=\int \frac{1}{x^{2}}dx - \int \frac{1}{x}dx\\
+	\ln|y|+C_{1} &=-\frac{1}{x}+C_{2} - \ln|x|+C_{3}\\
+	\ln|y| &=-\frac{1}{x}-\ln|x|+C\\
+	y &= e^{-\frac{1}{x}}\times e^{-\ln|x|}\times e^{C}\\
+	y &= e^{-\frac{1}{x}}\times e^{-\ln|x|}\times e^{C}\\
+	y &= e^{-\frac{1}{x}}\times \frac{1}{|x|} \times e^{C}\\
+	y &= \frac{1}{|x|} e^{C-\frac{1}{x}}\\
+	-1 &= \frac{1}{|-1|} e^{C-\frac{1}{-1}}\\
+	-1 &= \frac{1}{1} e^{C-(-1)}\\
+	-1 &= e^{C+1}\\
+\end{aligned}
+\end{equation*}
+%</Section-2.2>
+
+\end{document}
