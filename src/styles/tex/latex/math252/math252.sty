@@ -1,0 +1,60 @@
+%! Package = math252.sty
+%! Author = Len Washington III
+%! Date = 9/14/2023
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{math252}[2023/09/14 Len Washington III's Package]
+
+\RequirePackage{titling}
+\author{Len Washington III}
+\date{\today}
+\newcommand{\thesubject}{MATH 252 - Introduction to Differential Equations}
+
+\RequirePackage{amsmath}
+\RequirePackage[pdftex,
+	bookmarks=true,
+	bookmarksopen=true,
+	unicode=false,
+	pdftoolbar=false,
+	pdfmenubar=true,
+	pdffitwindow=false,
+	pdfstartview={FitH},
+	pdfauthor={\theauthor},
+	pdftitle={\thetitle},
+	pdfsubject={\thesubject},
+	colorlinks=true,
+	urlcolor=url-blue]{hyperref}
+\RequirePackage[margin=1in]{geometry}
+\RequirePackage{enumerate}
+\RequirePackage{enumitem}
+\RequirePackage{threeparttable}
+\RequirePackage{amsfonts}
+\RequirePackage{catchfilebetweentags}
+\RequirePackage{float}
+\RequirePackage{amsmath}
+\RequirePackage{booktabs}
+\RequirePackage{colortbl}
+\RequirePackage{textcomp}
+\RequirePackage{titlesec}
+
+\RequirePackage{graphicx}
+\graphicspath{{images}}
+
+\RequirePackage{index}
+\makeindex{}
+
+\RequirePackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\thetitle}
+\fancyhead[R]{\theauthor\ - \thepage}
+
+\RequirePackage[x11names]{xcolor}
+\definecolor{url-blue}{RGB}{0, 0, 238}
+
+\RequirePackage{etoolbox}%
+\RequirePackage{xstring}%
+\RequirePackage{catchfile}
+\RequirePackage{graphics}%
+
+\setlength{\parindent}{0pt}

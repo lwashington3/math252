@@ -7,72 +7,22 @@
 
 \RequirePackage{titling}
 \title{HW Section \arabic{chapter}.\arabic{section}}
-\author{Len Washington III}
-\date{\today}
-\newcommand{\thesubject}{MATH 252 - Introduction to Differential Equations}
-\RequirePackage{amsmath}
-\RequirePackage[pdftex,
-	bookmarks=true,
-	unicode=false,
-	pdftoolbar=false,
-	pdfmenubar=true,
-	pdffitwindow=false,
-	pdfstartview={FitH},
-	pdfauthor={\theauthor},
-	pdftitle={\thetitle},
-	pdfsubject={\thesubject},
-	colorlinks=true,
-	urlcolor=url-blue]{hyperref}
-\RequirePackage[margin=1in]{geometry}
-\RequirePackage{index}
-\RequirePackage{enumerate}
-\RequirePackage{enumitem}
-\RequirePackage{threeparttable}
-\RequirePackage{amsmath}
-\RequirePackage{amsfonts}
-\RequirePackage{booktabs}
-\RequirePackage{colortbl}
-\RequirePackage{textcomp}
+\RequirePackage{math252}
 
+\titleformat{\section}[block]
+{\normalfont\Large\bfseries}	% format
+{Section \arabic{chapter}.\arabic{section}}	% label
+{0em}	% sec
+{}	% before-code
 
-\RequirePackage{graphicx}
-\RequirePackage{float}
-\graphicspath{{images}}
-
-\RequirePackage{index}
-\makeindex{}
-
-\RequirePackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\thetitle}
-
-\RequirePackage[x11names]{xcolor}
-\definecolor{url-blue}{RGB}{0, 0, 238}
-
-\RequirePackage{etoolbox}%
-\RequirePackage{xstring}%
-\RequirePackage{catchfile}
-\RequirePackage{graphics}%
 
 \newcommand{\getenv}[2][]{%
   \CatchFileEdef{\temp}{"|kpsewhich --var-value #2"}{\endlinechar=-1}%
   \ifx\temp\empty\def\temp{UNDEFINED}\fi
-  \if\relax\detokenize{#1}\relax\temp\else\let#1\temp\fi}
+  \if\relax\detokenize{#1}\relax\temp\else\let#1\temp\fi
+}
 
-%\newcommand{\newgetenv}[2][]{%
-% \CatchFileEdef{\temp}{"|kpsewhich --var-value #2"}{\endlinechar=-1\relax}%
-% \if\relax\detokenize{#1}\relax\temp\else\edef#1{\temp}\fi%
-%}%
 \getenv[\Template]{Template}%
-
-%\ifdefstring{\Template}{UNDEFINED}{
-%	\newcommand{\answer}[1]{\textcolor{blue}{#1}}
-%	\fancyhead[R]{\theauthor\ - \thepage}
-%}{
-%	\newcommand{\answer}[1]{}
-%	\fancyhead[R]{\thepage}
-%}
 
 \RequirePackage{ifthen}
 \newboolean{istemplate}
@@ -91,7 +41,5 @@
 
 \newcommand{\ontemplate}[1]{\ifthenelse{\boolean{istemplate}}{#1}{}}
 \newcommand{\onhomework}[1]{\ifthenelse{\boolean{istemplate}}{}{#1}}
-%
 
-% \newcommand{\problem}{\addcontentsline{toc}{subsection}{Problem \the\numexpr\value{enumi}+1}\item}
-\newcommand{\problem}{\pdfbookmark[1]{Problem \the\numexpr\value{enumi}+1}\item}{target\the\numexpr\value{enumi}+1}
+\newcommand{\problem}[1]{\pdfbookmark[2]{Problem \the\numexpr\value{enumi}+1}{#1}\item}

@@ -1,0 +1,165 @@
+%! Author = Len Washington III
+%! Date = 9/13/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Sep 13, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{3}
+\chapter[Higher Order DEs]{Higher Order Differential Equations}\label{ch:higher-order-differential-equations}
+%<*Section-4.2>
+\setcounter{section}{1}
+\section{Reduction of Order}\label{sec:reduction-of-order}
+If you have one solution to a $2^{\mbox{nd}}$ order linear homogenous DE, then it is possible to use that function to construct a $2^{\mbox{nd}}$ Linear Independent solution to the DE.
+
+\example\label{ex:reduction-of-order-example}
+For example, the DE \[ y'' - y = 0 \] One solution is $y=e^{x}$ on $\left( -\infty, \infty \right)$.
+
+Idea: We look for $y_{2}$ of the form \[ y_{2}(x)=u(x)y_{1}(x)\mbox{ where } u(x) \mbox{ is not a constant} \]
+
+The general solution is of the form: \[ y = c_{1}y_{1} + c_{2}y_{2} \] where $y_{1}$ and $y_{2}$ are linearly independent solutions.
+
+To find $u(x)$, we substitute this into the DE \begin{equation*}
+\begin{aligned}
+	y_{2} &= u(x)y_{1}(x)\\
+	y_{2}' &= u(x)y_{1}'(x) + u'(x)y_{2}(x)\\
+	y_{2}'' &= u(x)y_{1}''(x) + u'(x)y_{1}(x) + u'(x)y_{2}'(x) + u''(x)y_{1}(x)\\
+			&= uy_{1}'' + 2u'y_{1}' + u''y_{1}
+\end{aligned}
+\end{equation*}
+
+So $y'' - y = 0$ becomes \begin{equation*}
+\begin{aligned}
+	uy_{1}'' + 2u'y_{1}' + u''y_{1} - uy_{1} &= 0 \mbox{ when we sub } y=y_{2}&=u_{y1}\\
+	u(e^{x})'' + 2u'(e^{x})' + u''(e^{x}) - u(e^{x}) &= 0\\
+	ue^{x} + 2u'e^{x} + u''e^{x} - ue^{x} &= 0\\
+	2u'e^{x} + u''e^{x} &= 0\\
+	e^{x}(2u' + u'') &= 0\\
+	2u' + u'' &= 0\\
+\end{aligned}
+\end{equation*}
+
+Let $w=u'$
+\begin{equation*}
+\begin{aligned}
+	2w + w' &= 0\\
+	2w + \frac{dw}{dx} &= 0\\
+	\frac{dw}{dx} &= -2w\\
+	\frac{dw}{w} &= -2dx\\
+	\int \frac{dw}{w} &= \int -2dx\\
+	\ln|w| &= -2x\\
+	w &= e^{-2x}\\
+	u' &= e^{-2x}\\
+	\int u' &= \int e^{-2x}\\
+	u &= -\frac{1}{2}e^{-2x}\\
+	y_{2} &= uy_{1}\\
+		  &= -\frac{1}{2}e^{-2x} \times e^{x}\\
+		  &= -\frac{1}{2}e^{-x}\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Double check that $y_{2}$ is a solution of the DE}\label{subsubsec:sec4-2-double-check}
+\begin{equation*}
+\begin{aligned}
+	y_{2} &= -\frac{1}{2}e^{-x}\\
+	y_{2}' &= \frac{1}{2}e^{-x}\\
+	y_{2}'' &= -\frac{1}{2}e^{-x}\\
+	y_{2}'' - y &= -\frac{1}{2}e^{-x} - \left( -\frac{1}{2}e^{-x} \right)\\
+				&= -\frac{1}{2}e^{-x} + \frac{1}{2}e^{-x}\\
+				&= 0\\
+\end{aligned}
+\end{equation*}
+
+In general, \[ a_{2}(x)y'' + a_{1}(x)y' + a_{0}(x)y = 0 \] put into standard form by dividing by $a_{2}(x)$ \[ y'' + P(x)y' + Q(x)y = 0 \] where $P(x) = \frac{a_{1}(x)}{a_{2}(x)}$ and $Q(x) = \frac{a_{0}(x)}{a_{2}(x)}$, the same method as in our \hyperref[ex:reduction-of-order-example]{example} leads to the formula \begin{equation} \label{eq:reduction-of-order} y_{2} = y_{1}\int \frac{e^{-\int P(x)dx}}{(y_{1}(x))^{2}} dx \end{equation}
+
+\example
+\subsubsection{Part 1}
+\[ x^{2}y'' - 3xy' + 4y = 0 \]
+Verify that $y_{1}=x^{2}$ is a solution $y_{1}'=2x, y_{1}''=2$.
+\begin{equation*}
+\begin{aligned}
+	x^{2}y'' - 3xy' + 4y &= 0\\
+	x^{2}(2) - 3x(2x) + 4(x^{2}) &= 0\\
+	2x^{2} - 6x^{2} + 4x^{2} &= 0\\
+	6x^{2} - 6x^{2} &= 0\\
+	0 &= 0\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Part 2}
+Find a linearly independent solution $y_{2}(x)$.
+
+\begin{equation*}
+\begin{aligned}
+	x^{2}y'' - 3xy' + 4y &= 0\\
+	y'' - \frac{3}{x}y' + \frac{4}{x^{2}}y &= 0\\
+	P(x) &= -\frac{3}{x}\\
+	y_{2} = y_{1}\int \frac{e^{\int \frac{3}{x}dx}}{(y_{1}(x))^{2}} dx\\
+	y_{2} = y_{1}\int \frac{e^{3\ln|x|}}{(y_{1}(x))^{2}} dx\\
+	y_{2} = y_{1}\int \frac{e^{\ln|x^{3}|}}{(y_{1}(x))^{2}} dx\\
+	y_{2} = x^{2}\int \frac{x^{3}}{(x^{2})^{2}} dx\\
+	y_{2} = x^{2}\int \frac{x^{3}}{x^{4}} dx\\
+	y_{2} = x^{2}\int \frac{1}{x} dx\\
+	y_{2} = x^{2}\ln|x| + C\\
+\end{aligned}
+\end{equation*}
+
+\subsection{Part 3: Double check that $y_{2}$ is a solution of the DE}
+\begin{equation*}
+\begin{aligned}
+	y_{2} &= x^{2}\ln|x|\\
+	y_{2}' &= x^{2}\times\frac{1}{x} + 2x\ln|x|\\
+	y_{2}'' &= 1 + 2x\frac{1}{x} + 2\ln|x|\\
+			&= 1 + 2 + 2\ln|x|\\
+			&= 3 + 2\ln|x|\\
+\end{aligned}
+\end{equation*}
+
+So the LHS DE becomes \begin{equation*}
+\begin{aligned}
+	x^{2}\left( 3 + 2\ln|x| \right) - 3x\left( x + 2x\ln|x| \right) + 4x^{2}\ln|x| &= 3x^{2} + 2x^{2}\ln|x| - 3x^{2} - 6x^{2}\ln|x| + 4x^{2}\ln|x|\\
+	&= 3x^{2}  - 3x^{2} + 2x^{2}\ln|x| - 6x^{2}\ln|x| + 4x^{2}\ln|x|\\
+	&= 3x^{2} - 3x^{2} + 2x^{2}\ln|x| - 6x^{2}\ln|x| + 4x^{2}\ln|x|\\
+	&= 0\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection[General solution with interval]{Write the general solution of the DE including the interval of the solution}
+\begin{equation*}
+\begin{aligned}
+	y &= c_{1}y_{1} + c_{2}y_{2}\\
+	  &= c_{1}x^{2} + c_{2}x^{2}\left( \ln|x| + C \right)\\
+	  &= c_{1}x^{2} + c_{2}x^{2}\ln|x| + Cc_{2}x^{2} \\
+	\mbox{just } y &= c_{1}x^{2} + c_{2}x^{2}\ln|x| \mbox{ on } I=\left( 0, \infty \right), y(2)=3, y'(2)=5
+\end{aligned}
+\end{equation*}
+
+\example
+\[ 3y'' + y' - 4y = 0 \]
+\begin{equation*}
+\begin{aligned}
+	y = e^{mx}\\
+	y' = me^{mx}\\
+	y'' = m^{2}e^{mx}\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	3y'' + y' - 4y  &= 3m^{2}e^{mx} + me^{mx} - 4e^{mx}\\
+					&= e^{mx}(3m^{2} + m - 4)\\
+					&= e^{mx}(3m^{2} + 4)(m - 1)\\
+				m=1 \mbox{  }& \mbox{  }m=-\frac{4}{3}
+\end{aligned}
+\end{equation*}
+\[ y_{1} = e^{x}, y_{2}=e^{-\frac{4}{3}x} \]
+
+%</Section-4.2>
+
+\end{document}
