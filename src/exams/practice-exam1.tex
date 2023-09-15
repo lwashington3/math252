@@ -1,0 +1,66 @@
+%! Author = Len Washington III
+%! Date = 9/15/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Practice Test \#1}
+\usepackage{math252exam}
+
+% Document
+\begin{document}
+
+\begin{enumerate}[label=\arabic*.]
+    \problem{prb:1} Consider the autonomous differential equation below.
+	\begin{enumerate}[label=(\alph*)]
+	    \item Determine the equilibrium solutions of the differential equation.\answer{$y=3$, $y=-2$, $y=5$}
+		\item Draw a phase portrait diagram for the differential equation.
+		\item For each equilibrium solutions, state whether it is stable, unstable, or semistable.
+	\end{enumerate}
+	\[ \frac{dy}{dx} = (3-y)(y+2)^{2}(y-5) \]
+	\item Consider the DE \[ y'' + 2y' = 8y \]
+	\begin{enumerate}[label=(\roman*)]
+	    \item Verify that all members of the two parameter family of function $y_{1}=c_{1}e^{2x} + c_{2}e^{-4x}$ are solutions of the DE.
+		\item Find a member of the family $y_{1}=c_{1}e^{2x} + c_{2}e^{-4x}$ that satisfies the initial conditions: $y(0)=4$ and $y'(0) = 2$.
+	\end{enumerate}
+	\item For each of the differential equations given below, indicate whether or not the equation is separable, exact, or first order linear by writing ``yes'' or ``no'' in the chart below. You may use the space below the chart for scratch work.
+	\begin{table}[H]
+	    \centering
+	    \begin{threeparttable}
+			\label{tab:prob-2}
+			\begin{tabular}{|c|c|c|c|}
+				\toprule
+				\textbf{Differential Equation} & \textbf{Separable} & \textbf{Exact} & \textbf{First Order Linear}\\
+				\midrule
+				$\frac{dy}{dx} = y-xy$ & \answer{yes} & \answer{no/yes*} & \answer{yes} \\
+				\midrule
+				$ydx = (y - xy^{2})dy$ & & &\\
+				\midrule
+				$\left( x^{2} + \frac{2y}{x} \right)dx = (3 - \ln(x^{2})) dy$ & & &\\
+				\bottomrule
+			\end{tabular}
+		\end{threeparttable}
+	\end{table}
+	\item Solve the DE: \[ y\frac{dy}{dx} = x + xy^{2} \]
+	\item Solve the DE: \[ x^{2}y' + 4xy = \cos(x^{3}) \]
+	\item Solve the DE: \[ (x^{3} + y^{3})dx + (3xy^{2} + \sin(y))dy = 0 \]
+	\item In each part below, a DE is given which is not separable, exact, nor first order linear. Make an appropriate substitution to transform the given DE into one which is either separable, exact, or first order linear. \underline{Simplify the transformed DE} to show that it is either separable, exact, or first order linear; \underline{but do not solve the transformed DE}.
+	\begin{enumerate}[label=(\roman*)]
+	    \item \[ y' = \frac{2x + y}{y + 2x} \]\answer{\begin{equation*}
+	    \begin{aligned}
+	    	y' &= \frac{2x + y}{y + 2x}\\
+	    	y' &= 1\\
+	    	\frac{dy}{dx} &= 1\\
+	    	dy &= dx\\
+			\mbox{Sepa}&\mbox{rable}
+	    \end{aligned}
+	    \end{equation*}}
+	    \item \[ y' = \frac{2x + y}{2y + x} \]
+		\item \[ \frac{dy}{dx} = y(xy^{3} - 1) \]
+	\end{enumerate}
+	\item Suppose that a large container initially contains a solution of brine which has 50 pounds of salt and volume 400 gallons. A second brine solution of concentration 2 pounds of salt per gallon is added at a rate of 4 gallons per minute. And the well mixed solution in the container flows out also at a rate of 4 gallons per minute. Construct an initial value problem whose solution $A(t)$ would represent the pounds of salt in the container $t$ minutes after the described process began. Do not solve initial value problem.
+\end{enumerate}
+
+\end{document}

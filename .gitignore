@@ -1,0 +1,10 @@
+auxil/
+
+*venv/
+
+*desktop.ini
+
+*synctex.gz
+
+.idea/jupyter-settings.xml
+.idea/markdown.xml
