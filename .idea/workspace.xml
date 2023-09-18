@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added templates for Homework 4.1 and 4.2.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Began writing and working on Practice Exam 1.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exams/practice-exam1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/exams/practice-exam1.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,23 +66,23 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Academic/math252/src/styles/tex/latex",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Academic/math252/src/styles/tex/latex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
@@ -2097,6 +2098,8 @@
       <item itemvalue="LaTeX.Aug 28, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 30, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
+      <item itemvalue="LaTeX.Practice Exam #1 Template" />
+      <item itemvalue="LaTeX.Practice Exam #1" />
       <item itemvalue="LaTeX.Homework 1.1" />
       <item itemvalue="LaTeX.Homework 1.2" />
       <item itemvalue="LaTeX.Homework 1.4" />
@@ -2162,14 +2165,13 @@
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 11, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 13, 2023 Notes" />
-      <item itemvalue="LaTeX.Practice Exam #1" />
-      <item itemvalue="LaTeX.Practice Exam #1 Template" />
       <item itemvalue="LaTeX.All Notes" />
       <item itemvalue="Makeindex.Aug 21, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 23, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 25, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 28, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 30, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Practice Exam #1 Makeindex" />
       <item itemvalue="Makeindex.Homework 1.1 Makeindex" />
       <item itemvalue="Makeindex.Homework 1.2 Makeindex" />
       <item itemvalue="Makeindex.Homework 1.4 Makeindex" />
@@ -2205,7 +2207,6 @@
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 11, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 13, 2023 Makeindex" />
-      <item itemvalue="Makeindex.Practice Exam #1 Makeindex" />
       <item itemvalue="Makeindex.notes makeindex" />
     </list>
     <recent_temporary>
@@ -2280,6 +2281,8 @@
       <workItem from="1694711212806" duration="1858000" />
       <workItem from="1694733665506" duration="2073000" />
       <workItem from="1694795107637" duration="1179000" />
+      <workItem from="1694828623172" duration="6000" />
+      <workItem from="1694970921679" duration="3570000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2361,7 +2364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694713086389</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Began writing and working on Practice Exam 1.">
+      <option name="closed" value="true" />
+      <created>1694799649953</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694799649953</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2387,7 +2398,8 @@
     <MESSAGE value="Added Homework 4.1, moved similar commands for the notes and homework packages to an overhead package, `math252.sty`." />
     <MESSAGE value="Added Homework 4.2." />
     <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added templates for Homework 4.1 and 4.2." />
+    <MESSAGE value="Began writing and working on Practice Exam 1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Began writing and working on Practice Exam 1." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
