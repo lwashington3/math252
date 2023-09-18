@@ -24,7 +24,7 @@ Taking a D.E. that's not:
 	\item 1st Order Linear
 	\item Exact
 \end{itemize}
-and making a substitution to turn the new D.E. into one of these
+and making a substitution to turn the new D.E. into one of these.\\\\
 
 \theorem{Given a D.E. \[ M(x,y)dx + N(x,y)dy = 0 \] A function $f(x,y)$ is said to be homogenous of order $\alpha$ if $f(tx, ty)=t^{\alpha}f(x,y)$}.
 
@@ -87,6 +87,7 @@ Solve the separable D.E.~and then back-substitute
 \end{aligned}
 \end{equation*}
 
+\section{Bernoulli Equation}\label{sec:bernoulli-equation}
 \theorem{An equation of the form \[ \frac{dy}{dx} + P(x)y = f(x)y^{n} \] where $n\neq0,1$ is called a Bernoulli Equation\label{dfn:bernoulli-equation}. The substitution \[ u=y^{1-n} \] will transform the D.E. into a 1st order linear.}
 
 \example
@@ -106,7 +107,10 @@ Solve the separable D.E.~and then back-substitute
 				  &= -\frac{1}{y^{2}}\frac{dy}{dx}\\
 	-y^{-2}\frac{dy}{dx} + -y^{-2}\times\frac{y}{x} &= -y^{-2}\times xy^{2}\\
 	-y^{-2}\frac{dy}{dx} + -\frac{1}{x}y^{-1} &= -x\\
-	\frac{du}{dx} - \frac{1}{x}u = -x& \\
+	\frac{du}{dx} - \frac{1}{x}u &= -x \\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
 	\mbox{I.F.}=\mu &= e^{P(x)dx}\\
 					&= e^{-\int \frac{1}{x}dx}\\
 					&= e^{-\ln|x|}\\
@@ -119,7 +123,7 @@ Solve the separable D.E.~and then back-substitute
 	\frac{1}{x}u &= -x + C\\
 	\frac{1}{x}\times{1}{y} &= -x + C\\
 	\frac{1}{x(-x+C)} &= y\\
-	y &= \frac{1}{Cx-x^{2}}\\
+	y &= \frac{1}{Cx-x^{2}}
 \end{aligned}
 \end{equation*}
 

@@ -17,12 +17,12 @@
 \setcounter{section}{3}
 %<*Section-2.4>
 \section{Exact Equations}\label{sec:exact-equations}
-1st Order D.E. in differential form \[ M(x,y)dx+N(x,y)dy=0 \] Given a function \[ z=f(x,y) \], the total differential, $dz$, is defined as \[ dx = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy \]
+1st Order D.E. in differential form \[ M(x,y)dx+N(x,y)dy=0 \] Given a function \[ z=f(x,y) \], the total differential, $dz$, is defined as \[ dz = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy \]
 
 \subsection{Method}\label{subsec:exact-equations-method}
-See if whe can find a function $f(x,y)$ such that \[ \frac{\partial f}{\partial x}=M, \frac{\partial f}{\partial y}=N \]
+See if we can find a function $f(x,y)$ such that \[ \frac{\partial f}{\partial x}=M, \frac{\partial f}{\partial y}=N \]
 
-If we can do this, then the D.E. is equivalent to \[ df=0 \Rightarrow f(x,y)=c \] is an implicit solution of D.E.
+If we can do this, then the D.E. is equivalent to \[ df=0 \Rightarrow f(x,y)=c \] is an implicit solution of D.E.\\
 
 Assume that $M$ and $N$ have continuous 1st order partials (assuming $f$ exists) \begin{equation*}
 \begin{aligned}
@@ -97,7 +97,7 @@ So $f(x,y)=c_{2}$ is the solution \[ xe^{2y}-\sin(xy)+y^{2}=c \]\\
 \[ dx = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy \]
 
 \subsection{What can you do if $M_{y} \neq N_{x}$}\label{subsec:what-can-you-do-if-exact-solution-dont-match}
-\textbf{Sometimes} you can multiply the DE by an integrating factor $\mu(x,y)$ to get an exact DE.
+\textbf{Sometimes} you can multiply the DE by an integrating factor $\mu(x,y)$ to get an exact DE.\\\\
 
 \noindent If \[ \frac{M_{y}-N_{x}}{N} \] is a function of only $x$, then \[ \mu = e^{\int \frac{M_{y}-N_{x}}{N} dx}\] will be an I.F.\\
 
@@ -110,7 +110,7 @@ So $f(x,y)=c_{2}$ is the solution \[ xe^{2y}-\sin(xy)+y^{2}=c \]\\
 \begin{aligned}
 	M_{y}&=x\\
 	N_{x}&=4x\\
-	M_{y}&\neq N_{x}
+	M_{y}&\neq N_{x}\\
 	\frac{N_{x}-M_{y}}{M}&=\frac{4x-x}{xy}\\
 						 &=\frac{3x}{xy}\\
 						 &=\frac{3}{y}\mbox{ is a function of just }y\\
