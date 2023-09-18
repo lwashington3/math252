@@ -28,8 +28,8 @@ Assume that $M$ and $N$ have continuous 1st order partials (assuming $f$ exists)
 \begin{aligned}
 	\left. \begin{array}{rlc}
 		My&=\frac{\partial}{\partial y}\frac{\partial f}{\partial x}dy=&f_{xy}\\
-		Nx&=\frac{\partial}{\partial x}\frac{\partial f}{\partial Y}dy=&f_{yx}\\
-	\end{array} \right\} \mbox{ Theorem tells use these are equal}
+		Nx&=\frac{\partial}{\partial x}\frac{\partial f}{\partial y}dy=&f_{yx}\\
+	\end{array} \right\} \mbox{ Theorem tells us these are equal}
 \end{aligned}
 \end{equation*}
 This provides a quick test to check if the D.E. is exact or not.
@@ -38,7 +38,7 @@ This provides a quick test to check if the D.E. is exact or not.
 \begin{equation*}
 \begin{aligned}
 	2xydx+\left( x^{2}-1 \right)dy&=0\\
-	M(x,y)=2xy & N(x,y)= x^{2}-1\\
+	M(x,y)=2xy \sep N(x,y)= x^{2}-1\\
 \end{aligned}
 \end{equation*}
 To check if the D.E. is exact
@@ -64,7 +64,7 @@ We now know there exists a function $f(x,y)$ with \begin{equation*}
 	f(x,y)&=c\\
 	x^{2}y-y&=c\mbox{ is an implicit solution of the D.E.}\\
 \end{aligned}
-\end{equation*} \textbf{Note: the $f_{M}$ format is just there to show which partial equation was integrated. It was made by me and, as far as I know, not standardly known.}
+\end{equation*} \textbf{Note: the $f_{M}$ format is just there to show which partial equation was integrated. It was made by me and, as far as I know, is not standardly known.}
 
 \example
 \begin{equation*}
@@ -125,7 +125,7 @@ So: \begin{equation*}
 	xy^{4}dx + y^{3}\left( 2x^{2}+3y^{2}-20 \right)dy&=0(y^{3})\\
 	xy^{4}dx + \left( 2x^{2}y^{3}+3y^{5}-20y^{3} \right)dy&=\\
 	M_{y}&=N_{x}\\
-	4xy^{3} &= 4xy^{3}
+	4xy^{3} &= 4xy^{3}\\
 	\frac{\partial f}{\partial x} % TODO: Add function from finish
 \end{aligned}
 \end{equation*}

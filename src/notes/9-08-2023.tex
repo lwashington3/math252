@@ -87,29 +87,29 @@ The Half-Life is the amount of time it takes for half of the original amount to 
 
 \subsection{Mixture Problems}\label{subsec:mixture-problems}
 \subsubsection{Setup}
-Initially, the container has 200 gallons of brine solution (salt-water) of concentration $\frac{10 \mbox{ lbs}}{200 \mbox{ gallons}}=0.05 \frac{\mbox{lbs}}{\mbox{gallon}}$. A solution of $\frac{5 \mbox{ lbs}}{200 \mbox{ gallons}}0.025 \frac{\mbox{lbs}}{\mbox{gallon}}$ is poured into the initial container at a rate of $\frac{4 \mbox{ gallons}}{\mbox{min}}$. How many pounds of salt are there in the container after 2 hours.\\
+Initially, the container has 200 gallons of brine solution (salt-water) of concentration $\frac{10 \mbox{ lbs}}{200 \mbox{ gallons}}=0.05 \frac{\mbox{lbs}}{\mbox{gallon}}$. A solution of $\frac{5 \mbox{ lbs}}{200 \mbox{ gallons}}0.025 \frac{\mbox{lbs}}{\mbox{gallon}}$ is poured into the initial container at a rate of $\frac{4 \mbox{ gallons}}{\mbox{min}}$. How many pounds of salt are there in the container after 2 hours.\\\\
 
-\noindent Let $y(t) = $ \# lbs of salt $t$ minutes after the precess starts
-$\frac{dy}{dt} = $ The rate of change of \# lbs of salt
+\noindent Let $A(t) = $ \# lbs of salt $t$ minutes after the precess starts\\
+$\frac{dA}{dt} = $ The rate of change of \# lbs of salt
 \begin{equation*}
 \begin{aligned}
-	\frac{dy}{dt} &= \left. 0.025\frac{\mbox{lbs}}{\mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate in}\\
-				  &\mbox{ }- \left. \frac{y(t)\mbox{lbs}}{200 \mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate out}\\
-				  &= (0.025)4\frac{\mbox{lbs}}{\mbox{min}} - \frac{4y(t)}{200}\frac{\mbox{lbs}}{\mbox{min}}\\
-				  &= 0.1\frac{\mbox{lbs}}{\mbox{min}} - \frac{y(t)}{50}\frac{\mbox{lbs}}{\mbox{min}}\\
-				  &= 0.1 - \frac{y(t)}{50}\\
-	\frac{dy}{dt} + \frac{1}{50}y &= 0.1\\
+	\frac{dA}{dt} &= \left. 0.025\frac{\mbox{lbs}}{\mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate in}\\
+				  &\mbox{ }- \left. \frac{A(t)\mbox{lbs}}{200 \mbox{gal}}\times4\frac{\mbox{gal}}{\mbox{min}} \right\} \mbox{rate out}\\
+				  &= (0.025)4\frac{\mbox{lbs}}{\mbox{min}} - \frac{4A(t)}{200}\frac{\mbox{lbs}}{\mbox{min}}\\
+				  &= 0.1\frac{\mbox{lbs}}{\mbox{min}} - \frac{A(t)}{50}\frac{\mbox{lbs}}{\mbox{min}}\\
+				  &= 0.1 - \frac{A(t)}{50}\\
+	\frac{dA}{dt} + \frac{1}{50}A &= 0.1\\
 	\mu &= e^{\int P(t) dt}\\
 		&= e^{\int \frac{1}{50} dt}\\
 		&= e^{\frac{t}{50}}\\
-	e^{\frac{t}{50}}\left(\frac{dy}{dt}\right) + e^{\frac{t}{50}}\left(\frac{1}{50}y\right) &= e^{\frac{t}{50}}(0.1)\\
-	\frac{d}{dt} \left( e^{\frac{t}{50}}y \right) &= e^{\frac{t}{50}}(0.1)\\
-	\int \frac{d}{dt} \left( e^{\frac{t}{50}}y \right) &= \int \frac{1}{10}e^{\frac{t}{50}}\\
-	e^{\frac{t}{50}}y &= \frac{1}{10} \times \frac{e^{\frac{t}{50}}}{\frac{1}{50}}+C\\
-	e^{\frac{t}{50}}y &= 5e^{\frac{t}{50}}+C\\
-	y &= 5 + Ce^{-\frac{t}{50}}\\
+	e^{\frac{t}{50}} \left( \frac{dA}{dt}\right) + e^{\frac{t}{50}}\left(\frac{1}{50}A \right) &= e^{\frac{t}{50}}(0.1)\\
+	\frac{d}{dt} \left( e^{\frac{t}{50}}A \right) &= e^{\frac{t}{50}}(0.1)\\
+	\int \frac{d}{dt} \left( e^{\frac{t}{50}}A \right) &= \int \frac{1}{10}e^{\frac{t}{50}}\\
+	e^{\frac{t}{50}}A &= \frac{1}{10} \times \frac{e^{\frac{t}{50}}}{\frac{1}{50}}+C\\
+	e^{\frac{t}{50}}A &= 5e^{\frac{t}{50}}+C\\
+	A(t) &= 5 + Ce^{-\frac{t}{50}}\\
 	  &= 5 + Ce^{-0.02t}\\ % TODO: Solve for t like the photo
-	y(120)  &= 5 + Ce^{-0.02(120)}\\
+	A(120)  &= 5 + Ce^{-0.02(120)}\\
 			&= 5 + Ce^{-2.4}
 \end{aligned}
 \end{equation*}

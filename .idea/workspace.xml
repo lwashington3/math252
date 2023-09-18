@@ -4,22 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Began writing and working on Practice Exam 1.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Corrected mistakes within notes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/notes/8-21-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/8-21-2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/notes/8-23-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/8-23-2023.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/9-01-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-01-2023.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/9-06-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-06-2023.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/9-08-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-08-2023.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/9-11-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-11-2023.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/exams/practice-exam1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/exams/practice-exam1.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/8-21-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/8-21-2023.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/8-23-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/8-23-2023.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/9-01-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-01-2023.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/9-06-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-06-2023.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/9-08-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-08-2023.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notes/9-11-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-11-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/9-13-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-13-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,49 +78,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "private",
-    "last_opened_file_path": "D:/Academic/math252/src/styles/tex/latex",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Academic/math252/src/styles/tex/latex&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
   <component name="RunManager" selected="LaTeX.All Notes">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -2124,100 +2104,6 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="math252" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="LaTeX.Aug 23, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 25, 2023 Notes" />
@@ -2409,6 +2295,7 @@
       <workItem from="1694795107637" duration="1179000" />
       <workItem from="1694828623172" duration="6000" />
       <workItem from="1694970921679" duration="3570000" />
+      <workItem from="1695048449063" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2498,7 +2385,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694799649953</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Corrected mistakes within notes.">
+      <option name="closed" value="true" />
+      <created>1695012183909</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695012183909</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Corrected mistakes within notes.">
+      <option name="closed" value="true" />
+      <created>1695017687746</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695017687746</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2525,7 +2428,8 @@
     <MESSAGE value="Added Homework 4.2." />
     <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
     <MESSAGE value="Began writing and working on Practice Exam 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Began writing and working on Practice Exam 1." />
+    <MESSAGE value="Corrected mistakes within notes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected mistakes within notes." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />

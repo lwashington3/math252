@@ -26,7 +26,7 @@ Taking a D.E. that's not:
 \end{itemize}
 and making a substitution to turn the new D.E. into one of these.\\\\
 
-\theorem{Given a D.E. \[ M(x,y)dx + N(x,y)dy = 0 \] A function $f(x,y)$ is said to be homogenous of order $\alpha$ if $f(tx, ty)=t^{\alpha}f(x,y)$}.
+\theorem{Given a D.E. \[ M(x,y)dx + N(x,y)dy = 0 \] A function $f(x,y)$ is said to be homogenous\label{dfn:homogenous} of order $\alpha$ if $f(tx, ty)=t^{\alpha}f(x,y)$}.
 
 \example
 Given: \[f(x,y) = x^{3} + 5xy^{2} - y^{3}\] Then: \begin{equation*}
@@ -58,8 +58,8 @@ Solve the separable D.E.~and then back-substitute
 \[ (x^{2} + y^{2})dx + (x^{2}-xy)dy = 0 \]
 \begin{equation*}
 \begin{aligned}
-	M(x,y) = x^{2} + y^{2} \mbox{   } & \mbox{   } N = x^{2}-xy \\
-	M_{y} = 2y \mbox{   } & \mbox{   } N_{x} = 2x-y \\
+	M(x,y) = x^{2} + y^{2} \sep N = x^{2}-xy \\
+	M_{y} = 2y \sep N_{x} = 2x-y \\
 	M_{y} &\neq N_{x}\\
 	M(tx,ty) &= (tx)^{2} + (ty)^{2}\\
 			 &= t^{2}x^{2} + t^{2}y^{2}\\
@@ -87,7 +87,7 @@ Solve the separable D.E.~and then back-substitute
 \end{aligned}
 \end{equation*}
 
-\section{Bernoulli Equation}\label{sec:bernoulli-equation}
+\subsection{Bernoulli Equation}\label{subsec:bernoulli-equation}
 \theorem{An equation of the form \[ \frac{dy}{dx} + P(x)y = f(x)y^{n} \] where $n\neq0,1$ is called a Bernoulli Equation\label{dfn:bernoulli-equation}. The substitution \[ u=y^{1-n} \] will transform the D.E. into a 1st order linear.}
 
 \example
