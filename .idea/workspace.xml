@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Corrected mistakes within notes.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Corrected more mistakes within notes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/8-21-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/8-21-2023.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/8-23-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/8-23-2023.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/9-01-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-01-2023.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/9-06-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-06-2023.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/9-08-2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/9-08-2023.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exams/practice-exam1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/exams/practice-exam1.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/8-21-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/8-21-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/8-23-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/8-23-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/9-01-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-01-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/9-06-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-06-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/9-08-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-08-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/9-11-2023.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/9-11-2023.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2295,7 +2283,7 @@
       <workItem from="1694795107637" duration="1179000" />
       <workItem from="1694828623172" duration="6000" />
       <workItem from="1694970921679" duration="3570000" />
-      <workItem from="1695048449063" duration="1619000" />
+      <workItem from="1695048449063" duration="3270000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2401,7 +2389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695017687746</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Corrected more mistakes within notes.">
+      <option name="closed" value="true" />
+      <created>1695050449222</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695050449222</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2429,7 +2425,8 @@
     <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
     <MESSAGE value="Began writing and working on Practice Exam 1." />
     <MESSAGE value="Corrected mistakes within notes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected mistakes within notes." />
+    <MESSAGE value="Corrected more mistakes within notes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected more mistakes within notes." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
