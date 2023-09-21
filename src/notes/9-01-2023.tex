@@ -17,19 +17,19 @@
 \setcounter{section}{3}
 %<*Section-2.4>
 \section{Exact Equations}\label{sec:exact-equations}
-1st Order D.E. in differential form \[ M(x,y)dx+N(x,y)dy=0 \] Given a function \[ z=f(x,y) \], the total differential, $dz$, is defined as \[ dx = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy \]
+1st Order D.E. in differential form \[ M(x,y)dx+N(x,y)dy=0 \] Given a function \[ z=f(x,y) \], the total differential, $dz$, is defined as \[ dz = \frac{\partial f}{\partial x}dx + \frac{\partial f}{\partial y}dy \]
 
 \subsection{Method}\label{subsec:exact-equations-method}
-See if whe can find a function $f(x,y)$ such that \[ \frac{\partial f}{\partial x}=M, \frac{\partial f}{\partial y}=N \]
+See if we can find a function $f(x,y)$ such that \[ \frac{\partial f}{\partial x}=M, \frac{\partial f}{\partial y}=N \]
 
-If we can do this, then the D.E. is equivalent to \[ df=0 \Rightarrow f(x,y)=c \] is an implicit solution of D.E.
+If we can do this, then the D.E. is equivalent to \[ df=0 \Rightarrow f(x,y)=c \] is an implicit solution of D.E.\\
 
 Assume that $M$ and $N$ have continuous 1st order partials (assuming $f$ exists) \begin{equation*}
 \begin{aligned}
 	\left. \begin{array}{rlc}
 		My&=\frac{\partial}{\partial y}\frac{\partial f}{\partial x}dy=&f_{xy}\\
-		Nx&=\frac{\partial}{\partial x}\frac{\partial f}{\partial Y}dy=&f_{yx}\\
-	\end{array} \right\} \mbox{ Theorem tells use these are equal}
+		Nx&=\frac{\partial}{\partial x}\frac{\partial f}{\partial y}dy=&f_{yx}\\
+	\end{array} \right\} \mbox{ Theorem tells us these are equal}
 \end{aligned}
 \end{equation*}
 This provides a quick test to check if the D.E. is exact or not.
@@ -38,7 +38,7 @@ This provides a quick test to check if the D.E. is exact or not.
 \begin{equation*}
 \begin{aligned}
 	2xydx+\left( x^{2}-1 \right)dy&=0\\
-	M(x,y)=2xy & N(x,y)= x^{2}-1\\
+	M(x,y)=2xy \sep N(x,y)= x^{2}-1\\
 \end{aligned}
 \end{equation*}
 To check if the D.E. is exact
@@ -64,7 +64,7 @@ We now know there exists a function $f(x,y)$ with \begin{equation*}
 	f(x,y)&=c\\
 	x^{2}y-y&=c\mbox{ is an implicit solution of the D.E.}\\
 \end{aligned}
-\end{equation*} \textbf{Note: the $f_{M}$ format is just there to show which partial equation was integrated. It was made by me and, as far as I know, not standardly known.}
+\end{equation*} \textbf{Note: the $f_{M}$ format is just there to show which partial equation was integrated. It was made by me and, as far as I know, is not standardly known.}
 
 \example
 \begin{equation*}
@@ -97,7 +97,7 @@ So $f(x,y)=c_{2}$ is the solution \[ xe^{2y}-\sin(xy)+y^{2}=c \]\\
 \[ dx = \frac{\partial z}{\partial x}dx + \frac{\partial z}{\partial y}dy \]
 
 \subsection{What can you do if $M_{y} \neq N_{x}$}\label{subsec:what-can-you-do-if-exact-solution-dont-match}
-\textbf{Sometimes} you can multiply the DE by an integrating factor $\mu(x,y)$ to get an exact DE.
+\textbf{Sometimes} you can multiply the DE by an integrating factor $\mu(x,y)$ to get an exact DE.\\\\
 
 \noindent If \[ \frac{M_{y}-N_{x}}{N} \] is a function of only $x$, then \[ \mu = e^{\int \frac{M_{y}-N_{x}}{N} dx}\] will be an I.F.\\
 
@@ -110,7 +110,7 @@ So $f(x,y)=c_{2}$ is the solution \[ xe^{2y}-\sin(xy)+y^{2}=c \]\\
 \begin{aligned}
 	M_{y}&=x\\
 	N_{x}&=4x\\
-	M_{y}&\neq N_{x}
+	M_{y}&\neq N_{x}\\
 	\frac{N_{x}-M_{y}}{M}&=\frac{4x-x}{xy}\\
 						 &=\frac{3x}{xy}\\
 						 &=\frac{3}{y}\mbox{ is a function of just }y\\
@@ -125,7 +125,7 @@ So: \begin{equation*}
 	xy^{4}dx + y^{3}\left( 2x^{2}+3y^{2}-20 \right)dy&=0(y^{3})\\
 	xy^{4}dx + \left( 2x^{2}y^{3}+3y^{5}-20y^{3} \right)dy&=\\
 	M_{y}&=N_{x}\\
-	4xy^{3} &= 4xy^{3}
+	4xy^{3} &= 4xy^{3}\\
 	\frac{\partial f}{\partial x} % TODO: Add function from finish
 \end{aligned}
 \end{equation*}
