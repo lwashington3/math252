@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Created the template for Homework 4.3.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Adding template files for homeworks after 4.3 so PyCharm can see the files.">
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-1.1.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-1.2.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-2.1.tex" afterDir="false" />
@@ -13,29 +13,17 @@
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-2.4.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-2.5.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-3.1.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-3.3.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-3.4.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-3.8.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.1.tex" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.2.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.4.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.6.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.9.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-5.1.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-6.1.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-6.2.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.1.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.2.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.3.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.4.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.5.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.6.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-8.2.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-8.3.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework/washington-homework-8.4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/exams/practice-exam1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-1.4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-1.8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-3.1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-3.1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-3.3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-3.4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-3.8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +106,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 4.3 Template">
+  <component name="RunManager" selected="LaTeX.Homework 3.1 Template">
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -2258,7 +2246,7 @@
       <workItem from="1694795107637" duration="1179000" />
       <workItem from="1694828623172" duration="6000" />
       <workItem from="1694970921679" duration="3570000" />
-      <workItem from="1695313997784" duration="3435000" />
+      <workItem from="1695313997784" duration="4014000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2364,7 +2352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695317239818</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Adding template files for homeworks after 4.3 so PyCharm can see the files.">
+      <option name="closed" value="true" />
+      <created>1695317568288</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695317568288</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2392,7 +2388,8 @@
     <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
     <MESSAGE value="Began writing and working on Practice Exam 1." />
     <MESSAGE value="Created the template for Homework 4.3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the template for Homework 4.3." />
+    <MESSAGE value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />

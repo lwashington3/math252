@@ -1,0 +1,50 @@
+%! Author = Len Washington III
+%! Date = 9/09/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\setcounter{chapter}{3}
+\setcounter{section}{1}
+\usepackage{math252homework}
+
+% Document
+\begin{document}
+
+\section{Growth and Decay}\label{sec:growth-and-decay}
+\begin{enumerate}[label=\arabic*., start=3]
+	\problem{prb:3} The population of a town grows at a rate proportional to the population present at time $t$. The initial population of 500 increases by 15\% in 10 years. What will be the population in 30 years? How fast is the population growing at $t=30$?
+	\problem{prb:4} The population of bacteria in a culture grows at a rate proportional to the number of bacteria present at time $t$. After 3 hours it is observed that 400 bacteria are present. After 10 hours 2000 bacteria are present. What was the initial number of bacteria?
+	\problem{prb:5} The radioactive isotope of lead, Pb-209, decays at a rate proportional to the amount present to time $t$ and has a half-life of 3.3 hours. If 1 gram of this isotope is present initially, how long will it take for 90\% of the lead to decay?
+	\problem{prb:6} Initially 100 milligrams of a radioactive substance was present. After 6 hours the mass had decreased by 3\%. If the rate of decay is proportional to the amount of the substance present to time $t$, find the amount remaining after 24 hours.\ontemplate{\textbf{ DO NOT ANSWER. THIS IS MERELY FOR REFERENCE.}}
+	\problem{prb:7} Determine the half-life of the radioactive substance described in \hyperref[prb:6]{Problem 6}.
+	\problem{prb:8} \begin{enumerate}[label=(\alph*)]
+	    \item\label{prb:8a} Consider the initial-value problem $\frac{dA}{dt}=kA$, $A(0)=A_{0}$ as the model for the decay of a radioactive substance. Show that, in general, the half life $T$ of the substance is $T=\frac{-(\ln2)}{k}$.
+		\item Show that the solution of the initial-value problem in part (\hyperref[prb:8a]{a}) can be written $A(t) = A_{0}2^{-\frac{t}{T}}$.
+		\item If a radioactive substance has the half-life $T$ given in part (\hyperref[prb:8a]{a}), how long will it take an initial amount $A_{0}$ of the substance to decay to $\frac{1}{8}A_{0}$?
+	\end{enumerate}
+\end{enumerate}
+\section{Newton's Law of Cooling/Warming}\label{sec:newton's-law-of-cooling/warming}
+\begin{enumerate}[label=\arabic*., start=13]
+	\problem{prb:13} A thermometer is removed from a room where the temperature is 70\textdegree F and is taken outside, where the air temperature is 10\textdegree F. After one-half minute the thermometer reads 50\textdegree F. What is the reading of the thermometer at $t=1$ min? How long will it take for the thermometer to reach 15\textdegree F?
+	\setcounter{enumi}{15}
+	\problem{prb:16} Two large containers $A$ and $B$ of the same size are filled with different fluids. The fluids in containers $A$ and $B$ are maintained at 0\textdegree C and 100\textdegree C, respectively. A small metal bar, whose initial temperature is 100\textdegree C, is lowered into container $A$. After 1 minute the temperature of the bat is 90\textdegree C. After 2 minutes the bar is removed and instantly transferred to the other container. After 1 minute in contained $B$ the temperature of the bar rises 10\textdegree. How long, measured from the start of the entire process, will it take the bar to reach 99.9\textdegree C?
+\end{enumerate}
+\section{Mixtures}\label{sec:mixtures}
+\begin{enumerate}[label=\arabic*., start=23]
+	\problem{prb:}\label{prb:23} A large tank is filled to capacity with 500 gallons of pure water. Brine containing 2 pounds of salt per gallon is pumped into the tank at a rate of 5 gal/min. The well-mixed solution is pumped out at the same rate. Find the number $A(t)$ of pounds of salt in the tank at time $t$.
+	\setcounter{enumi}{24}
+	\problem{prb:25} Solve Problem \hyperref[prb:23]{23} under the assumption that the solution is pumped out at a faster rate of 10 gal/min. When is the tank empty?
+	\setcounter{enumi}{27}
+	\problem{prb:28} In Example 5 the size of the tank containing the salt mixture was not given. Suppose, as in the discussion following Example 5, that the rate at which brine is pumped into the tank is 3 gal/min but that the well-stirred solution is pumped out at a rate of 2 gal/min. It stands to reason that since brine is accumulating in the tank at the rate of 1 gal/min, any finite tank must eventually overflow. Now suppose that the tank has an open top and has a total capacity of 400 gallons.
+	\begin{enumerate}[label=(\alph*)]
+	    \item When will the tank overflow?
+		\item What will be the number of pounds of salt in the tank at the instant it overflows?
+		\item Assume that although the tank is overflowing, brine solution continues to be pumped in at a rate of 3 gal/min and the well-stirred solution continues to be pumped out at a rate of 2 gal/min. Devise a method for determining the number of pounds of salt in the tank at $t=150$ minutes.
+		\item Determine the number of pounds of salt in the tank at $t\rightarrow\infty$. Does your answer agree with your intuition?
+		\item Use a graphing utility to plot the graph of $A(t)$ on the interval $[0, 500)$.
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}
