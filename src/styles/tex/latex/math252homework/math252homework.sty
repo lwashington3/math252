@@ -11,7 +11,7 @@
 
 \titleformat{\section}[block]
 {\normalfont\Large\bfseries}	% format
-{Section \arabic{chapter}.\arabic{section}}	% label
+{Section \arabic{chapter}.\arabic{section} }	% label
 {0em}	% sec
 {}	% before-code
 
@@ -43,3 +43,5 @@
 \newcommand{\onhomework}[1]{\ifthenelse{\boolean{istemplate}}{}{#1}}
 
 \newcommand{\problem}[1]{\pdfbookmark[2]{Problem \the\numexpr\value{enumi}+1}{#1}\item}
+
+\newcommand{\customsection}[2]{\pdfbookmark[1]{\Large\bfseries Section #1\\\\}{#2}{\Large\textbf{Section #1}}\\}
