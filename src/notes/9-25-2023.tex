@@ -1,0 +1,178 @@
+%! Author = Len Washington III
+%! Date = 9/25/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Sep 25, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{3}
+\chapter[Higher Order DEs]{Higher Order Differential Equations}\label{ch:higher-order-differential-equations}
+\setcounter{section}{3}
+\section{Nonhomogeneous, Linear DE with Constant Coefficients}\label{sec:nonhomogeneous-linear-de-with-constant-coefficients}
+%<*Section-4.4-2>
+\setcounter{section}{3}
+\subsection{Method of Undetermined Coefficients 2}\label{subsec:method-of-undetermined-coefficients-2}
+For Solving Linear, Non-homogeneous DE with constant coefficients \[ a_{2}y'' + a_{1}y' + a_{0}y = f(x) \]
+Standard Form: \[ y'' + a_{1}y' + a_{0}y = g(x) \]
+
+\subsection{Steps}
+\begin{enumerate}[label=Step \arabic*)]
+    \item Solve $y'' + a_{1}y' + a_{0}y = 0$ called the general solution $y_{c}$.
+	\item Find one particular solution $y_{p}$ of the given DE and the general solution is \[ y = y_{c} + y_{p} \] \\\textcolor{red}{This method can only be used when $g(x)$ is a polynomial (An exponetial (i.e. $e^{kx}$), sines or cosines or sums of products of these types of functions)}
+\end{enumerate}
+
+\example
+\[ y'' - 3y' - 4y = 4\cos(3x) \]
+1st solve:
+\begin{equation*}
+\begin{aligned}
+	y'' - 3y' - 4y &= 0\\
+	m^{2}e^{mx} - 3me^{mx} - 4e^{mx} &= 0\\
+	m^{2} - 3m - 4 &= 0\\
+	(m-4)(m+1) &= 0\\
+	m-4 = 0\sep m+1= 0\\
+	m = 4\sep m = -1\\
+	y_{c} = c_{1}e^{4x} + c_{2}e^{-x}
+\end{aligned}
+\end{equation*}
+\\\\
+\begin{equation*}
+\begin{aligned}
+	y &= A\cos(3x) + B\sin(3x)\\
+	y' &= -3A\sin(3x) + 3B\cos(3x)\\
+	y'' &= -9A\cos(3x) - 9B\sin(3x)\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	y'' - 3y' - 4y = 4\cos(3x)\\
+	\left( -9A\cos(3x) - 9B\sin(3x) \right) - 3\left( -3A\sin(3x) + 3B\cos(3x) \right) - 4\left( A\cos(3x) + B\sin(3x) \right) = 4\cos(3x)\\
+	-9A\cos(3x) - 9B\sin(3x) + 9A\sin(3x) - 9B\cos(3x) - 4A\cos(3x) - 4B\sin(3x) = 4\cos(3x)\\
+	-9A\cos(3x) - 9B\cos(3x) - 4A\cos(3x) - 9B\sin(3x) + 9A\sin(3x) - 4B\sin(3x) = 4\cos(3x)\\
+	\cos(3x)(-9A - 9B - 4A) + \sin(3x) (-9B + 9A - 4B) = 4\cos(3x)\\
+	\cos(3x)(-13A - 9B) + \sin(3x) (9A - 13B) = 4\cos(3x)\\
+	\left\{ \begin{array}{ccc}
+		-13A & -9B & = 4\\
+		9A & -13B & = 0
+	\end{array} \right. \mbox{Solve simultaneously}
+\end{aligned}
+\end{equation*}
+
+One way to solve Linear Systems of Equations is called Cramer's Rule.
+\begin{equation*}
+\begin{aligned}
+	\det \left[ \begin{array}{cc}
+		4 & -9\\
+		0 & -13
+	\end{array} \right]\\
+	A &= \frac{\left[ \begin{array}{cc}
+		4 & -9\\
+		0 & -13
+	\end{array} \right]}{\left[ \begin{array}{cc}
+		-13 & -9\\
+		9 & -13
+	\end{array} \right]}\\
+	  &= \frac{4(-13) - 0(-9)}{-13(-13) - 9(-9)}\\
+	  &= \frac{-52 - 0}{169 + 81}\\
+	  &= -\frac{52}{250}\\
+	  &= -\frac{26}{125}\\
+	B &= \frac{\left[ \begin{array}{cc}
+		-13 & 4\\
+		9 & 0
+	\end{array} \right]}{\left[ \begin{array}{cc}
+		-13 & -9\\
+		9 & -13
+	\end{array} \right]}\\
+	  &= \frac{-13(0) - 4(9)}{250}\\
+	  &= \frac{0 - 36}{250}\\
+	  &= -\frac{36}{250}\\
+	  &= -\frac{18}{125}\\
+\end{aligned}
+\end{equation*}
+Check: \begin{equation*}
+\begin{aligned}
+	(-13)\left( -\frac{26}{125} \right) + (-9)\left( -\frac{18}{125} \right) ?&= 4\\
+	\frac{338}{125} + \frac{162}{125} ?&= 4\\
+	\frac{500}{125} &= 4\\
+	9\left( -\frac{26}{125} \right) + (-13)\left( -\frac{18}{125} \right) ?&= 0\\
+	-\frac{234}{125} + \frac{234}{125} ?&= 0\\
+	0 &= 0\\
+\end{aligned}
+\end{equation*}
+So \[ y = -\frac{26}{125}\cos(3x) - \frac{18}{125}\sin(3x) + c_{1}e^{4x} + c_{2}e^{-x} \] is the general solution to the given DE.
+
+\example
+\[ y'' - 5y' + 4y = 8e^{x} \]
+If we try: \begin{equation*}
+\begin{aligned}
+	y_{p} = Ae^{x}\\
+	Ae^{x} - 5Ae^{x} + 4Ae^{x} &= 8e^{x}\\
+	e^{x}(A - 5A + 4) &= 8e^{x}\\
+	0 &= 8e^{x} \mbox{ has no solution.}
+\end{aligned}
+\end{equation*}
+
+Solve \[ y'' - 5y' + 4y = 0 \]
+1st \begin{equation*}
+\begin{aligned}
+	m^{2} - 5m + 4 &= 0\\
+	(m-1)(m-4) &= 0\\
+	m-1 = 0 \sep m-4 = 0\\
+	m = 1 \sep m = 4\\
+	y_{1}=e^{1mx} \sep y_{2}=e^{4mx}\\
+	y_{1}=e^{mx} \sep y_{2}=e^{4mx}\\
+	y_{c} &= c_{2}e^{mx} + c_{2}e^{4mx} \mbox{ hole at } Ae^{x} \mbox{ is } c_{1}=A\mbox{{ }{ }} c_{2}=0\\
+\end{aligned}
+\end{equation*}
+
+Suppose we have a 5th order DE with \[ a_{5}y^{(5)} + a_{4}y^{(4)} + \dots + a_{1}y' + a_{0}y = g(x) \] and the auxiliary equation factors as \[ m^{2}(m-3)(m-(2+i))(m-(2-i))=0 \]
+\begin{equation*}
+\begin{aligned}
+	m=0 \mbox{ (multiplicity 2)} \sep m=3 \sep m=2+i \sep m=2-i\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Step 1}
+Write the general solution to the complimentary DE
+\begin{equation*}
+\begin{aligned}
+	y_{1} &= e^{0x} =& 1\\
+	y_{2} &= xe^{0x} =& x\\
+	y_{3} &= e^{3x} =& e^{3x}\\
+	y_{4} &= e^{(2+i)x} =& e^{2x}\cos(x)\\
+	y_{5} &= e^{(2-i)x} =& e^{2x}\sin(x)\\
+\end{aligned}
+\end{equation*}
+\[ y_{c} = c_{1} + c_{2}x + c_{3}e^{3x} + e^{2x}\cos(x) + e^{2x}\sin(x) \]
+
+\subsection{What would you guess for the form of $y_{p}$?}\label{subsec:what-would-you-guess-for-the-form-of-yp?}
+If
+\begin{enumerate}[label=(\roman*),start=2]
+    \item $g(x) = e^{5x} \Rightarrow y_{p} = Ae^{5x}$
+    \item $g(x) = e^{3x} \Rightarrow y_{p} = Axe^{3x}$ (because $e^{3x}$ is in $y_{c}$)
+    \item $g(x) = 5e^{2x}\sin(x) \Rightarrow y_{p} = \left( Ae^{2x}\cos(x) + Be^{2x}\sin(x) \right)x$
+    \item $g(x) = 6x^{2}e^{4x} \Rightarrow y_{p} = \left( Ax^{2} + Bx + C \right)e^{4x}$
+    \item $g(x) = x^{2}e^{3x} \Rightarrow y_{p} = \left( Ax^{2} + Bx + C \right)e^{3x}x\\\left( Ax^{2} + Bx + C \right)e^{3x}$
+\end{enumerate}
+
+%</Section-4.4-2>
+
+%<*Section-4.6-1>
+\setcounter{section}{5}
+\section{Methods of Variation of Parameters}
+This method can be used for linear, non-homogenous, DE with constant coefficients and any $g(x)$ function.
+
+\example
+Suppose you have a 2nd order DE \[ y'' + P(x)y' + Q(x)y = g(x) \] 1st solve complementary DE \[ y_{c} = c_{1}y_{1} + c_{2}y_{2} \]\\
+
+Guess \[ y_{p} = u_{1}(x)y_{1}(x) + u_{2}(x)y_{2}(x) \] for some functions $u_{1}(x)$ and $u_{2}(x)$. Plug into DE, make an additional assumption on $u_{1}(x)$, $u_{2}(x)$. Get \[ u_{1}(x) = \frac{W_{1}}{W} \] and \[ u_{2}' = \frac{W_{2}}{W} \]
+%</Section-4.6-1>
+
+\end{document}

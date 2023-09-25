@@ -1,0 +1,123 @@
+%! Author = Len Washington III
+%! Date = 9/22/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage{titling}
+\title{Sep 22, 2023 Notes}
+\usepackage{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{3}
+\chapter[Higher Order DEs]{Higher Order Differential Equations}\label{ch:higher-order-differential-equations}
+%<*Section-4.4>
+\setcounter{section}{3}
+\section{Nonhomogeneous, Linear DE with Constant Coefficients}\label{sec:nonhomogeneous-linear-de-with-constant-coefficients}
+
+\subsection{Method of Undetermined Coefficients}\label{subsec:method-of-undetermined-coefficients}
+Section 4.5 gives another approach but it a bit more abstract
+
+\hyperref[linear-equations]{\[ a_{n}(x)\frac{d^{n}y}{dx^{n}} + a_{n-1}(x)\frac{d^{n-1}y}{dx^{n-1}} + a_{n-2}(x)\frac{d^{n-2}y}{dx^{n-2}} + \dots + a_{1}(x)\frac{dy}{dx}+ a_{0}y = g(x)\mbox{ where } g(x) \neq 0\]}
+
+\theorem{If we can find any one particular solution $y_{p}$ of this DE $(y_{p} + y_{c})$, where $y_{c}$ is the solution of the complementary DE\label{dfn:complementary-de} (the same LHS$=0$ instead of $g(x)$), is also a solution of the non-homogeneous DE, then the general solution is \begin{equation*}
+\begin{aligned}
+	y &= y_{c} + y_{p}\\
+	  &= c_{1}y_{1} + c_{2}y_{2} + c_{3}y_{3} + \dots + c_{n}y_{n} + y_{p}
+\end{aligned}
+\end{equation*}} where you use \hyperref[sec:higher-order-linear-homogeneous-de-with-constant-coefficients]{Section 4.3} methods for the $c_{i}y_{i}$'s.
+
+\example
+\[ y'' + 4y' - 2y = 2x^{2} -3x + 6\]
+\subsubsection{Step 1: Find the General Solution $y_{c}$ of the complimentary DE} $y'' + 4y' - 2y = 0$
+
+Aux equation: \begin{equation*}
+\begin{aligned}
+	m^{2} + 4m - 2 &= 0\\
+	m^{2} + 4m + 4 &= 6\\
+	(m+2)^{2} &= 6\\
+	m+2 &= \pm\sqrt{6}\\
+	m &= -2\pm\sqrt{6}\\
+	y_{1} &= e^{(-2 + \sqrt{6})x}\\
+	y_{2} &= e^{(-2 - \sqrt{6})x}\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Step 2: Find a particular solution $y_{p}$ of given DE}
+Educated Guess: \[ y_{p} = Ax^{2} + Bx + C \] for some coefficients $A$, $B$, $C$. For the moment, they're undetermined coefficients.\\
+
+Plugging in the $y_{p}$, we get \begin{equation*}
+\begin{aligned}
+	y_{p}' &= 2Ax + B\\
+	y_{p}'' &= 2A\\
+\end{aligned}
+\end{equation*}
+So,
+\begin{equation*}
+\begin{aligned}
+	2A + 4(2Ax + B) - 2\left( Ax^{2} + Bx + C \right) &= 2x^{2} - 3x + 6\\
+	2A + 8Ax + 4B - 2Ax^{2} - 2Bx - 2C &= 2x^{2} - 3x + 6\\
+	-2Ax^{2} + 8Ax - 2Bx + 2A + 4B - 2C &= 2x^{2} - 3x + 6\\
+	-2Ax^{2} + (8A - 2B)x + (2A + 4B - 2C) &= 2x^{2} - 3x + 6\\
+	-2A &= 2\\
+	8A - 2B &= -3\\
+	2A + 4B - 2C &= 6\\
+	-2A &= 2\\
+	A &= -1\\
+	8(-1) - 2B &= -3\\
+	-8 - 2B &= -3\\
+	8 + 2B &= 3\\
+	2B &= -5\\
+	B &= -\frac{5}{2}\\
+	2(-1) + 4(-\frac{5}{2}) - 2C &= 6\\
+	-2 + -10 - 2C &= 6\\
+	-2C &= 18\\
+	C &= -9\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Step 3: Check}
+\begin{equation*}
+\begin{aligned}
+	y_{p}' &= 2(-1)x + \left( -\frac{5}{2} \right)\\
+		   &= -2x - \frac{5}{2}\\
+	y_{p}'' &= 2(-1)\\
+		   &= -2\\
+	y'' + 4y' - 2y &= -2 + 4\left( -2x - \frac{5}{2} \right) - 2\left( -x^{2} - \frac{5}{2}x - 9 \right)\\
+				   &= -2 - 8x - 10 + 2x^{2} + 5x + 18\\
+				   &= 2x^{2} - 8x + 5x - 10 + 18 -2\\
+				   &= 2x^{2} - 3x + 6\\
+\end{aligned}
+\end{equation*}
+
+\example
+\[ y'' - y' + y = 2\sin(3x) \]
+\subsubsection{Step 1: Find the General Solution $y_{c}$ of the complimentary DE}
+Aux equation: \begin{equation*}
+\begin{aligned}
+	m^{2} - m + 1 &= 0\\
+	m &= \frac{1 \pm \sqrt{(-1)^{2} - 4(1)(1)}}{2(1)}\\
+	  &= \frac{1 \pm \sqrt{1 - 4}}{2}\\
+	  &= \frac{1 \pm \sqrt{-3}}{2}\\
+	  &= \frac{1 \pm \sqrt{3}i}{2}\\
+	m_{1} &= \frac{1 + \sqrt{3}i}{2}\\
+	m_{2} &= \frac{1 - \sqrt{3}i}{2}\\
+	y_{1} &= e^{\frac{1}{2}x}\cos\left( \frac{\sqrt{3}}{2}x \right)\\
+	y_{2} &= e^{\frac{1}{2}x}\sin\left( \frac{\sqrt{3}}{2}x \right)\\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{Step 2: Guess $y_{p}=A\sin(3x) + B\cos(3x)$}
+Plug into the DE \begin{equation*}
+\begin{aligned}
+	&y''& &-y'& &+y &=2\sin(3x) \\
+	&\overbrace{-9A\sin(3x)-9B\cos(3x)}& - &\left( \overbrace{3A\cos(3x) - 3B\sin(3x)} \right)& + & \overbrace{A\sin(3x) + B\cos(3x)} &= 2\sin(3x)\\
+\end{aligned}
+\end{equation*}
+
+%</Section-4.4>
+
+\end{document}
