@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Corrected more mistakes within notes.">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.3.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,27 +74,50 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Academic/math252/src/styles/tex/latex&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/d/Academic/math252/src/homework&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/homework" />
+      <recent name="D:\Academic\math252\src\notes" />
+      <recent name="D:\Academic\math252\src\homework" />
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.All Notes">
+  <component name="RunManager" selected="LaTeX.Homework 4.3 Template">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>EVINCE</pdf-viewer>
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -141,8 +164,8 @@
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/8-23-2023.tex</main-file>
-        <output-path>$PROJECT_DIR$/out/notes</output-path>
-        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <output-path>$PROJECT_DIR$</output-path>
+        <auxil-path>$PROJECT_DIR$</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -169,7 +192,7 @@
         <latex-distribution>MIKTEX</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[]</makeindex-run-config>
+        <makeindex-run-config>[Makeindex.Aug 25, 2023 Makeindex]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -248,8 +271,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -292,102 +315,14 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[Makeindex.Homework 1.2 Makeindex]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
-        <compiler-arguments>--jobname=math_252_homework_templates/homework-1.4</compiler-arguments>
-        <envs>
-          <env name="Template" value="yes" />
-        </envs>
-        <main-file />
-        <output-path>$PROJECT_DIR$/out/homework</output-path>
-        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>true</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 1.4 Makeindex]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
-        <compiler-arguments />
-        <envs />
-        <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>true</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 1.4 Makeindex]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.8 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
-        <compiler-arguments>--jobname=math_252_homework_templates/homework-1.8</compiler-arguments>
-        <envs>
-          <env name="Template" value="yes" />
-        </envs>
-        <main-file />
-        <output-path>$PROJECT_DIR$/out/homework</output-path>
-        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>true</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 1.8 Makeindex]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.8" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
-        <compiler-arguments />
-        <envs />
-        <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>true</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 1.8 Makeindex]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -424,8 +359,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -468,8 +403,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -512,8 +447,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -556,8 +491,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -600,8 +535,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -644,8 +579,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -688,8 +623,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -732,8 +667,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -776,8 +711,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -875,6 +810,50 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 4.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>EVINCE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 4.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -908,8 +887,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -952,8 +931,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -996,8 +975,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1040,8 +1019,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1084,8 +1063,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1128,8 +1107,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1172,8 +1151,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1216,8 +1195,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1260,8 +1239,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1304,8 +1283,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1348,8 +1327,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1392,8 +1371,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1436,8 +1415,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1480,8 +1459,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1524,8 +1503,8 @@
         <compiler-arguments />
         <envs />
         <main-file />
-        <output-path>{projectDir}/out/homework</output-path>
-        <auxil-path>{projectDir}/auxil/homework</auxil-path>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
         <latex-distribution>MIKTEX</latex-distribution>
@@ -1680,7 +1659,49 @@
         <latex-distribution>MIKTEX</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Sep 13, 2023 Makeindex]</makeindex-run-config>
+        <makeindex-run-config>[Makeindex.Sep 22, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 20, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 20, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 22, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 22, 2023 Makeindex]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -1755,7 +1776,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1764,25 +1785,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file />
-        <command-line-args />
-        <work-dir />
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="Homework 1.8 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file />
-        <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1791,7 +1794,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1800,7 +1803,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1809,7 +1812,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1818,7 +1821,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1827,7 +1830,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1836,7 +1839,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1845,7 +1848,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1854,7 +1857,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1863,7 +1866,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1872,7 +1875,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1881,7 +1884,16 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1890,7 +1902,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1899,7 +1911,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1908,7 +1920,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1917,7 +1929,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1926,7 +1938,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1935,7 +1947,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1944,7 +1956,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1953,7 +1965,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1962,7 +1974,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1971,7 +1983,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1980,7 +1992,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1989,7 +2001,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -1998,7 +2010,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2007,7 +2019,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2016,7 +2028,7 @@
         <program>MAKEINDEX</program>
         <main-file />
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2025,7 +2037,7 @@
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/exams/practice-exam1.tex</main-file>
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/exams</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2070,7 +2082,25 @@
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/9-13-2023.tex</main-file>
         <command-line-args />
-        <work-dir />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 20, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 22, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2092,6 +2122,134 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="LaTeX.Aug 23, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 25, 2023 Notes" />
@@ -2100,10 +2258,9 @@
       <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       <item itemvalue="LaTeX.Practice Exam #1 Template" />
       <item itemvalue="LaTeX.Practice Exam #1" />
+      <item itemvalue="LaTeX.Homework 4.3" />
       <item itemvalue="LaTeX.Homework 1.1" />
       <item itemvalue="LaTeX.Homework 1.2" />
-      <item itemvalue="LaTeX.Homework 1.4" />
-      <item itemvalue="LaTeX.Homework 1.8" />
       <item itemvalue="LaTeX.Homework 2.1" />
       <item itemvalue="LaTeX.Homework 2.2" />
       <item itemvalue="LaTeX.Homework 2.3" />
@@ -2130,10 +2287,9 @@
       <item itemvalue="LaTeX.Homework 8.2" />
       <item itemvalue="LaTeX.Homework 8.3" />
       <item itemvalue="LaTeX.Homework 8.4" />
+      <item itemvalue="LaTeX.Homework 4.3 Template" />
       <item itemvalue="LaTeX.Homework 1.1 Template" />
       <item itemvalue="LaTeX.Homework 1.2 Template" />
-      <item itemvalue="LaTeX.Homework 1.4 Template" />
-      <item itemvalue="LaTeX.Homework 1.8 Template" />
       <item itemvalue="LaTeX.Homework 2.1 Template" />
       <item itemvalue="LaTeX.Homework 2.2 Template" />
       <item itemvalue="LaTeX.Homework 2.3 Template" />
@@ -2160,6 +2316,8 @@
       <item itemvalue="LaTeX.Homework 8.2 Template" />
       <item itemvalue="LaTeX.Homework 8.3 Template" />
       <item itemvalue="LaTeX.Homework 8.4 Template" />
+      <item itemvalue="LaTeX.Sep 20, 2023 Notes" />
+      <item itemvalue="LaTeX.Sep 22, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -2172,10 +2330,9 @@
       <item itemvalue="Makeindex.Aug 28, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 30, 2023 Makeindex" />
       <item itemvalue="Makeindex.Practice Exam #1 Makeindex" />
+      <item itemvalue="Makeindex.Homework 4.3 Makeindex" />
       <item itemvalue="Makeindex.Homework 1.1 Makeindex" />
       <item itemvalue="Makeindex.Homework 1.2 Makeindex" />
-      <item itemvalue="Makeindex.Homework 1.4 Makeindex" />
-      <item itemvalue="Makeindex.Homework 1.8 Makeindex" />
       <item itemvalue="Makeindex.Homework 2.1 Makeindex" />
       <item itemvalue="Makeindex.Homework 2.2 Makeindex" />
       <item itemvalue="Makeindex.Homework 2.3 Makeindex" />
@@ -2202,6 +2359,8 @@
       <item itemvalue="Makeindex.Homework 8.2 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.3 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.4 Makeindex" />
+      <item itemvalue="Makeindex.Sep 20, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Sep 22, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -2211,6 +2370,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       </list>
@@ -2283,7 +2443,9 @@
       <workItem from="1694795107637" duration="1179000" />
       <workItem from="1694828623172" duration="6000" />
       <workItem from="1694970921679" duration="3570000" />
-      <workItem from="1695048449063" duration="3270000" />
+      <workItem from="1695313997784" duration="4014000" />
+      <workItem from="1695401144665" duration="2860000" />
+      <workItem from="1695654849447" duration="3105000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2373,29 +2535,29 @@
       <option name="project" value="LOCAL" />
       <updated>1694799649953</updated>
     </task>
-    <task id="LOCAL-00012" summary="Corrected mistakes within notes.">
+    <task id="LOCAL-00012" summary="Created the template for Homework 4.3.">
       <option name="closed" value="true" />
-      <created>1695012183909</created>
+      <created>1695317182539</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1695012183909</updated>
+      <updated>1695317182539</updated>
     </task>
-    <task id="LOCAL-00013" summary="Corrected mistakes within notes.">
+    <task id="LOCAL-00013" summary="Created the template for Homework 4.3.">
       <option name="closed" value="true" />
-      <created>1695017687746</created>
+      <created>1695317239818</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1695017687746</updated>
+      <updated>1695317239818</updated>
     </task>
-    <task id="LOCAL-00014" summary="Corrected more mistakes within notes.">
+    <task id="LOCAL-00014" summary="Adding template files for homeworks after 4.3 so PyCharm can see the files.">
       <option name="closed" value="true" />
-      <created>1695050449222</created>
+      <created>1695317568288</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1695050449222</updated>
+      <updated>1695317568288</updated>
     </task>
     <option name="localTasksCounter" value="15" />
     <servers />
@@ -2424,12 +2586,13 @@
     <MESSAGE value="Added Homework 4.2." />
     <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
     <MESSAGE value="Began writing and working on Practice Exam 1." />
-    <MESSAGE value="Corrected mistakes within notes." />
-    <MESSAGE value="Corrected more mistakes within notes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected more mistakes within notes." />
+    <MESSAGE value="Created the template for Homework 4.3." />
+    <MESSAGE value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
   </component>
 </project>
