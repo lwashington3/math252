@@ -6,8 +6,15 @@
 \ProvidesPackage{math252notes}[2023/08/23 Len Washington III's Package]
 
 \RequirePackage{titling}
+\RequirePackage{xkeyval}
+
+\DeclareOptionX{title}{
+	\title{#1}
+}
+\ProcessOptionsX\relax
+
 \RequirePackage{math252}
-\title{\thesubject\ Notes}
+%\title{\thesubject\ Notes}
 
 \fancyhead[L]{\leftmark}
 

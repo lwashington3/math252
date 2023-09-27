@@ -6,6 +6,16 @@
 \ProvidesPackage{math252homework}[2023/08/21 Len Washington III's Package]
 
 \RequirePackage{titling}
+\RequirePackage{xkeyval}
+
+\DeclareOptionX{chapter}{
+	\setcounter{chapter}{#1}
+}
+\DeclareOptionX{section}{
+	\setcounter{section}{#1}
+}
+\ProcessOptionsX\relax
+
 \title{HW Section \arabic{chapter}.\arabic{section}}
 \RequirePackage{math252}
 
