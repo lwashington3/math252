@@ -1,5 +1,7 @@
 *venv/
 
+.fuse_hidden*
+
 *desktop.ini
 
 .idea/jupyter-settings.xml
