@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Finished Lecture 9/27, turned in Homework 4.4." />
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Uploading Lecture Notes for 4.6.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.4.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-4.3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.3.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-4.6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.6.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252homework/math252homework.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252homework/math252homework.sty" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +94,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 4.4 Template">
+  <component name="RunManager" selected="LaTeX.Homework 4.6">
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -2328,6 +2335,8 @@
       <workItem from="1695313997784" duration="4014000" />
       <workItem from="1695401144665" duration="2860000" />
       <workItem from="1695654849447" duration="3105000" />
+      <workItem from="1695841334657" duration="58000" />
+      <workItem from="1695918830045" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2441,7 +2450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695317568288</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Uploading Lecture Notes for 4.6.">
+      <option name="closed" value="true" />
+      <created>1695841375831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695841375831</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2470,7 +2487,8 @@
     <MESSAGE value="Began writing and working on Practice Exam 1." />
     <MESSAGE value="Created the template for Homework 4.3." />
     <MESSAGE value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
+    <MESSAGE value="Uploading Lecture Notes for 4.6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploading Lecture Notes for 4.6." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
