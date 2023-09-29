@@ -5,6 +5,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{math252homework}[2023/08/21 Len Washington III's Package]
 
+\RequirePackage{alphalph}
 \RequirePackage{titling}
 \RequirePackage{xkeyval}
 
@@ -52,16 +53,16 @@
 \newcommand{\ontemplate}[1]{\ifthenelse{\boolean{istemplate}}{#1}{}}
 \newcommand{\onhomework}[1]{\ifthenelse{\boolean{istemplate}}{}{#1}}
 
-\newcommand*\makeAlph[1]{\symbol{\numexpr97+#1}}
+\newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
 
 \newcommand{\problem}{\pdfbookmark[2] % Level
 {Problem \the\numexpr\value{enumi}+1} % Text
 {prb:\number\value{enumi}}\item\label{prb:\number\value{enumi}}} % Name/Label
 
-\newcommand{\subproblem}[1]{\pdfbookmark[3] % Level
-{Problem \the\numexpr\value{enumi}#1} % Text
-{prb:\number\value{enumi}#1}
-\item\label{prb:\number\value{enumi}#1}} % Name/Label
+\newcommand{\subproblem}{\pdfbookmark[3] % Level
+{Problem \the\numexpr\value{enumi}\makeAlph{enumii}} % Text
+{prb:\number\value{enumi}\makeAlph{enumii}}
+\item\label{prb:\number\value{enumi}\alph{enumii}}} % Name/Label
 
 %\newcommand{\subproblem}[1]{\pdfbookmark[3]{Problem \the\numexpr\value{enumi}.{\symbol{\numexpr97+\number\value{enumii}}}}{#1}\item\label{#1}}
 
