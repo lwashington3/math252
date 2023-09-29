@@ -58,11 +58,12 @@
 {Problem \the\numexpr\value{enumi}+1} % Text
 {prb:\number\value{enumi}}\item\label{prb:\number\value{enumi}}} % Name/Label
 
-\newcommand{\subproblem}{\pdfbookmark[3] % Level
-{Problem \the\numexpr\value{enumi}} % Text
-{prb:\number\value{enumi}}\item\label{prb:\number\value{enumi}}} % Name/Label
+\newcommand{\subproblem}[1]{\pdfbookmark[3] % Level
+{Problem \the\numexpr\value{enumi}#1} % Text
+{prb:\number\value{enumi}#1}
+\item\label{prb:\number\value{enumi}#1}} % Name/Label
 
 %\newcommand{\subproblem}[1]{\pdfbookmark[3]{Problem \the\numexpr\value{enumi}.{\symbol{\numexpr97+\number\value{enumii}}}}{#1}\item\label{#1}}
 
-\newcommand{\customsection}[2]{{\\}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}{\\}{\\}}
+\newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{2em}}
 \newcommand{\ivpsep}{\mbox{{ }{ }}}
