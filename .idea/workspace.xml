@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Uploaded Homework 5.1 template.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added the equations to the template for Homework 5.1.">
+      <change afterPath="$PROJECT_DIR$/src/notes/10-02-2023.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/9-29-2023.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/images/5.1.graphs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/images/5.1.spring.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.6.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/math_252_homework_templates/homework-4.6.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-4.4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-4.6.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-4.6.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252homework/math252homework.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252homework/math252homework.sty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +96,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 5.1 Template">
+  <component name="RunManager" selected="LaTeX.All Notes">
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -1496,6 +1499,27 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Oct 04, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-04-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Practice Exam #1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exam Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -1727,6 +1751,15 @@
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[]</makeindex-run-config>
       </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-04-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
       <method v="2" />
     </configuration>
     <configuration name="Aug 21, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
@@ -2035,6 +2068,15 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Oct 04, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Practice Exam #1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exams">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -2200,6 +2242,7 @@
       <item itemvalue="LaTeX.Homework 8.2 Template" />
       <item itemvalue="LaTeX.Homework 8.3 Template" />
       <item itemvalue="LaTeX.Homework 8.4 Template" />
+      <item itemvalue="LaTeX.Oct 04, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -2244,6 +2287,7 @@
       <item itemvalue="Makeindex.Homework 8.2 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.3 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.4 Makeindex" />
+      <item itemvalue="Makeindex.Oct 04, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -2252,6 +2296,7 @@
       <item itemvalue="Makeindex.Sep 20, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 22, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 25, 2023 Makeindex" />
+      <item itemvalue="Makeindex.10-04-2023 makeindex" />
       <item itemvalue="Makeindex.notes makeindex" />
     </list>
     <recent_temporary>
@@ -2472,7 +2517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695952265414</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added the equations to the template for Homework 5.1.">
+      <option name="closed" value="true" />
+      <created>1696440078627</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1696440078627</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2504,7 +2557,8 @@
     <MESSAGE value="Uploading Lecture Notes for 4.6." />
     <MESSAGE value="Uploaded Homework 4.6 Template." />
     <MESSAGE value="Got the bookmarks working for Homework 4.6 Template." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got the bookmarks working for Homework 4.6 Template." />
+    <MESSAGE value="Added the equations to the template for Homework 5.1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the equations to the template for Homework 5.1." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />

@@ -1,0 +1,68 @@
+%! Author = Len Washington III
+%! Date = 10/04/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage[title={Oct 04, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{5}
+\chapter{Series Solutions of Linear Equations}\label{ch:series-solutions-of-linear-equations}
+%<*Section-6.1>
+\section{Solution by Infinite Series}\label{sec:solution-by-infinite-series}
+2nd order linear DE with (possibly) variable coefficients
+\[ a_{2}(x)y'' + a_{1}(x)y' + a_{0}(x)y = f(x) \]
+\[ y'' + P(x)y' + Q(x)y = F(x) \]
+
+\subsection{Review of Infinite Series Facts}\label{subsec:review-of-infinite-series-facts}
+\subsubsection{Maclaurin Series}
+\[ \sum_{n=0}^{\infty} a_{n}x^{n}  \]
+Power series centered at 0
+
+\subsubsection{Taylor Series}
+\[ \sum_{n=0}^{\infty} a_{n}(x-a)^{n}  \]
+Centered at a = 0
+
+It's a theorem that power series either
+\begin{enumerate}[label=(\arabic*)]
+    \item Converge all real numbers $x$ on the interval $I=(-\infty, \infty)$ and the radius of convergence is $R=\infty$
+	\item Converge only when $x=a$ on the interval $I=[a,a]$ and the radius of convergence is $R=0=\{a\}$
+	\item The series converges on an interval centered at a finite, non-zero radius $R=(a-R, a+R)$
+\end{enumerate}
+
+\subsection{Ratio Test}\label{subsec:ratio-test}
+Use the Ratio Test to determine which of these 3 cases occurs in a specific problem.
+
+The 3 cases of the ratio test are:
+\begin{itemize}
+	\item[$L < 1$], the series converges
+	\item[$L > 1$], the series diverges
+	\item[$L = 1$],
+\end{itemize}
+
+\example
+Determine the radius and interval of convergence for \[ \sum_{n=0}^{\infty} \frac{x^{n}}{3^{n}(n+1)}  \]
+
+\begin{equation*}
+\begin{aligned}
+	L &= \lim_{n\rightarrow\infty} \frac{\bigg| \frac{x^{n+1}}{3^{n+1}(n+2)} \bigg|}{\bigg| \frac{x^{n}}{3^{n}(n+1)} \bigg|}\\
+	  &= \lim_{n\rightarrow\infty} \frac{|x|}{3}\frac{n+1}{n+2}\\
+	  &= \frac{|x|}{3}\lim_{n\rightarrow\infty}\frac{n+1}{n+2}\\
+	  &= \frac{|x|}{3}(1)\\
+	  &= \frac{|x|}{3}\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	\frac{|x|}{3} &< 1\\
+	|x| &< 3\\
+	I &= \left( -3, 3 \right)\\
+\end{aligned}
+\end{equation*}
+
+	%</Section-6.1>
+
+\end{document}

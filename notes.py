@@ -5,15 +5,13 @@ from xml.etree import ElementTree
 def create_tex_file(date:date, datefmt:str, file:str):
 	with open(file, 'w') as f:
 		f.write(fr"""%! Author = Len Washington III
-%! Date = {date:%m/%d/%Y}
+%! Date = {date:%#m/%d/%Y}
 
 % Preamble
 \documentclass[12pt]{{report}}
 
 % Packages
-\usepackage{{titling}}
-\title{{{date.strftime(datefmt)} Notes}}
-\usepackage{{math252notes}}
+\usepackage[title={{{date.strftime(datefmt)} Notes}}]{{math252notes}}
 
 % Document
 \begin{{document}}
@@ -42,7 +40,8 @@ def create_notes_conf(root:ElementTree, date:date, datefmt, month, texfile):
 	ElementTree.SubElement(texify, "compiler").text = "PDFLATEX"
 	ElementTree.SubElement(texify, "compiler-path")
 	ElementTree.SubElement(texify, "sumatra-path")
-	ElementTree.SubElement(texify, "pdf-viewer").text = "BUILT-IN-PDF-VIEWER"
+	ElementTree.SubElement(texify, "pdf-viewer").text = "NONE"
+	ElementTree.SubElement(texify, "viewer-command").text = "opener"
 	ElementTree.SubElement(texify, "compiler-arguments")
 	ElementTree.SubElement(texify, "envs")
 	ElementTree.SubElement(texify, "main-file").text = f"$PROJECT_DIR$/src/notes/{texfile}"
