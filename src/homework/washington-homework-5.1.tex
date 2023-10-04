@@ -10,19 +10,30 @@
 % Document
 \begin{document}
 
+\pdfbookmark[2]{Equations}{prb:equations}
+\renewcommand\theequation{\arabic{equation}}
+\setcounter{equation}{5}
+\begin{equation} x(t) = A\sin(\omega t + \phi)\label{eq:6}\end{equation}
+\renewcommand\theequation{\arabic{equation}'}
+\setcounter{equation}{5}
+\begin{equation} x(t) = A\cos(\omega t - \phi) \label{eq:6'}\end{equation}
+\renewcommand\theequation{\arabic{equation}}
+\setcounter{equation}{22}
+\begin{equation} x(t) = Ae^{-\lambda t}\sin\left( \sqrt{\omega^{2} - \lambda^{2}t} + \phi \right) \label{eq:23}\end{equation}
+
 \begin{enumerate}[label=\arabic*.,start=3]
 	\problem A mass weighing 24 pounds, attached to the end of a spring, stretches it 4 inches. Initially, the mass is released from rest from a point 3 inches above the equilibrium position. Find the equation of motion.
 	\setcounter{enumi}{8}
 	\problem A mass weighing 8 pounds is attached to a spring. When set in motion, the spring/mass system exhibits simple harmonic motion.
 	\begin{enumerate}[label=(\alph*)]
 	    \subproblem Determine the equation of motion if the spring constant is 1 lb/ft and the mass is initially released from a point 6 inches below the equilibrium position with a downward velocity of $\frac{3}{2}$ ft/s.
-		\subproblem Express the equation of motion in the form given in (6).
-		\subproblem Express the equation of motion in the form given in (6').
+		\subproblem Express the equation of motion in the form given in (\hyperref[eq:6]{6}).
+		\subproblem Express the equation of motion in the form given in (\hyperref[eq:6']{6'}).
 	\end{enumerate}
 	\problem A mass weighing 10 pounds stretches a spring $\frac{1}{4}$ foot. This mass is removed and replaced with a mass of 1.6 slugs, which is initially released from a point $\frac{1}{3}$ foot above the equilibrium position above the equilibrium position with a downward velocity of $\frac{5}{4}$ ft/s.
 	\begin{enumerate}[label=(\alph*)]
-	    \subproblem Express the equation of motion in the form given in (6).
-	    \subproblem Express the equation of motion in the form given in (6').
+	    \subproblem Express the equation of motion in the form given in (\hyperref[eq:6]{6}).
+	    \subproblem Express the equation of motion in the form given in (\hyperref[eq:6']{6'}).
 		\subproblem Use one of the solutions obtained in parts (\hyperref[prb:10a]{a}) and (\hyperref[prb:10b]{b}) to determine the times the mass attains a displacement below the equilibrium position numerically equal to $\frac{1}{2}$ the amplitude of motion.
 	\end{enumerate}
 	\setcounter{enumi}{26}
@@ -36,7 +47,7 @@
 	\problem After a mass weighing 10 pounds is attached to a 5-foot spring, the spring measures 7 feet. This mass is removed and replaced with another mass that weighs 8 pounds. The entire system is placed in a medium that offers a damping force that is numerically equal to the instantaneous velocity.
 	\begin{enumerate}[label=(\alph*)]
 	    \subproblem Find the equation of motion if the mass is initially released from a point $\frac{1}{2}$ foot below the equilibrium position with a downward velocity of 1 ft/s.
-		\subproblem Express the equation of motion in the form given in (23).
+		\subproblem Express the equation of motion in the form given in (\hyperref[eq:23]{23}).
 		\subproblem Find the times at which the mass passes through the equilibrium position heading downward.
 		\subproblem Graph the equation of motion.
 	\end{enumerate}
