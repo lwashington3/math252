@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added the equations to the template for Homework 5.1.">
-      <change afterPath="$PROJECT_DIR$/src/notes/10-02-2023.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/9-29-2023.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/images/5.1.graphs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/images/5.1.spring.jpg" afterDir="false" />
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,38 +64,88 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/d/Academic/math252/.idea/workspace.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;TexifyConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "D:/Academic/math252/.idea/workspace.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "TexifyConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Academic\math252\src\notes" />
       <recent name="$PROJECT_DIR$/src/homework" />
+      <recent name="D:\Academic\math252\src\notes" />
       <recent name="D:\Academic\math252\src\homework" />
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.All Notes">
+  <component name="RunManager" selected="LaTeX.Homework 6.2 Template">
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/notes.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.notes makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -123,7 +166,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/8-21-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Aug-21-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 21, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -144,7 +208,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/8-23-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$</output-path>
+        <auxil-path>$PROJECT_DIR$</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 23, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -165,7 +250,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/8-25-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Aug 25, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 25, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -186,7 +292,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/8-28-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Aug 28, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 28, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -207,7 +334,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/8-30-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 30, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -228,7 +376,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-1.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 1.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-1.1</compiler-arguments>
         <envs>
@@ -251,7 +422,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 1.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -272,7 +464,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-1.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 1.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-1.2</compiler-arguments>
         <envs>
@@ -295,7 +510,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 1.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -316,7 +552,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-2.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-2.1</compiler-arguments>
         <envs>
@@ -339,7 +598,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -360,7 +640,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-2.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-2.2</compiler-arguments>
         <envs>
@@ -383,7 +686,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -404,7 +728,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-2.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-2.3</compiler-arguments>
         <envs>
@@ -427,7 +774,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -448,7 +816,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-2.4</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-2.4</compiler-arguments>
         <envs>
@@ -471,7 +862,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -492,7 +904,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-2.5</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.5 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.5 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-2.5</compiler-arguments>
         <envs>
@@ -515,7 +950,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 2.5 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.5" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -536,7 +992,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-3.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-3.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-3.1</compiler-arguments>
         <envs>
@@ -559,7 +1038,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-3.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -580,7 +1080,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-3.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-3.3</compiler-arguments>
         <envs>
@@ -603,7 +1126,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -624,7 +1168,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-3.4</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-3.4</compiler-arguments>
         <envs>
@@ -647,7 +1214,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -668,7 +1256,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-3.8</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.8 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.8 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-3.8</compiler-arguments>
         <envs>
@@ -691,7 +1302,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 3.8 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.8" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -712,7 +1344,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.1</compiler-arguments>
         <envs>
@@ -735,7 +1390,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -756,7 +1432,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.2</compiler-arguments>
         <envs>
@@ -779,7 +1478,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -800,7 +1520,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.3</compiler-arguments>
         <envs>
@@ -839,12 +1582,56 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 4.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 4.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.4</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.4</compiler-arguments>
         <envs>
@@ -867,7 +1654,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -888,7 +1696,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.6</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.6.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.6 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.6 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.6</compiler-arguments>
         <envs>
@@ -927,12 +1758,56 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 4.6" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.6.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.6 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 4.9 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-4.9</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.9 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.9 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-4.9</compiler-arguments>
         <envs>
@@ -955,7 +1830,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 4.9 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.9" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -976,7 +1872,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-5.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 5.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 5.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-5.1</compiler-arguments>
         <envs>
@@ -999,8 +1918,29 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 5.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 5.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
@@ -1020,7 +1960,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-6.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 6.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 6.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-6.1</compiler-arguments>
         <envs>
@@ -1043,8 +2006,8 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
-        <viewer-command />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
@@ -1055,7 +2018,28 @@
         <latex-distribution>MIKTEX</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 6.1 Makeindex]</makeindex-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 6.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -1064,7 +2048,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-6.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 6.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 6.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-6.2</compiler-arguments>
         <envs>
@@ -1087,7 +2094,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 6.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 6.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1108,7 +2136,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.1</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.1</compiler-arguments>
         <envs>
@@ -1131,7 +2182,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1152,7 +2224,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.2</compiler-arguments>
         <envs>
@@ -1175,7 +2270,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1196,7 +2312,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.3</compiler-arguments>
         <envs>
@@ -1219,7 +2358,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1240,7 +2400,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.4</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.4</compiler-arguments>
         <envs>
@@ -1263,7 +2446,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1284,7 +2488,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.5</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.5.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.5 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.5 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.5</compiler-arguments>
         <envs>
@@ -1307,7 +2534,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.5.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.5 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.5" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1328,7 +2576,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-7.6</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.6.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.6 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.6 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-7.6</compiler-arguments>
         <envs>
@@ -1351,7 +2622,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.6.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 7.6 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.6" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1372,7 +2664,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-8.2</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.2 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-8.2</compiler-arguments>
         <envs>
@@ -1395,7 +2710,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.2.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.2 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.2" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1416,7 +2752,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-8.3</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.3 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-8.3</compiler-arguments>
         <envs>
@@ -1439,7 +2798,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.3.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.3 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.3" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1460,7 +2840,30 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-8.4</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.4 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=math_252_homework_templates/homework-8.4</compiler-arguments>
         <envs>
@@ -1483,7 +2886,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.4.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.4" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1520,12 +2944,119 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Oct 04, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-04-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 06, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-06-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 06, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-06-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 11, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-11-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Practice Exam #1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exam Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=practice-exam1-blank</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/exams/practice-exam1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/exams</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/exams</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Practice Exam #1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Practice Exam #1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exam Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments>--jobname=practice-exam1-blank</compiler-arguments>
         <envs>
@@ -1548,7 +3079,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/exams/practice-exam1.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/exams</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/exams</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Practice Exam #1 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Practice Exam #1" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exams">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1569,7 +3121,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-01-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 01, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 01, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1590,7 +3163,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-06-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 06, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 06, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1611,7 +3205,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-08-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 08, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1632,7 +3247,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-11-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 11, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1653,7 +3289,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-13-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 22, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 13, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1674,7 +3331,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Sep 20, 2023 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 20, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1695,7 +3373,28 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 22, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1716,11 +3415,53 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/9-25-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 25, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/9-25-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Textbook Tables" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -1737,7 +3478,7 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <pdf-viewer>NONE</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
@@ -1762,10 +3503,64 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="10-04-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-06-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-06-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-11-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Aug 21, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/8-21-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 21, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/8-21-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 23, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/8-23-2023.tex</main-file>
         <command-line-args />
         <work-dir />
       </texify-makeindex>
@@ -1789,6 +3584,24 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Aug 25, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/8-25-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Aug 28, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/8-28-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Aug 28, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -1807,7 +3620,34 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Aug 30, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="August Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/8-30-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 1.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 1.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
@@ -1834,7 +3674,34 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 2.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 2.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
@@ -1861,6 +3728,24 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 2.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 2.5 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 2.5 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -1879,7 +3764,34 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 3.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-3.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 3.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 3.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
@@ -1906,10 +3818,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 3.8 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 4.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.2.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -1933,10 +3872,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 4.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 4.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.4.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.4.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 4.6 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.6.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -1960,10 +3926,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 4.9 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 5.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 5.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 6.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -1987,10 +3980,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 6.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.2.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 7.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.2.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -2014,10 +4034,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 7.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.3.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 7.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 7.5 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.5.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -2041,10 +4088,37 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 7.6 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.6.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Homework 8.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.2.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.2 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.2.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework 8.3 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.3.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -2068,12 +4142,66 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Homework 8.4 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-8.4.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Oct 04, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 04, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 06, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 06, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 11, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Practice Exam #1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exams">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/exams/practice-exam1.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/exams</work-dir>
       </texify-makeindex>
       <method v="2" />
     </configuration>
@@ -2090,6 +4218,24 @@
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/9-01-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 01, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-01-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 06, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-06-2023.tex</main-file>
         <command-line-args />
         <work-dir />
       </texify-makeindex>
@@ -2113,6 +4259,24 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Sep 08, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-08-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 11, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-11-2023.tex</main-file>
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Sep 11, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -2131,7 +4295,34 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Sep 13, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-13-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Sep 20, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 20, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sep 22, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
@@ -2158,10 +4349,28 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Sep 25, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="September Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/9-25-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="notes makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/notes.tex</main-file>
         <command-line-args />
         <work-dir />
       </texify-makeindex>
@@ -2243,6 +4452,8 @@
       <item itemvalue="LaTeX.Homework 8.3 Template" />
       <item itemvalue="LaTeX.Homework 8.4 Template" />
       <item itemvalue="LaTeX.Oct 04, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 06, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 11, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -2252,6 +4463,7 @@
       <item itemvalue="LaTeX.Sep 22, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 25, 2023 Notes" />
       <item itemvalue="LaTeX.All Notes" />
+      <item itemvalue="LaTeX.Textbook Tables" />
       <item itemvalue="Makeindex.Aug 21, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 23, 2023 Makeindex" />
       <item itemvalue="Makeindex.Aug 25, 2023 Makeindex" />
@@ -2288,6 +4500,8 @@
       <item itemvalue="Makeindex.Homework 8.3 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.4 Makeindex" />
       <item itemvalue="Makeindex.Oct 04, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 06, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 11, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -2296,11 +4510,14 @@
       <item itemvalue="Makeindex.Sep 20, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 22, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 25, 2023 Makeindex" />
+      <item itemvalue="Makeindex.10-11-2023 makeindex" />
+      <item itemvalue="Makeindex.10-06-2023 makeindex" />
       <item itemvalue="Makeindex.10-04-2023 makeindex" />
       <item itemvalue="Makeindex.notes makeindex" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       </list>
     </recent_temporary>
@@ -2380,6 +4597,14 @@
       <workItem from="1695936054229" duration="1127000" />
       <workItem from="1695937184857" duration="11000" />
       <workItem from="1695937199987" duration="3619000" />
+      <workItem from="1696524056897" duration="306000" />
+      <workItem from="1696609565015" duration="2950000" />
+      <workItem from="1696633974776" duration="10297000" />
+      <workItem from="1696727237202" duration="25000" />
+      <workItem from="1696885257384" duration="5452000" />
+      <workItem from="1696904241247" duration="39000" />
+      <workItem from="1696955383752" duration="4197000" />
+      <workItem from="1697041468364" duration="3988000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -2525,7 +4750,55 @@
       <option name="project" value="LOCAL" />
       <updated>1696440078627</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added the notes for Section 6.1.">
+      <option name="closed" value="true" />
+      <created>1696447325213</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1696447325213</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Starting point for final rush of Homework 5.1.">
+      <option name="closed" value="true" />
+      <created>1696647458588</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696647458588</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Couldn't finish Homework 5.1 before the extension was over.">
+      <option name="closed" value="true" />
+      <created>1696654609364</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1696654609364</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Worked on Homework 6.1. Started file to hold useful tables of info from the textbook.">
+      <option name="closed" value="true" />
+      <created>1696959452872</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1696959452872</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Wrote template for Homework 6.2.">
+      <option name="closed" value="true" />
+      <created>1697055779348</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1697055779348</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches.">
+      <option name="closed" value="true" />
+      <created>1697055846598</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1697055846598</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2558,12 +4831,19 @@
     <MESSAGE value="Uploaded Homework 4.6 Template." />
     <MESSAGE value="Got the bookmarks working for Homework 4.6 Template." />
     <MESSAGE value="Added the equations to the template for Homework 5.1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the equations to the template for Homework 5.1." />
+    <MESSAGE value="Added the notes for Section 6.1." />
+    <MESSAGE value="Added Lecture Notes and Homework Template for 6.1." />
+    <MESSAGE value="Starting point for final rush of Homework 5.1." />
+    <MESSAGE value="Couldn't finish Homework 5.1 before the extension was over." />
+    <MESSAGE value="Worked on Homework 6.1. Started file to hold useful tables of info from the textbook." />
+    <MESSAGE value="Wrote template for Homework 6.2." />
+    <MESSAGE value="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
-    <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1696264008021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1695773102536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
   </component>
 </project>

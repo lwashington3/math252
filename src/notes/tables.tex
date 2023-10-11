@@ -1,0 +1,43 @@
+%! Author = Len Washington III
+%! Date = 10/06/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage[title={Textbook Tables}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{5}
+\chapter{Series Solutions of Linear Equations}\label{ch:series-solutions-of-linear-equations}
+\section{Solving Linear DE's without constant coefficients}\label{sec:solving-linear-de's-without-constant-coefficients}
+%<*Section-6.1-table>
+
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{Maclaurin Series Representations}
+		\label{tab:maclaurin-series}
+		\begin{tabular}{|r|c|}
+			\toprule
+			\textbf{Maclaurin Series} & \textbf{Interval of Convergence}\\
+			\midrule
+			\begin{minipage}{0.75\textwidth}\begin{equation} e^{x} = 1 + \frac{x}{1!} + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \dots = \sum_{n=0}^{\infty}\frac{1}{n!}x^{n}  \label{eq:maclaurn-e^x}\end{equation}\end{minipage} & $(-\infty, \infty)$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \cos x = 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \dots = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n)!}x^{2n}\label{eq:maclaurn-cos} \end{equation}\end{minipage} & $(-\infty, \infty)$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \sin x = x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \dots = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2n+1)!}x^{2n+1}\label{eq:maclaurn-sin} \end{equation}\end{minipage} & $(-\infty, \infty)$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \tan^{-1} x = x - \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7} + \dots = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{2n+1}x^{2n+1}\label{eq:maclaurn-tan^-1} \end{equation}\end{minipage}  & $[-1,1]$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \cosh x = 1 + \frac{x^{2}}{2!} + \frac{x^{4}}{4!} + \frac{x^{6}}{6!} + \dots = \sum_{n=0}^{\infty} \frac{1}{(2n)!}x^{2n} \label{eq:maclaurn-cosh}\end{equation}\end{minipage} & $(-\infty, \infty)$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \sinh x = x + \frac{x^{3}}{3!} + \frac{x^{5}}{5!} + \frac{x^{7}}{7!} + \dots = \sum_{n=0}^{\infty} \frac{1}{(2n+1)!}x^{2n+1} \label{eq:maclaurn-sinh}\end{equation}\end{minipage} & $(-\infty, \infty)$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \ln(1+x) = x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \dots = \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}x^{n}  \label{eq:maclaurn-ln}\end{equation}\end{minipage} & $(-1, 1]$\\
+			\begin{minipage}{0.75\textwidth}\begin{equation} \frac{1}{1-x} = 1 + x + x^{2} + x^{3} + \dots = \sum_{n=0}^{\infty} x^{n} \label{eq:maclaurn-1/1-x}\end{equation}\end{minipage} & $(-1, 1)$\\
+			\bottomrule
+		\end{tabular}
+	\end{threeparttable}
+\end{table}
+
+
+%</Section-6.1-table>
+
+\end{document}

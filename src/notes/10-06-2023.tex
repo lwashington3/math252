@@ -1,0 +1,100 @@
+%! Author = Len Washington III
+%! Date = 10/06/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage[title={Oct 06, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{5}
+\chapter{Series Solutions of Linear Equations}\label{ch:series-solutions-of-linear-equations}
+\section{Solving Linear DE's without constant coefficients}\label{sec:solving-linear-de's-without-constant-coefficients}
+%<*Section-6.1-2>
+
+\subsection{Idea of Method}\label{subsec:idea-of-method}
+We will try to find a solution of the DE in the form of a power series \[ y = \sum_{n=0}^{\infty} c_{n}x^{n} \mbox{ (centered at 0)} \]  or \[ y = \sum_{n=0}^{\infty} c_{n}(x-a)^{n} \mbox{ (centered at $a$)} \]
+
+When you substitute this into the DE you get recurrence relationships for the coefficients $c_{0}$, $c_{1}$, $\dots$. Once you've found the coefficients in terms of either $c_{0}$, or $c_{0}, c_{1}$ where $c_{0} \neq c_{1}$. Then you should determine where the series converges.\\
+
+An example of a recurrence relation is the Fibonacci Sequence \[ F_{n+2} = F_{n} + F_{n+1} \]
+
+\example
+Use this method to solve the DE \[ y' + y = 0 \]
+
+Assume \[ y = \sum_{n=0}^{\infty} c_{n}x^{n} = c_{0} + c_{1}x + c_{2}x^{2} + c_{3}x^{3} + \dots \]
+then \[ y' = \sum_{n=0}^{\infty} c_{n}nx^{n-1} = c_{1} + 2c_{2}x + 3c_{3}x^{2} + \dots = \sum_{n=1}^{\infty} c_{n}nx^{n-1} \]
+
+\begin{equation*}
+\begin{aligned}
+	\sum_{n=1}^{\infty} c_{n}nx^{n-1} + \sum_{n=0}^{\infty} c_{n}x^{n} &= 0\\
+\end{aligned}
+\end{equation*}
+
+Shift the index of the first summation such that both have terms $x^{n}$. To do this, we'll make the substitution $k=n-1 \Rightarrow n = k+1$
+
+\begin{equation*}
+\begin{aligned}
+	\sum_{k+1=1}^{\infty} c_{k+1}(k+1)x^{(k+1)-1} + \sum_{k=0}^{\infty} c_{k}x^{k} &= 0\\
+	\sum_{k=0}^{\infty} c_{k+1}(k+1)x^{k} + \sum_{k=0}^{\infty} c_{k}x^{k} &= 0\\
+	\sum_{k=0}^{\infty} \left[ c_{k+1}(k+1)x^{k} + c_{k}x^{k}  \right]&= 0\\
+	\sum_{k=0}^{\infty} \left[ (k+1)c_{k+1} + c_{k}  \right]x^{k}&= 0\\
+\end{aligned}
+\end{equation*}
+
+This implies $(k+1)c_{k+1} + c_{k} = 0$ for all $k = 0, 1, 2, \dots$ \footnote{since the only power series that equals 0 is $\sum_{k=0}^{\infty}0x^{k}$} $\Rightarrow c_{k+1} = \frac{-c_{k}}{k+1}$ for all $k=0, 1, 2, \dots$.
+
+\begin{equation*}
+\begin{aligned}
+	c_{0} &= c_{0}\\
+	c_{1} &= -\frac{c_{0}}{1}\\
+		  &= -c_{0}\\
+	c_{2} &= -\frac{c_{1}}{2}\\
+		  &= -\frac{-c_{0}}{2}\\
+		  &= \frac{-1^{2}c_{0}}{2}\\
+		  &= \frac{c_{0}}{2}\\
+	c_{3} &= -\frac{c_{2}}{3}\\
+		  &= -\frac{\frac{c_{0}}{2}}{3}\\
+		  &= \frac{-c_{0}}{6}\\
+\end{aligned}
+\end{equation*}
+
+\conjecture{It is apparent that \begin{equation*}
+\begin{aligned}
+	c_{n} &+ \frac{(-1)^{n}c_{0}}{n!}
+\end{aligned}
+\end{equation*}}
+
+\subsubsection{Plugging into the DE}
+\begin{equation*}
+\begin{aligned}
+	y = \sum_{n=0}^{\infty} c_{n}x^{n} &= \sum_{n=0}^{\infty} \frac{(-1)^{n}c_{0}}{n!}x^{n} \\
+									   &= c_{0}\sum_{n=0}^{\infty} \frac{(-1)^{n}}{n!}x^{n} \\
+\end{aligned}
+\end{equation*}
+
+\subsubsection{By the Ratio Test}
+\begin{equation*}
+\begin{aligned}
+	L &= \lim_{n\rightarrow\infty} \frac{\bigg| \frac{(-1)^{n+1}}{(n+1)!}x^{n+1} \bigg|}{\bigg| \frac{(-1)^{n}}{n!}x^{n} \bigg|}\\
+	  &= \lim_{n\rightarrow\infty} \bigg| (-1)\frac{x\ n!}{(n+1)!} \bigg|\\
+	  &= \lim_{n\rightarrow\infty} \frac{|x|\ n!}{(n+1)!} \\
+	  &= \lim_{n\rightarrow\infty} \frac{|x|}{n+1} \\
+	  &= |x|\lim_{n\rightarrow\infty} \frac{1}{n+1} \\
+	  &= |x|\times0 \\
+	  &= 0 \mbox{ The series converges everywhere}\\
+\end{aligned}
+\end{equation*}
+
+\subsection{Power Series of Basic Functions}
+\[ e^{x} = \sum_{n=0}^{\infty} \frac{x^{n}}{n!} = 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \dots \]
+
+Our answer in the DE is \[ y = \sum_{n=0}^{\infty} (-1)^{n}\frac{x^{n}}{n!} = \sum_{n=0}^{\infty} \frac{(-x)^{n}}{n!} = e^{-x}  \]
+
+
+%</Section-6.1-2>
+
+\end{document}
