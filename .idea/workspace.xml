@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Uploaded template for Homework 7.1.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,27 +89,6 @@
     </key>
   </component>
   <component name="RunManager" selected="LaTeX.Homework 6.2 Template">
-    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify>
-        <compiler>PDFLATEX</compiler>
-        <compiler-path />
-        <sumatra-path />
-        <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command />
-        <compiler-arguments />
-        <envs />
-        <main-file />
-        <output-path>{projectDir}/out</output-path>
-        <auxil-path>{projectDir}/auxil</auxil-path>
-        <compile-twice>false</compile-twice>
-        <output-format>PDF</output-format>
-        <latex-distribution>MIKTEX</latex-distribution>
-        <has-been-run>false</has-been-run>
-        <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[]</makeindex-run-config>
-      </texify>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -117,6 +96,26 @@
         <command-line-args />
         <work-dir />
       </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
     <configuration name="All Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -2106,7 +2105,7 @@
         <latex-distribution>MIKTEX</latex-distribution>
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
-        <makeindex-run-config>[Makeindex.Homework 6.2 Makeindex]</makeindex-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -2974,7 +2973,7 @@
         <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3016,7 +3015,7 @@
         <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-11-2023.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3025,6 +3024,27 @@
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[Makeindex.10-11-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 13, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Oct 13, 2023 Makeindex]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -3461,7 +3481,7 @@
         <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/tables.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3515,7 +3535,7 @@
     <configuration name="10-06-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -3533,7 +3553,7 @@
     <configuration name="10-11-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-11-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4172,7 +4192,7 @@
     <configuration name="Oct 06, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4188,6 +4208,15 @@
       <method v="2" />
     </configuration>
     <configuration name="Oct 11, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-11-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 13, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file />
@@ -4385,6 +4414,100 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="math252" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="LaTeX.Aug 23, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 25, 2023 Notes" />
@@ -4454,6 +4577,7 @@
       <item itemvalue="LaTeX.Oct 04, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 06, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 11, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 13, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -4502,6 +4626,7 @@
       <item itemvalue="Makeindex.Oct 04, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 11, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 13, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -4517,6 +4642,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       </list>
@@ -4605,6 +4731,9 @@
       <workItem from="1696904241247" duration="39000" />
       <workItem from="1696955383752" duration="4197000" />
       <workItem from="1697041468364" duration="3988000" />
+      <workItem from="1697214503274" duration="4340000" />
+      <workItem from="1697389802143" duration="39000" />
+      <workItem from="1697389851734" duration="1061000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -4782,23 +4911,39 @@
       <option name="project" value="LOCAL" />
       <updated>1696959452872</updated>
     </task>
-    <task id="LOCAL-00023" summary="Wrote template for Homework 6.2.">
+    <task id="LOCAL-00023" summary="Worked on Homework 6.2.">
       <option name="closed" value="true" />
-      <created>1697055779348</created>
+      <created>1697318187244</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1697055779348</updated>
+      <updated>1697318187244</updated>
     </task>
-    <task id="LOCAL-00024" summary="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches.">
+    <task id="LOCAL-00024" summary="Uploaded what I could for Homework 6.2.">
       <option name="closed" value="true" />
-      <created>1697055846598</created>
+      <created>1697343356911</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1697055846598</updated>
+      <updated>1697343356911</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Uploaded template for Homework 7.1.">
+      <option name="closed" value="true" />
+      <created>1697390822986</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390822986</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Uploaded template for Homework 7.1.">
+      <option name="closed" value="true" />
+      <created>1697390871684</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390871684</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -4836,14 +4981,15 @@
     <MESSAGE value="Starting point for final rush of Homework 5.1." />
     <MESSAGE value="Couldn't finish Homework 5.1 before the extension was over." />
     <MESSAGE value="Worked on Homework 6.1. Started file to hold useful tables of info from the textbook." />
-    <MESSAGE value="Wrote template for Homework 6.2." />
-    <MESSAGE value="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added vcs.xml to git to hopefully stop Pycharm from crashing when changing branches." />
+    <MESSAGE value="Worked on Homework 6.2." />
+    <MESSAGE value="Uploaded what I could for Homework 6.2." />
+    <MESSAGE value="Uploaded template for Homework 7.1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploaded template for Homework 7.1." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1695773102536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
   </component>
 </project>

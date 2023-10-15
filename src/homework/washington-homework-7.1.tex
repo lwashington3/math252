@@ -10,8 +10,47 @@
 % Document
 \begin{document}
 
+In Problems 1--18 use Definition 7.1.1 to find $\laplace \{ f(t) \}$.
 \begin{enumerate}[label=\arabic*.]
-	\item
+	\problem \[ f(t) = \left\{ \begin{array}{rr}
+		-1, & 0 \leq t < 1\\
+		1,	& t \geq 1
+	\end{array} \right. \] % TODO: Problem 1
+	\setcounter{enumi}{3}
+	\problem \[ f(t) = \left\{ \begin{array}{rr}
+		2t+1, & 0 \leq t < 1\\
+		0, & t \geq 1
+	\end{array} \right. \] % TODO: Problem 4
+	\setcounter{enumi}{6}
+	\problem~\begin{figure}[H]
+				 \centering
+				 \includegraphics[width=0.4\textwidth]{7.7}
+				 \caption{Graph for Problem \arabic{enumi}}
+				 \label{fig:7}
+	\end{figure} % TODO: Problem 7
+	\setcounter{enumi}{9}
+	\problem~\begin{figure}[H]
+				 \centering
+				 \includegraphics[width=0.4\textwidth]{7.10}
+				 \caption{Graph for Problem \arabic{enumi}}
+				 \label{fig:10}
+	\end{figure} % TODO: Problem 10
+\end{enumerate}
+
+In Problems 19--37 use Theorem 7.1.1 to find $\laplace \{ f(t) \}$.
+\begin{enumerate}[label=\arabic*.,start=19]
+	\problem \[ f(t) = 2t^{4} \] % TODO: Problem 19
+	\setcounter{enumi}{22}
+	\problem \[ f(t) = t^{2} + 6t - 3 \] % TODO: Problem 23
+	\problem \[ f(t) = -4t^{2} + 16t + 9 \] % TODO: Problem 24
+	\problem \[ f(t) = (t+1)^{3} \] % TODO: Problem 25
+	\setcounter{enumi}{29}
+	\problem \[ f(t) = (e^{t}-e^{-t})^{2} \] % TODO: Problem 30
+	\problem \[ f(t) = 4t^{2} - 5\sin(3t) \] % TODO: Problem 31
+	\setcounter{enumi}{32}
+	\problem \[ f(t) = \sinh(kt) \] % TODO: Problem 33
+	\setcounter{enumi}{34}
+	\problem \[ f(t) = e^{t}\sinh(t) \] % TODO: Problem 35
 \end{enumerate}
 
 \end{document}
