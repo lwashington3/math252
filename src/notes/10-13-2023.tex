@@ -1,0 +1,78 @@
+%! Author = Len Washington III
+%! Date = 10/13/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage[title={Oct 13, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+%<*Section-7.1>
+\subsubsection{Chapter Goals}
+\begin{itemize}
+	\item Given a DE, Perform a Calculus-based rule for finding the laplace transformation of DE.
+	\item Solve this new equation algebraically.
+	\item Find the inverse-Laplace transformation to get our solution to the IVP.
+\end{itemize}
+
+\section{Definition of Laplace Transform}\label{sec:laplace-transform-definition}
+Given a function $f(t)$, the Laplace Transform\label{dfn:laplace-transform} of $f(t)$ is \[ \laplace\{ f(t) \} = \int_{0}^{\infty} e^{-st}f(t)dt  \]
+
+\subsection{Laplace Transformations of basic Functions}
+\begin{enumerate}[label=(\arabic*)]
+    \item \begin{equation*}
+    \begin{aligned}
+    	\laplace\{1\} &= \int_{0}^{\infty} e^{-st}(1)dt\\
+			   &= \int_{0}^{\infty} e^{-st}dt\\
+			   &= \lim_{b\rightarrow\infty}\int_{0}^{b} e^{-st}dt\\
+			   &= \lim_{b\rightarrow\infty} \frac{e^{-st}}{-s} \bigg|_{0}^{b}\\
+			   &= \lim_{b\rightarrow\infty} \frac{e^{-s(b)}}{-s} - \frac{e^{-s(0)}}{-s} \\
+			   &= -\frac{e^{-s(0)}}{-s} + \lim_{b\rightarrow\infty} \frac{e^{-s(b)}}{-s} \\
+			   &= -\frac{e^{0}}{-s} + \frac{1}{-s} \lim_{b\rightarrow\infty} e^{-s}e^{b} \\
+			   &= \frac{1}{s} - \frac{e^{-s}}{s} \lim_{b\rightarrow\infty} e^{b} \\
+			   &= \frac{1}{s} \mbox{ for } s > 0
+    \end{aligned}
+    \end{equation*}
+	\item \begin{equation*}
+	\begin{aligned}
+		\laplace\{ k \} &= \int_{0}^{\infty} e^{-st}kdt\\
+				 &= k\int_{0}^{\infty} e^{-st}dt\\
+				 &= k\frac{1}{s}\\
+				 &= \frac{k}{s}\\
+	\end{aligned}
+	\end{equation*}
+\end{enumerate}
+
+The Laplace Transform is a \emph{linear operator}\label{dfn:linear-operator}, in other words,\begin{enumerate}[label=(\arabic*),start=3]
+    \item \[ \laplace \{ f(t) + g(t) \} = \laplace\{f(t)\} + \laplace\{g(t)\} \]
+	\item \[ \laplace \{ kf(t) \} = k\laplace \{f(t)\}\\ \]
+	\item \begin{equation*}
+	\begin{aligned}
+		\laplace \{ e^{2t} \} &= \int_{0}^{\infty} e^{-st}\times e^{2t} dt\\
+					   &= \int_{0}^{\infty} e^{(2-s)t}dt\\
+					   &= \int_{0}^{\infty} e^{-(s-2)t}dt\\
+						&u = -(s-2)t\\
+						&du = -(s-2)dt\\
+					   &= \int_{0}^{\infty} e^{u}\frac{du}{-(s-2)}\\
+					   &= \frac{1}{-(s-2)}\int_{0}^{\infty} e^{u}du\\
+					   &= \frac{1}{-(s-2)}e^{u}\bigg|_{0}^{\infty}\\
+					   &= \frac{1}{-(s-2)}e^{-(s-2)t}\bigg|_{0}^{\infty}\\
+					   &= \lim_{b\rightarrow\infty}\frac{1}{-(s-2)}e^{-(s-2)b} - \frac{1}{-(s-2)}e^{-(s-2)0}\\
+					   &=-\frac{1}{-(s-2)}e^{0} + \lim_{b\rightarrow\infty}\frac{1}{-(s-2)}e^{-(s-2)b}\\
+					   &=-\frac{1}{-(s-2)}(1)\\
+					   &=\frac{1}{s-2}\\
+	\end{aligned}
+	\end{equation*}\[ \laplace\left\{ e^{at} \right\} = \frac{1}{s-a} \mbox{ for } s > a \]
+	\item \[ \laplace\{ t^{n} \} = \frac{n!}{s^{n+1}} \]
+	\item \[ \laplace\{ \cos(kt) \} = \frac{s}{s^{2} + k^{2}} \]
+	\item \[ \laplace\{ \sin(kt) \} = \frac{k}{s^{2} + k^{2}} \]
+\end{enumerate}
+
+%</Section-7.1>
+
+\end{document}
