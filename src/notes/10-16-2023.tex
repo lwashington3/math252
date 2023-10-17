@@ -1,0 +1,158 @@
+%! Author = Len Washington III
+%! Date = 10/16/2023
+
+% Preamble
+\documentclass[12pt]{report}
+
+% Packages
+\usepackage[title={Oct 16, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+\setcounter{section}{1}
+%<*Section-7.2>
+\section{Solving I.V.T by using Laplace Transform}\label{sec:solving-i.v.t-by-using-laplace-transform}
+
+Take $\laplace$ of both sides of the DE
+
+\example
+\[ y'' - 3y' + 2y = e^{-4t},\ y(0)=1,\ y'(0)=5 \]
+\begin{equation*}
+\begin{aligned}
+	\laplace \{y''\} - \laplace \{3y'\} + \laplace \{2y\} &= \laplace \{e^{-4t}\}
+\end{aligned}
+\end{equation*}
+
+We need more formulas first.
+\begin{equation*}
+\begin{aligned}
+	u = e^{-st} \sep dv = f'(x)dt\\
+	du = -se^{-st}dt \sep v = f(x)\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	\laplace \{ f'(t) \} &= \int_{0}^{\infty} e^{st} f'(t)dt\\
+						 &= f(t)e^{-st}\bigg|_{0}^{\infty} - \int_{0}^{\infty} -sf(t)e^{st} dt\\
+						 &= -f(t)e^{-st} + s\int_{0}^{\infty} f(t)e^{st} dt\\
+						 &= -f(t)e^{-st} + s\laplace\{ f(t) \}\\
+						 &= -f(t)e^{-st} + sF(s)\\
+						 &= -f(0)e^{-s(0)} + sF(s)\\
+						 &= -f(0)(1) + sF(s)\\
+						 &= -f(0) + sF(s)\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	\laplace \{ f''(t) \} &= \laplace \{ (f'(t))' \}\\
+						  &= s\laplace \{ f'(t) \} - f'(0)\\
+						  &= s\left( -f(0) + sF(s) \right) - f'(0)\\
+						  &= -sf(0) + s^{2}F(s) - f'(0)\\
+						  &= s^{2}F(s) - sf(0) - f'(0)\\
+						  &= s^{2}\laplace \{ f \} - sf(0) - f'(0)\\
+\end{aligned}
+\end{equation*}
+
+In general \begin{equation} \laplace\{ f^{(n)}(t) \} = s^{n}F(s) - s^{n-1}f(0) - s^{n-2}f'(0) \dots - s^{n-n}f^{n-1}(0) \label{eq:laplace-ivp}\end{equation} or\begin{equation} \laplace\{ f^{(n)}(t) \} = s^{n}F(s) - s^{n-1}f(0) - s^{n-2}f'(0) \dots - f^{n-1}(0) \label{eq:laplace-ivp-2}\end{equation}
+
+So the DE transforms to \begin{equation*}
+\begin{aligned}
+	s^{2}Y(s) - sy(0) - y'(0) - 3\left( sY(s) - y(0) \right) + 2Y(s) &= \frac{1}{s+4}\\
+	s^{2}Y(s) - s(1) - 5 - 3\left( sY(s) - 1 \right) + 2Y(s) &= \frac{1}{s+4}\\
+	s^{2}Y(s) - s - 5 - 3sY(s) + 3 + 2Y(s) &= \frac{1}{s+4}\\
+	s^{2}Y(s) - 3sY(s) + 2Y(s) - s - 5 + 3 &= \frac{1}{s+4}\\
+	Y(s)\left(s^{2} - 3s + 2\right) - s - 2 &= \frac{1}{s+4}\\
+	Y(s)\left(s^{2} - 3s + 2\right) &= \frac{1}{s+4} + s + 2\\
+	Y(s) &= \frac{\frac{1}{s+4} + s + 2}{\left(s^{2} - 3s + 2\right)}\\
+		 &= \frac{1 + (s + 2)(s+4)}{(s+4)\left(s^{2} - 3s + 2\right)}\\
+		 &= \frac{1 + s^{2} + 6s + 8}{(s+4)(s-1)(s-2)}\\
+		 &= \frac{s^{2} + 6s + 9}{(s+4)(s-1)(s-2)}\\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	\frac{s^{2} + 6s + 9}{(s+4)(s-1)(s-2)} &= \frac{A}{s+4} + \frac{B}{s-1} + \frac{C}{s-2}\\
+										   &= \frac{A(s-1)(s-2)}{(s+4)(s-1)(s-2)} + \frac{B(s+4)(s-2)}{(s+4)(s-1)(s-2)} + \frac{C(s+4)(s-1)}{(s+4)(s-1)(s-2)}\\
+	s^{2} + 6s + 9 &= A(s-1)(s-2) + B(s+4)(s-2) + C(s+4)(s-1)\\
+	(s+3)^{2} &= A(s-1)(s-2) + B(s+4)(s-2) + C(s+4)(s-1)\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	s^{2} + 6s + 9 &= A(s-1)(s-2) + B(s+4)(s-2) + C(s+4)(s-1)\\
+	(-4)^{2} + 6(-4) + 9 &= A(-4-1)(-4-2) + B(-4+4)(-4-2) + C(-4+4)(-4-1)\\
+	16 - 24 + 9 &= A(-5)(-6) + B(0)(-6) + C(0)(-5)\\
+	1 &= 30A \\
+	A &= \frac{1}{30} \\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	(s+3)^{2} &= A(s-1)(s-2) + B(s+4)(s-2) + C(s+4)(s-1)\\
+	(1+3)^{2} &= A(1-1)(1-2) + B(1+4)(1-2) + C(1+4)(1-1)\\
+	4^{2} &= A(0)(-1) + B(5)(-1) + C(5)(0)\\
+	16 &= -5B\\
+	B &= \frac{-16}{5}\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	(s+3)^{2} &= A(s-1)(s-2) + B(s+4)(s-2) + C(s+4)(s-1)\\
+	(2+3)^{2} &= A(2-1)(2-2) + B(2+4)(2-2) + C(2+4)(2-1)\\
+	5^{2} &= A(1)(0) + B(6)(0) + C(6)(1)\\
+	25 &= 6C\\
+	C &= \frac{6}{25}\\
+\end{aligned}
+\end{equation*}
+
+Note: \[ \laplace\{e^{at}\} = \frac{1}{s-a} \rightarrow \laplace^{-1}\{\frac{1}{s-a}\} = e^{at}\]
+
+\begin{equation*}
+\begin{aligned}
+	Y(s) &= \frac{s^{2} + 6s + 9}{(s+4)(s-1)(s-2)}\\
+		 &= \frac{\frac{1}{30}}{s+4} + \frac{\frac{-16}{5}}{s-1} + \frac{\frac{6}{25}}{s-2}\\
+	y(t) &= \laplace^{-1}\{ Y(s) \}\\
+		 &= \frac{1}{30}\laplace^{-1} \left\{ \frac{1}{s+4} \right\} - \frac{16}{5}\laplace^{-1} \left\{ \frac{1}{s-1} \right\} + \frac{6}{25}\laplace^{-1} \left\{ \frac{1}{s-2} \right\}\\
+		 &= \frac{1}{30}e^{-4t} - \frac{16}{5}e^{t} + \frac{6}{25}e^{2t}\\
+\end{aligned}
+\end{equation*}
+
+\subsection{Finding Inverse-Laplace Transform}
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ \frac{1}{s^{4}} \right\} &= \frac{1}{3!}\laplace \left\{ \frac{3!}{s^{4}} \right\}\\
+											  &= \frac{1}{3!}\laplace \left\{ \frac{3!}{s^{3+1}} \right\}\\
+											  &= \frac{1}{3!}t^{3}\\
+											  &= \frac{1}{6}t^{3}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ \frac{5}{s^{2} + 49} \right\} &= \frac{5}{7}\laplace \left\{ \frac{7}{s^{2} + 49} \right\}\\
+												   &= \frac{5}{7}\sin(7t)\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ \frac{(s+1)^{3}}{s^{4}} \right\} &= \laplace \left\{ \frac{s^{3} + 3s^{2} + 3s + 1}{s^{4}} \right\}\\
+													  &= \laplace \left\{ \frac{s^{3}}{s^{4}} \right\} + \laplace \left\{ \frac{3s^{2}}{s^{4}} \right\} + \laplace \left\{ \frac{3s}{s^{4}} \right\} + \laplace \left\{ \frac{1}{s^{4}} \right\}\\
+													  &= \laplace \left\{ \frac{1}{s} \right\} + \laplace \left\{ \frac{3}{s^{2}} \right\} + \laplace \left\{ \frac{3}{s^{3}} \right\} + \laplace \left\{ \frac{1}{s^{4}} \right\}\\
+													  &= \laplace \left\{ \frac{1}{s} \right\} + 3\laplace \left\{ \frac{1}{s^{2}} \right\} + 3\laplace \left\{ \frac{1}{s^{3}} \right\} + \laplace \left\{ \frac{1}{s^{4}} \right\}\\
+													  &= \laplace \left\{ \frac{1}{s} \right\} + 3\laplace \left\{ \frac{1}{s^{2}} \right\} + \frac{3}{2!}\laplace \left\{ \frac{2!}{s^{3}} \right\} + \frac{1}{3!}\laplace \left\{ \frac{3!}{s^{4}} \right\}\\
+													  &= 1 + 3t + \frac{3}{2!}t^{2} + \frac{1}{3!}t^{3}\\
+													  &= 1 + 3t + \frac{3}{2}t^{2} + \frac{1}{6}t^{3}\\
+\end{aligned}
+\end{equation*}
+
+%</Section-7.2>
+
+\end{document}
