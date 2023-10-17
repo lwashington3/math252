@@ -6,6 +6,14 @@
 \ProvidesPackage{math252}[2023/09/14 Len Washington III's Package]
 
 \RequirePackage{titling}
+\RequirePackage{xkeyval}
+
+\DeclareOptionX{title}{
+	\title{#1}
+	\let\mytitle\thetitle
+}
+\ProcessOptionsX\relax
+
 \author{Len Washington III}
 \date{\today}
 \newcommand{\thesubject}{MATH 252 - Introduction to Differential Equations}
@@ -43,6 +51,9 @@
 
 \RequirePackage{index}
 \makeindex{}
+
+\RequirePackage{mathrsfs}
+\newcommand{\laplace}{\mathscr{L}}
 
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
