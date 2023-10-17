@@ -62,18 +62,14 @@ leftmargin=\parindent,
 }
 
 \setlist[problems, 2]
-{label=\textbf{\alph{problemsii}},
-leftmargin=1.5\parindent,}
-
-% region Example
-\newcommand{\randomtext}{Hello, here is some text without a meaning. Hello, here is some text without a meaning.}
-\newcommand{\shortrandomtext}{Hello, here is some text.}
+{label=\textbf{(\alph{problemsii})},
+leftmargin=30pt,}
 
 \newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
 
-\newcommand{\problem}{\pdfbookmark[2] % Level
+\newcommand{\problem}[1][prb:\number\value{problemsi}]{\pdfbookmark[2] % Level
 {Problem \the\numexpr\value{problemsi}+1} % Text
-{prb:\number\value{problemsi}}\item\label{prb:\number\value{problemsi}}} % Name/Label
+{#1}\item\label{#1}} % Name/Label
 
 \newcommand{\subproblem}{\pdfbookmark[3] % Level
 {Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
@@ -82,5 +78,5 @@ leftmargin=1.5\parindent,}
 
 %\newcommand{\subproblem}[1]{\pdfbookmark[3]{Problem \the\numexpr\value{enumi}.{\symbol{\numexpr97+\number\value{enumii}}}}{#1}\item\label{#1}}
 
-\newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{2em}}
+\newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{0.5em}}
 \newcommand{\ivpsep}{\mbox{{ }{ }}}

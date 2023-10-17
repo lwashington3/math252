@@ -2,42 +2,39 @@
 %! Date = 8/21/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[chapter=4,section=2]{math252homework}
-\newcommand{\customsection}[2]{\pdfbookmark[1]{\Large\bfseries Section #1\\\\}{#2}{\Large\textbf{Section #1}}\\}
+\documentclass[chapter=4,section=2]{math252homework}
 
 % Document
 \begin{document}
-
 \customsection{4.2}{sec:4.2}
+
 In Problems 1--16 the indicated function $y_{1}(x)$ is a solution of the given differential equation. Use reduction of order or formula (5), as instructed, to find a second solution $y_{2}$(x).
-\begin{enumerate}[label=\arabic*.]
-    \problem{prb:1} \[ y'' - 4y' + 4y = 0; y_{1} = e^{2x}\]
-	\setcounter{enumi}{2}
-    \problem{prb:3} \[ y'' + 16y = 0; y_{1} = \cos(4x) \]
-	\setcounter{enumi}{8}
-    \problem{prb:9} \[ x^{2}y'' - 7xy' + 16y = 0; y_{1}=x^{4} \]
-	\setcounter{enumi}{10}
-    \problem{prb:11} \[ xy'' + y' = 0; y_{1}=\ln(x) \]
-    \problem{prb:12} \[ 4x^{2}y'' + y = 0; y_{1} = \sqrt{x}\ln(x) = x^{\frac{1}{2}}\ln(x) \]
-\end{enumerate}
+\begin{problems}
+    \problem \[ y'' - 4y' + 4y = 0; y_{1} = e^{2x}\]
+	\setcounter{problemsi}{2}
+    \problem \[ y'' + 16y = 0; y_{1} = \cos(4x) \]
+	\setcounter{problemsi}{8}
+    \problem \[ x^{2}y'' - 7xy' + 16y = 0; y_{1}=x^{4} \]
+	\setcounter{problemsi}{10}
+    \problem \[ xy'' + y' = 0; y_{1}=\ln(x) \]
+    \problem \[ 4x^{2}y'' + y = 0; y_{1} = \sqrt{x}\ln(x) = x^{\frac{1}{2}}\ln(x) \]
+\end{problems}
 
 In Problems 21 and 22 the indicated function $y_{1}(x)$ is a solution of the given differential equation. Use formula (5) to find a second solution $y_{2}(x)$ expressed in terms of an integral-defined function. See ($iii$) in the \emph{Remarks}.
-\begin{enumerate}[label=\arabic*), start=21]
-    \problem{prb:21} \[ x^{2}y'' + (x^{2} - x)y' + (1 - x)y = 0; y_{1}=x \]
-\end{enumerate}
+\begin{problems}[start=21]
+    \problem \[ x^{2}y'' + (x^{2} - x)y' + (1 - x)y = 0; y_{1}=x \]
+\end{problems}
 
 \customsection{4.1}{sec:4.1}
+
 In Problems 15--22 determine whether the given set of functions is linearly independent on the interval $( -\infty, \infty )$.
-\begin{enumerate}[label=\arabic*., start=15]
-	\problem{prb:15} \[ f_{1}(x) = x, f_{2}(x) = x^{2}, f_{3}(x) = 4x-3x^{2} \]
-	\setcounter{enumi}{16}
-	\problem{prb:17} \[ f_{1}(x) = 5, f_{2}(x) = \cos^{2}(x), f_{3} = \sin^{2}(x) \]
-	\setcounter{enumi}{18}
-	\problem{prb:19} \[ f_{1}(x) = x, f_{2}(x) = x-1, f_{3}(x) = x + 3 \]
-	\problem{prb:20} \[ f_{1}(x) = 2+x, f_{2}(x) = 2+|x| \]
-\end{enumerate}
+\begin{problems}[start=15]
+	\problem \[ f_{1}(x) = x, f_{2}(x) = x^{2}, f_{3}(x) = 4x-3x^{2} \]
+	\setcounter{problemsi}{16}
+	\problem \[ f_{1}(x) = 5, f_{2}(x) = \cos^{2}(x), f_{3} = \sin^{2}(x) \]
+	\setcounter{problemsi}{18}
+	\problem \[ f_{1}(x) = x, f_{2}(x) = x-1, f_{3}(x) = x + 3 \]
+	\problem \[ f_{1}(x) = 2+x, f_{2}(x) = 2+|x| \]
+\end{problems}
 
 \end{document}

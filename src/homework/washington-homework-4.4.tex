@@ -2,40 +2,37 @@
 %! Date = 9/25/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[chapter=4,section=4]{math252homework}
-\newcommand{\supproblem}[1]{\pdfbookmark[2]{Supplemental Problem \the\numexpr\value{enumi}+1}{#1}\item}
+\documentclass[chapter=4,section=4]{math252homework}
+\newcommand{\supproblem}{\pdfbookmark[2]{Supplemental Problem \the\numexpr\value{problemsi}+1}{supprb:\number\value{problemsi}}\item}
 
 % Document
 \begin{document}
 
 In Problems 1--26 solve the given differential equation by undetermined coefficients.
-\begin{enumerate}[label=\arabic*.,start=3]
-	\problem	\[ y'' - 10y' + 25y = 30x + 3 \]
-	\setcounter{enumi}{6}
+\begin{problems}[start=3]
+	\problem \[ y'' - 10y' + 25y = 30x + 3 \]
+	\setcounter{problemsi}{6}
 	\problem \[ y'' + 3y = -48x^{2}e^{3x} \]
-	\problem	\[ 4y'' - 4y'- 3y = \cos(2x) \]
-	\setcounter{enumi}{12}
+	\problem \[ 4y'' - 4y'- 3y = \cos(2x) \]
+	\setcounter{problemsi}{12}
 	\problem \[ y'' + 4y = 3\sin(2x) \]
-	\setcounter{enumi}{20}
+	\setcounter{problemsi}{20}
 	\problem \[ y''' - 6y'' = 3 - \cos(x) \]
-\end{enumerate}
+\end{problems}
 
 \pdfbookmark[2]{Supplemental Problem}{prb:supplemental}
 Suppose that you are given a $6^{\mbox{th}}$ order linear differential equation with constant coefficients \[ a_{6}y^{(6)} + a_{5}y^{(5)} + \dots + a_{1}y' + a_{0}y = f(x) \] and that the auxiliary equation of the complementary differential equation can be written in factored form as \[ m^{3}(m+3)(m-(2+5i))(m-(2-5i))=0 \]
-\begin{enumerate}[label=(\textbf{\roman*})]
+\begin{problems}[label=(\textbf{\roman*})]
     \supproblem Write the general solution $y_{c}$ of the complementary differential equation.
-\end{enumerate}
+\end{problems}
 
 In each part below, a different function $f(x)$ is given for the above differential equation. Give the form of a particular solution $y_{p}$ of the DE that one should look for according to the method of Undetermined Coefficients. (Do not attempt to solve for the coefficients)
-\begin{enumerate}[label=(\textbf{\roman*}),start=2]
+\begin{problems}[label=(\textbf{\roman*}),start=2]
     \supproblem \[ f(x) = e^{-3x} \]
 	\supproblem \[ f(x) = 4x + 7 \]
 	\supproblem \[ f(x) = \cos(6x) \]
 	\supproblem \[ f(x) = e^{2x}\sin(5x) \]
 	\supproblem \[ f(x) = xe^{-3x} \]
-\end{enumerate}
+\end{problems}
 
 \end{document}

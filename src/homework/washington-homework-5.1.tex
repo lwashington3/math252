@@ -2,10 +2,7 @@
 %! Date = 8/21/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[chapter=5,section=1]{math252homework}
+\documentclass[chapter=5,section=1]{math252homework}
 
 % Document
 \begin{document}
@@ -21,45 +18,45 @@
 \setcounter{equation}{22}
 \begin{equation} x(t) = Ae^{-\lambda t}\sin\left( \sqrt{\omega^{2} - \lambda^{2}t} + \phi \right) \label{eq:23}\end{equation}
 
-\begin{enumerate}[label=\arabic*.,start=3]
+\begin{problems}[start=3]
 	\problem A mass weighing 24 pounds, attached to the end of a spring, stretches it 4 inches. Initially, the mass is released from rest from a point 3 inches above the equilibrium position. Find the equation of motion.
-	\setcounter{enumi}{8}
+	\setcounter{problemsi}{8}
 	\problem A mass weighing 8 pounds is attached to a spring. When set in motion, the spring/mass system exhibits simple harmonic motion.
-	\begin{enumerate}[label=(\alph*)]
+	\begin{problems}
 	    \subproblem Determine the equation of motion if the spring constant is 1 lb/ft and the mass is initially released from a point 6 inches below the equilibrium position with a downward velocity of $\frac{3}{2}$ ft/s.
 		\subproblem Express the equation of motion in the form given in (\hyperref[eq:6]{6}).
 		\subproblem Express the equation of motion in the form given in (\hyperref[eq:6']{6'}).
-	\end{enumerate}
+	\end{problems}
 	\problem A mass weighing 10 pounds stretches a spring $\frac{1}{4}$ foot. This mass is removed and replaced with a mass of 1.6 slugs, which is initially released from a point $\frac{1}{3}$ foot above the equilibrium position above the equilibrium position with a downward velocity of $\frac{5}{4}$ ft/s.
-	\begin{enumerate}[label=(\alph*)]
+	\begin{problems}
 	    \subproblem Express the equation of motion in the form given in (\hyperref[eq:6]{6}).
 	    \subproblem Express the equation of motion in the form given in (\hyperref[eq:6']{6'}).
 		\subproblem Use one of the solutions obtained in parts (\hyperref[prb:10a]{a}) and (\hyperref[prb:10b]{b}) to determine the times the mass attains a displacement below the equilibrium position numerically equal to $\frac{1}{2}$ the amplitude of motion.
-	\end{enumerate}
-	\setcounter{enumi}{26}
+	\end{problems}
+	\setcounter{problemsi}{26}
 	\problem A 1-kilogram mass is attached to a spring whose constant is 16 N/m, and the entire system is then submerged in a liquid that imparts a damping force numerically equal to 10 times the instantaneous velocity. Determine the equations of motion if
-	\begin{enumerate}[label=(\alph*)]
+	\begin{problems}
 	    \subproblem the mass is initially released from rest from a point 1 meter below the equilibrium position, and then
 		\subproblem the mass is initially released from a point 1 meter below the equilibrium position with an upward velocity of 12 m/s.
-	\end{enumerate}
+	\end{problems}
 	\problem In parts (\hyperref[prb:27a]{a}) and (\hyperref[prb:27b]{b}) of Problem 27 determine whether the mass passes through the equilibrium position. In each case, find the time at which the mass attains its extreme displacement from the equilibrium position. What is the position of the mass at this instant?
-	\setcounter{enumi}{29}
+	\setcounter{problemsi}{29}
 	\problem After a mass weighing 10 pounds is attached to a 5-foot spring, the spring measures 7 feet. This mass is removed and replaced with another mass that weighs 8 pounds. The entire system is placed in a medium that offers a damping force that is numerically equal to the instantaneous velocity.
-	\begin{enumerate}[label=(\alph*)]
+	\begin{problems}
 	    \subproblem Find the equation of motion if the mass is initially released from a point $\frac{1}{2}$ foot below the equilibrium position with a downward velocity of 1 ft/s.
 		\subproblem Express the equation of motion in the form given in (\hyperref[eq:23]{23}).
 		\subproblem Find the times at which the mass passes through the equilibrium position heading downward.
 		\subproblem Graph the equation of motion.
-	\end{enumerate}
-	\setcounter{enumi}{34}
+	\end{problems}
+	\setcounter{problemsi}{34}
 	\problem A mass of 1 slug, when attached to a spring, stretches it 2 feet and then comes to rest in the equilibrium position. Starting at $t=0$, an external force equal to $f(t)=8\sin(4t)$ is applied to the system. Find the equation of motion if the surrounding medium offers a damping force that is numerically equal to 8 times the instantaneous velocity.
-	\setcounter{enumi}{42}
+	\setcounter{problemsi}{42}
 	\problem 
-	\begin{enumerate}[label=(\alph*)]
+	\begin{problems}
 	    \subproblem Show that the solution of the initial-value problem \[ \frac{d^{2}x}{dt^{2}} + \omega^{2}x = F_{0}\cos(\gamma t),\ivpsep x(0)=0,\ivpsep x'(0)=0 \] is \[ x(t) = \frac{F_{0}}{\omega^{2} - \gamma^{2}}(\cos(\gamma t) - \cos(\omega t)) \]
 		\subproblem Evaluate \[ \lim_{y\rightarrow \omega} \frac{F_{0}}{\omega^{2} - \gamma^{2}}(\cos(\gamma t) - \cos(\omega t)) \]
-	\end{enumerate}
+	\end{problems}
 	\problem Compare the result obtained in part (\hyperref[prb:43b]{b}) of Problem 43 with the solution obtained using variation of parameters when the external force if $F_{0}\cos(\omega t)$.
-\end{enumerate}
+\end{problems}
 
 \end{document}

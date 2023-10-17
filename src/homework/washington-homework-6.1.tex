@@ -2,48 +2,45 @@
 %! Date = 10/6/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[chapter=6,section=1]{math252homework}
+\documentclass[chapter=6,section=1]{math252homework}
 
 % Document
 \begin{document}
 
 In Problems 1--10 find the interval and radius of convergence for the given power series.
-\begin{enumerate}[label=\arabic*., start=3]
+\begin{problems}[start=3]
 	\problem \[ \sum_{n=1}^{\infty} \frac{2^{n}}{n}x^{n}  \] % TODO: Problem 3
-	\setcounter{enumi}{5}
+	\setcounter{problemsi}{5}
 	\problem \[ \sum_{k=0}^{\infty} k!(x-1)^{k} \] % TODO: Problem 6
 	\problem \[ \sum_{k=1}^{\infty} \frac{1}{k^{2} + k}(3x - 1)^{k}  \] % TODO: Problem 7
-\end{enumerate}
+\end{problems}
 
 In Problems 11--16 use an appropriate series in (2) to find the Maclaurin series of the given function. Write your answer in summation notation.
-\begin{enumerate}[label=\arabic*., start=11]
+\begin{problems}[start=11]
 	\problem \[ e^{-\frac{x}{2}} \] % TODO: Problem 11
 	\problem \[ xe^{3x} \] % TODO: Problem 12
 	\problem \[ \frac{1}{2 + x} \] % TODO: Problem 13
-\end{enumerate}
+\end{problems}
 
 In Problems 23 and 24 use substitution to shift the summation index so that the general term of given power series involves $x^{k}$.
-\begin{enumerate}[label=\arabic*., start=23]
+\begin{problems}[start=23]
 	\problem \[ \sum_{n=1}^{\infty} nc_{n}x^{n+2}  \] % TODO: Problem 23
 	\problem \[ \sum_{n=3}^{\infty} (2n-1)c_{n}x^{n-3}  \] % TODO: Problem 24
-\end{enumerate}
+\end{problems}
 
 In Problems 25--30 proceed as in Example 3 to rewrite the given expression using a single power series whose general term involves $x^{k}$
-\begin{enumerate}[label=\arabic*., start=27]
+\begin{problems}[start=27]
 	\problem \[ \sum_{n=1}^{\infty} 2nc_{n}x^{n-1} + \sum_{n=0}^{\infty} 6c_{n}x^{n+1}   \] % TODO: Problem 27
-	\setcounter{enumi}{29}
+	\setcounter{problemsi}{29}
 	\problem \[ \sum_{n=2}^{\infty} n(n-1)c_{n}x^{n} + 2 \sum_{n=2}^{\infty} n(n-1)c_{n}x^{n-2} + 3 \sum_{n=1}^{\infty} nc_{n}x^{n} \] % TODO: Problem 30
-\end{enumerate}
+\end{problems}
 
 In Problems 35--38 proceed as in Example 4 and find a power series solution $y = \sum_{n=0}^{\infty} c_{n}x^{n} $ of the given linear first-order differential equation.
-\begin{enumerate}[label=\arabic*., start=35]
+\begin{problems}[start=35]
 	\problem \[ y' - 5y = 0 \] % TODO: Problem 35
-	\setcounter{enumi}{36}
+	\setcounter{problemsi}{36}
 	\problem \[ y' = xy \] % TODO: Problem 37
 	\problem \[ (1+x)y' + y = 0 \] % TODO: Problem 38
-\end{enumerate}
+\end{problems}
 
 \end{document}

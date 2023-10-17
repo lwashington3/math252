@@ -2,10 +2,7 @@
 %! Date = 8/21/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[chapter=4,section=3]{math252homework}
+\documentclass[chapter=4,section=3]{math252homework}
 
 % Document
 \begin{document}
@@ -13,58 +10,58 @@
 \customsection{4.3}{sec:4.3}
 
 In Problems 1--14 find the general solution of the given second-order differential equation.
-\begin{enumerate}[label=\arabic*.,start=3]
-	\problem{prb:4.3-3} \[ y'' - y' - 6y = 0 \]				% TODO: Problem 4.3 3
-	\setcounter{enumi}{4}
-	\problem{prb:4.3-5} \[ y'' + 8y' + 16y = 0 \]				% TODO: Problem 4.3 5
-	\problem{prb:4.3-6} \[ y'' - 10y' + 25y = 0 \]			% TODO: Problem 4.3 6
-	\setcounter{enumi}{8}
-	\problem{prb:4.3-9} \[ y'' + 9y = 0 \] 					% TODO: Problem 4.3 9
-	\setcounter{enumi}{10}
-	\problem{prb:4.3-11} \[ y'' - 4y' + 5y = 0 \] 				% TODO: Problem 4.3 11
-	\problem{prb:4.3-12} \[ 2y'' + 2y' + y = 0 \] 				% TODO: Problem 4.3 12
-\end{enumerate}
+\begin{problems}[start=3]
+	\problem[prb:4.3-3] \[ y'' - y' - 6y = 0 \]				% TODO: Problem 4.3 3
+	\setcounter{problemsi}{4}
+	\problem[prb:4.3-5] \[ y'' + 8y' + 16y = 0 \]				% TODO: Problem 4.3 5
+	\problem[prb:4.3-6] \[ y'' - 10y' + 25y = 0 \]			% TODO: Problem 4.3 6
+	\setcounter{problemsi}{8}
+	\problem[prb:4.3-9] \[ y'' + 9y = 0 \] 					% TODO: Problem 4.3 9
+	\setcounter{problemsi}{10}
+	\problem[prb:4.3-11] \[ y'' - 4y' + 5y = 0 \] 				% TODO: Problem 4.3 11
+	\problem[prb:4.3-12] \[ 2y'' + 2y' + y = 0 \] 				% TODO: Problem 4.3 12
+\end{problems}
 
 In Problems 15--28 find the general solution of the given higher-order differential equation.
-\begin{enumerate}[label=\arabic*.,start=15]
-	\problem{prb:4.3-15} \[ y''' - 4y'' - 5y' = 0 \]										% TODO: Problem 4.3 15
-	\setcounter{enumi}{16}
-	\problem{prb:4.3-17} \[ y''' - 5y'' + 3y' + 9y = 0 \]									% TODO: Problem 4.3 17
-	\setcounter{enumi}{24}
-	\problem{prb:4.3-25} \[ 16\frac{d^{4}y}{dx^{4}} + 24\frac{d^{2}y}{dx^{2}} + 9y = 0 \]	% TODO: Problem 4.3 25
-	\problem{prb:4.3-26} \[ \frac{d^{4}y}{dx^{4}} - 7\frac{d^{2}y}{dx^{2}} - 18y = 0 \]	% TODO: Problem 4.3 26
-\end{enumerate}
+\begin{problems}[start=15]
+	\problem[prb:4.3-15] \[ y''' - 4y'' - 5y' = 0 \]										% TODO: Problem 4.3 15
+	\setcounter{problemsi}{16}
+	\problem[prb:4.3-17] \[ y''' - 5y'' + 3y' + 9y = 0 \]									% TODO: Problem 4.3 17
+	\setcounter{problemsi}{24}
+	\problem[prb:4.3-25] \[ 16\frac{d^{4}y}{dx^{4}} + 24\frac{d^{2}y}{dx^{2}} + 9y = 0 \]	% TODO: Problem 4.3 25
+	\problem[prb:4.3-26] \[ \frac{d^{4}y}{dx^{4}} - 7\frac{d^{2}y}{dx^{2}} - 18y = 0 \]	% TODO: Problem 4.3 26
+\end{problems}
 
 In Problems 29--36 solve the given initial-value problem.
-\begin{enumerate}[label=\arabic*.,start=31]
-	\problem{prb:4.3-31} \[ \frac{d^{2}y}{dt^{2}} - 4\frac{dy}{dt} - 5y = 0,\ivpsep y(1)=0,\ivpsep y'(1)=2 \]			% TODO: Problem 4.3 31
-	\problem{prb:4.3-32} \[ 4y'' - 4y' - 3y = 0,\ivpsep y(0)=1,\ivpsep y'(0)=5 \]										% TODO: Problem 4.3 32
-\end{enumerate}
+\begin{problems}[start=31]
+	\problem[prb:4.3-31] \[ \frac{d^{2}y}{dt^{2}} - 4\frac{dy}{dt} - 5y = 0,\ivpsep y(1)=0,\ivpsep y'(1)=2 \]			% TODO: Problem 4.3 31
+	\problem[prb:4.3-32] \[ 4y'' - 4y' - 3y = 0,\ivpsep y(0)=1,\ivpsep y'(0)=5 \]										% TODO: Problem 4.3 32
+\end{problems}
 
 In Problems 49--58 find a homogenous linear differential equation with constant coefficients whose general solution is given.
-\begin{enumerate}[label=\arabic*.,start=49]
-	\problem{prb:4.3-49} \[ y = c_{1}e^{x} + c_{2}e^{5x} \]							% TODO: Problem 4.3 49
-	\problem{prb:4.3-50} \[ y = c_{1}e^{-4x} + c_{2}e^{-3x} \]							% TODO: Problem 4.3 50
-	\setcounter{enumi}{52}
-	\problem{prb:4.3-53} \[ y = c_{1}\cos(3x) + c_{2}\sin(3x) \]						% TODO: Problem 4.3 53
-	\setcounter{enumi}{55}
-	\problem{prb:4.3-56} \[ y = c_{1} + c_{2}e^{2x}\cos(5x) + c_{3}e^{2x}\sin(5x) \]	% TODO: Problem 4.3 56
-\end{enumerate}
+\begin{problems}[start=49]
+	\problem[prb:4.3-49] \[ y = c_{1}e^{x} + c_{2}e^{5x} \]							% TODO: Problem 4.3 49
+	\problem[prb:4.3-50] \[ y = c_{1}e^{-4x} + c_{2}e^{-3x} \]							% TODO: Problem 4.3 50
+	\setcounter{problemsi}{52}
+	\problem[prb:4.3-53] \[ y = c_{1}\cos(3x) + c_{2}\sin(3x) \]						% TODO: Problem 4.3 53
+	\setcounter{problemsi}{55}
+	\problem[prb:4.3-56] \[ y = c_{1} + c_{2}e^{2x}\cos(5x) + c_{3}e^{2x}\sin(5x) \]	% TODO: Problem 4.3 56
+\end{problems}
 
 \customsection{4.1}{sec:4.1}
 
 In Problems 23--30 verify that the given functions form a fundamental set of solutions of the differential equation on the indicated interval. Form the general solution.
 
-\begin{enumerate}[label=\arabic*.,start=23]
-    \problem{prb:4.1-23} \[ y'' - y' - 12y = 0;\ivpsep e^{-3x},\ivpsep e^{4x},\ivpsep (-\infty, \infty) \]					% TODO: Problem 4.1 23
-	\setcounter{enumi}{24}
-	\problem{prb:4.1-25} \[ y'' - 2y' + 5y = 0;\ivpsep e^{x}\cos(2x), \ivpsep e^{x}\sin(2x),\ivpsep (-\infty, \infty) \]	% TODO: Problem 4.1 25
-\end{enumerate}
+\begin{problems}[label=\arabic*.,start=23]
+    \problem[prb:4.1-23] \[ y'' - y' - 12y = 0;\ivpsep e^{-3x},\ivpsep e^{4x},\ivpsep (-\infty, \infty) \]					% TODO: Problem 4.1 23
+	\setcounter{problemsi}{24}
+	\problem[prb:4.1-25] \[ y'' - 2y' + 5y = 0;\ivpsep e^{x}\cos(2x), \ivpsep e^{x}\sin(2x),\ivpsep (-\infty, \infty) \]	% TODO: Problem 4.1 25
+\end{problems}
 
-\begin{enumerate}[label=\arabic*.,start=40]
-    \problem{prb:4.1-40} Is the set of functions $f_{1}(x) = e^{x+2}, f_{2}(x) = e^{x-3}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 40
-	\problem{prb:4.1-41} Suppose $y_{1}$, $y_{2}$, $\dots$, $y_{k}$ are $k$ linearly independent solutions on $(-\infty, \infty)$ of a homogeneous linear $n$th-order differential equation with constant coefficients. By Theorem 4.1.2 it follows that $y_{k+1}=0$ is also a solution of the differential equation. Is the set of functions $y_{1}, y_{2}, \dots, y_{k}, y_{k+1}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 41
-	\problem{prb:4.1-42} Suppose that $y_{1}, y_{2}, \dots, y_{k}$ are $k$ nontrivial solutions of a homogeneous linear $n$th-order differential equation with constant coefficients and that $k=n+1$. Is the set of solutions $y_{1}, y_{2}, \dots, y_{k}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 42
-\end{enumerate}
+\begin{problems}[label=\arabic*.,start=40]
+    \problem[prb:4.1-40] Is the set of functions $f_{1}(x) = e^{x+2}, f_{2}(x) = e^{x-3}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 40
+	\problem[prb:4.1-41] Suppose $y_{1}$, $y_{2}$, $\dots$, $y_{k}$ are $k$ linearly independent solutions on $(-\infty, \infty)$ of a homogeneous linear $n$th-order differential equation with constant coefficients. By Theorem 4.1.2 it follows that $y_{k+1}=0$ is also a solution of the differential equation. Is the set of functions $y_{1}, y_{2}, \dots, y_{k}, y_{k+1}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 41
+	\problem[prb:4.1-42] Suppose that $y_{1}, y_{2}, \dots, y_{k}$ are $k$ nontrivial solutions of a homogeneous linear $n$th-order differential equation with constant coefficients and that $k=n+1$. Is the set of solutions $y_{1}, y_{2}, \dots, y_{k}$ linearly dependent or linearly independent on $(-\infty, \infty)$? Discuss. % TODO: Problem 4.1 42
+\end{problems}
 
 \end{document}
