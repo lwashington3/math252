@@ -34,7 +34,6 @@
 	urlcolor=url-blue]{hyperref}
 \RequirePackage[margin=1in]{geometry}
 \RequirePackage{enumerate}
-\RequirePackage{enumitem}
 \RequirePackage{threeparttable}
 \RequirePackage{amsfonts}
 \RequirePackage{catchfilebetweentags}
@@ -45,6 +44,17 @@
 \RequirePackage{textcomp}
 \RequirePackage{titlesec}
 \RequirePackage{bookmark}
+
+\RequirePackage{enumitem}
+\newlist{problems}{enumerate}{2}
+\setlist[problems, 1]
+{label=\textbf{\arabic{problemsi}.},
+leftmargin=15pt,
+}
+
+\setlist[problems, 2]
+{label=\textbf{(\alph{problemsii})},
+leftmargin=30pt,}
 
 \RequirePackage{graphicx}
 \graphicspath{{images}}
@@ -69,6 +79,17 @@
 \RequirePackage{xstring}%
 \RequirePackage{catchfile}
 \RequirePackage{graphics}%
+
+\newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
+
+\newcommand{\problem}[1][prb:\number\value{problemsi}]{\pdfbookmark[2] % Level
+{Problem \the\numexpr\value{problemsi}+1} % Text
+{#1}\item\label{#1}} % Name/Label
+
+\newcommand{\subproblem}{\pdfbookmark[3] % Level
+{Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
+{prb:\number\value{problemsi}\makeAlph{problemsii}}
+\item\label{prb:\number\value{problemsi}\alph{problemsii}}} % Name/Label
 
 \setlength{\parindent}{0pt}
 \newcommand{\sep}{\mbox{{ }{ }{ }} & \mbox{{ }{ }{ }}}
