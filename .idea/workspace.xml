@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Updated the styling for the Homework Templates.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added all of the questions from the first practice exam for Exam 2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -65,23 +65,23 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Academic/math252/.idea/workspace.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "TexifyConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Academic/math252/.idea/workspace.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;TexifyConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/homework" />
@@ -1791,7 +1791,7 @@
         <envs>
           <env name="Template" value="yes" />
         </envs>
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -1812,7 +1812,7 @@
         <viewer-command />
         <compiler-arguments />
         <envs />
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3898,7 +3898,7 @@
     <configuration name="Homework 4.9 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -4474,6 +4474,7 @@
       <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       <item itemvalue="LaTeX.Practice Exam #1 Template" />
       <item itemvalue="LaTeX.Practice Exam #1" />
+      <item itemvalue="LaTeX.Homework 4.9" />
       <item itemvalue="LaTeX.Homework 1.1" />
       <item itemvalue="LaTeX.Homework 1.2" />
       <item itemvalue="LaTeX.Homework 2.1" />
@@ -4502,6 +4503,7 @@
       <item itemvalue="LaTeX.Homework 8.2" />
       <item itemvalue="LaTeX.Homework 8.3" />
       <item itemvalue="LaTeX.Homework 8.4" />
+      <item itemvalue="LaTeX.Homework 4.9 Template" />
       <item itemvalue="LaTeX.Homework 1.1 Template" />
       <item itemvalue="LaTeX.Homework 1.2 Template" />
       <item itemvalue="LaTeX.Homework 2.1 Template" />

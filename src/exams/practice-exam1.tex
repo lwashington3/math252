@@ -2,22 +2,19 @@
 %! Date = 9/15/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage{titling}
-\title{Practice Test \#1}
-\usepackage{math252exam}
+\documentclass[exam=1]{math252exam}
 
 % Document
 \begin{document}
 
+\maketitle
+
 \begin{enumerate}[label=\arabic*.]
     \problem{prb:1} Consider the autonomous differential equation below.
 	\begin{enumerate}[label=(\alph*)]
-	    \item Determine the equilibrium solutions of the differential equation.\answer{$y=3$, $y=-2$, $y=5$}
-		\item Draw a phase portrait diagram for the differential equation.
-		\item For each equilibrium solutions, state whether it is stable, unstable, or semistable.
+	    \subproblem Determine the equilibrium solutions of the differential equation.\answer{$y=3$, $y=-2$, $y=5$}
+		\subproblem Draw a phase portrait diagram for the differential equation.
+		\subproblem For each equilibrium solutions, state whether it is stable, unstable, or semistable.
 	\end{enumerate}
 	\[ \frac{dy}{dx} = (3-y)(y+2)^{2}(y-5) \]
 	\item Consider the DE \[ y'' + 2y' = 8y \]
@@ -71,9 +68,9 @@
 				\midrule
 				$\frac{dy}{dx} = y-xy$ & \answer{yes} & \answer{no/yes*} & \answer{yes} \\
 				\midrule
-				$ydx = (y - xy^{2})dy$ & \answer{no} & \answer{yes} & \answer{no}\\
+				$ydx = (y - xy^{2})dy$ & \answer{no} & \answer{yes}\correction{no} & \answer{no}\\
 				\midrule
-				$\left( x^{2} + \frac{2y}{x} \right)dx = (3 - \ln(x^{2})) dy$ & & &\\
+				$\left( x^{2} + \frac{2y}{x} \right)dx = (3 - \ln(x^{2})) dy$ & \answer{no} & \answer{yes} & \answer{yes}\\
 				\bottomrule
 			\end{tabular}
 		\end{threeparttable}
@@ -82,9 +79,21 @@
 	\begin{aligned}
 		y\frac{dy}{dx} &= x + xy^{2}\\
 		ydy &= \left( x + xy^{2} \right)dx\\
-		\left( x + xy^{2} \right)dx - ydy &= 0\\
-		M=x+xy^{2} \sep N=-y\\
-		M_{y}=0+2xy \sep N_{x}=0\\ % TODO: Look up how to solve DE's whose partials aren't equal
+		ydy &= x\left( 1 + y^{2} \right)dx\\
+		\frac{y}{1 + y^{2}}dy &= xdx\\
+		\int \frac{y}{1 + y^{2}}dy &= \int xdx\\
+		\int \frac{1}{u}\frac{du}{2} &= \frac{x^{2}}{2} + C\\
+		\frac{1}{2}\int \frac{du}{u} &= \frac{x^{2}}{2} + C\\
+		\frac{1}{2}\ln|u| &= \frac{x^{2}}{2} + C\\
+		\frac{1}{2}\ln(y^{2}+1) &= \frac{x^{2}}{2} + C
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		\ln(y^{2}+1) &= x^{2} + 2C\\
+		y^{2}+1 &= e^{x^{2} + C}\\
+		y^{2}+1 &= e^{x^{2}}e^{C}\\
+		y^{2} &= Ae^{x^{2}} - 1\\
+		y &= \pm\sqrt{Ae^{x^{2}} - 1}\correction{\mbox{ with } A >0}\\
 	\end{aligned}
 	\end{equation*}}
 	\item Solve the DE: \[ x^{2}y' + 4xy = \cos(x^{3}) \]\answer{\begin{equation*}
@@ -148,7 +157,15 @@
 		\end{aligned}
 		\end{equation*}}
 	\end{enumerate}
-	\item Suppose that a large container initially contains a solution of brine which has 50 pounds of salt and volume 400 gallons. A second brine solution of concentration 2 pounds of salt per gallon is added at a rate of 4 gallons per minute. And the well mixed solution in the container flows out also at a rate of 4 gallons per minute. Construct an initial value problem whose solution $A(t)$ would represent the pounds of salt in the container $t$ minutes after the described process began. Do not solve initial value problem.
+	\item Suppose that a large container initially contains a solution of brine which has 50 pounds of salt and volume 400 gallons. A second brine solution of concentration 2 pounds of salt per gallon is added at a rate of 4 gallons per minute. And the well mixed solution in the container flows out also at a rate of 4 gallons per minute. Construct an initial value problem whose solution $A(t)$ would represent the pounds of salt in the container $t$ minutes after the described process began. Do not solve initial value problem.\answer{\begin{equation*}
+	\begin{aligned}
+		\frac{dA}{dt} &= \left( 2\frac{lbs}{gal} \times 4\frac{gal}{min} \right) \} \mbox{rate in}\\
+					  &= \left( \frac{A(t)\mbox{ lbs}}{400 \mbox{gal}} \times 4\frac{gal}{min} \right) \} \mbox{rate out}\\
+		\frac{dA}{dt} &= 8\frac{\mbox{lbs}}{\mbox{min}} - \frac{4A(t)\mbox{ lbs}}{400 \mbox{ gal}}\\
+					  &= 8\frac{\mbox{lbs}}{\mbox{min}} - \frac{A(t)\mbox{ lbs}}{100 \mbox{ gal}}\\
+		\frac{dA}{dt} + \frac{A}{100} &= 8\frac{\mbox{lbs}}{\mbox{min}}\\
+	\end{aligned}
+	\end{equation*}}
 \end{enumerate}
 
 \end{document}

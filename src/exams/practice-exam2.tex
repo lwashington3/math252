@@ -1,0 +1,161 @@
+%! Author = Len Washington III
+%! Date = 10/17/2023
+
+% Preamble
+\documentclass[exam=2]{math252exam}
+
+% Document
+\begin{document}
+
+\maketitle
+
+\begin{problems}
+	\problem One solution to the differential equation \[ y'' - \tan(x)y' - \sec^{2}(x)y = 0 \] is $y_{1}(x)=\sec(x)$ on the interval $I = \left( -\frac{\pi}{2}, \frac{\pi}{2} \right)$. Find a solution $y_{2}(x)$ of the given DE which is linearly independent from $y_{1}(x)$. You may find some of the following facts helpful.
+	\begin{minipage}{0.5\textwidth}
+		\[ \int \sec(x)dx = \ln|\sec(x) + \tan(x)| + C \]
+	\end{minipage}\begin{minipage}{0.5\textwidth}
+		\[ \int \tan(x)dx = \ln|\sec(x)| + C \]
+	\end{minipage}\answer{\begin{equation*}
+	\begin{aligned}
+		y_{2}(x) &= y_{1}(x)\int \frac{e^{-\int P(x)dx}}{\left( y_{1}(x) \right)^{2}}dx\\
+				 &= \sec(x)\int \frac{e^{-\int -\tan(x)dx}}{\sec^{2}(x)}dx\\
+				 &= \sec(x)\int \frac{e^{\int \tan(x)dx}}{\sec^{2}(x)}dx\\
+				 &= \sec(x)\int \frac{e^{\left( \ln|\sec(x) | \right)}}{\sec^{2}(x)}dx\\
+				 &= \sec(x)\int \frac{e^{\left( \ln(\sec(x)) \right)}}{\sec^{2}(x)}dx\\
+				 &= \sec(x)\int \frac{\sec(x)}{\sec^{2}(x)}dx\\
+				 &= \sec(x)\int \frac{1}{\sec(x)}dx\\
+				 &= \sec(x)\int \cos(x)dx\\
+				 &= \sec(x)(\sin(x))\\
+				 &= \frac{1}{\cos x}(\sin(x))\\
+				 &= \tan x\\
+	\end{aligned}
+	\end{equation*}}
+	\problem Determine the general solution of the following differential equation. \[ y'' + 3y' - 10y = 20x^{2} - 2x \]\answer{\begin{equation*}
+	\begin{aligned}
+		y'' + 3y' - 10y &= 0\\
+		m^{2}e^{mx} + 3me^{mx} - 10e^{mx} &= 0\\
+		m^{2} + 3m - 10 &= 0\\
+		(m+5)(m-2) &= 0\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		m_{1}+5=0 \sep m_{2}-2=0\\
+		m_{1}=-5 \sep m_{2}=2\\
+		y_{1}=e^{-5x} \sep y_{2}=e^{2x}\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		y_{c} &= c_{1}e^{-5x} + c_{2}e^{2x}\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		y_{p} &= Ax^{4} + Bx^{3}\\
+		y_{p}' &= 4Ax^{3} + 3Bx^{2}\\
+		y_{p}'' &= 12Ax^{2} + 6Bx\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		12Ax^{2} + 6Bx &= 20x^{2} - 2x\\
+		6Ax^{2} + 3Bx &= 10x^{2} - x\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		6A = 10 \sep 3B = -1\\
+		A = \frac{10}{6} \sep B = \frac{-1}{3}\\
+		A = \frac{5}{3} \sep B = -\frac{1}{3}\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		y_{p} &= \frac{5}{3}x^{4} - \frac{1}{3}x^{3}\\
+		y &= y_{c} + y_{p}\\
+		  &= c_{1}e^{-5x} + c_{2}e^{2x} + \frac{5}{3}x^{4} - \frac{1}{3}x^{3}\\
+	\end{aligned}
+	\end{equation*}}
+	\problem Suppose that you are given a $6^{\mbox{th}}$ order linear differential equation with constant coefficients \[ a_{6}y^{(6)} + a_{5}y^{(5)} + \dots + a_{1}y' + a_{0}y = f(x) \] and that the auxiliary equation of the complementary differential equation can be written in factored forms as \[ m^{3}(m+3)(m-(2+5i))(m-(2-5i)) = 0 \].
+	\begin{problems}
+		\subproblem Write the general solution $y_{c}$ of the complementary differential equation. \answer{\begin{equation*}
+		\begin{aligned}
+			m_{1}^{3} = 0 \sep m_{2}+3 = 0 \sep m_{3}-(2+5i) = 0 \sep m_{4}-(2-5i) = 0\\
+			m_{1} = 0 \sep m_{2} = -3 \sep m_{3} = 2+5i \sep m_{4} = 2-5i\\
+			y_{1} = e^{0x} \sep y_{2} = e^{-3x} \sep y_{3} = e^{2x}\cos(5x) \sep y_{4} = e^{2x}\sin(5x)\\
+		\end{aligned}
+		\end{equation*}\begin{equation*}
+		\begin{aligned}
+			y_{5} &= y_{1}\int \frac{e^{-\int y_{1}dx}}{\left( y_{1} \right)^{2}}\\
+				  &= 1\int \frac{e^{-\int 1dx}}{\left( 1 \right)^{2}}\\
+				  &= \int \frac{e^{-x}}{1}\\
+				  &= \int e^{-x}\\
+		\end{aligned}
+		\end{equation*}\begin{equation*}
+		\begin{aligned}
+			y_{c} &= c_{1}e^{0x} + c_{2}e^{-3x} +  c_{3}e^{2x}\cos(5x) + c_{4}e^{2x}\sin(5x)\\
+				  &= c_{1}(1) + c_{2}e^{-3x} +  c_{3}e^{2x}\cos(5x) + c_{4}e^{2x}\sin(5x)\\
+				  &= c_{1} + c_{2}e^{-3x} +  c_{3}e^{2x}\cos(5x) + c_{4}e^{2x}\sin(5x)\\
+		\end{aligned}
+		\end{equation*}}
+	\end{problems}
+	In each part below a different function $f(x)$ is given for the above differential equation. Give the form of a particular solution $y_{p}$ of the DE that one should look for according to the method of Undetermined Coefficients. (Do not attempt to solve for the coefficients)
+	\begin{problems}
+		\subproblem \[ f(x) = e^{-3x} \]
+		\subproblem \[ f(x) = 4x + 7 \]
+		\subproblem \[ f(x) = \cos(6x) \]
+		\subproblem \[ f(x) = e^{2x}\sin(5x) \]
+		\subproblem \[ f(x) = xe^{-3x} \]
+	\end{problems}
+	\problem Find power series representations of two linearly independent solutions of the following differential equation. The solution to this problem does allow for one to indicate the pattern of the coefficients in the power series. \[ y'' - xy' - y = 0 \]\answer{\begin{equation*}
+	\begin{aligned}
+		  y &= \sum_{n=0}^{\infty} c_{n}x^{n}\\
+		 y' &= \sum_{n=1}^{\infty} nc_{n}x^{n-1}\\
+		y'' &= \sum_{n=2}^{\infty} n(n-1)c_{n}x^{n-2}\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		0 &= \sum_{n=2}^{\infty} n(n-1)c_{n}x^{n-2} - x\sum_{n=1}^{\infty} nc_{n}x^{n-1} - \sum_{n=0}^{\infty} c_{n}x^{n}\\
+		  &= \sum_{n=2}^{\infty} n(n-1)c_{n}x^{n-2} - \sum_{n=1}^{\infty} nc_{n}x^{n} - \sum_{n=0}^{\infty} c_{n}x^{n}\\
+		  &= \sum_{k+2=2}^{\infty} (k+2)(k+2-1)c_{k+2}x^{k+2-2} - \sum_{k=1}^{\infty} kc_{k}x^{k} - \sum_{k=0}^{\infty} c_{k}x^{k}\\
+		  &= \sum_{k=0}^{\infty} (k+2)(k+1)c_{k+2}x^{k} - \sum_{k=1}^{\infty} kc_{k}x^{k} - \sum_{k=0}^{\infty} c_{k}x^{k}\\
+		  &= \sum_{k=0}^{1} (k+2)(k+1)c_{k+2}x^{k} + \sum_{k=1}^{\infty} (k+2)(k+1)c_{k+2}x^{k} - \sum_{k=1}^{\infty} kc_{k}x^{k} - \sum_{k=0}^{1} c_{k}x^{k} - \sum_{k=1}^{\infty} c_{k}x^{k}\\
+		  &= \sum_{k=0}^{1} (k+2)(k+1)c_{k+2}x^{k} - \sum_{k=0}^{1} c_{k}x^{k} + \sum_{k=1}^{\infty} (k+2)(k+1)c_{k+2}x^{k} - kc_{k}x^{k} - c_{k}x^{k}\\
+		  &= (0+2)(0+1)c_{0+2}x^{0} - c_{0}x^{0} + \sum_{k=1}^{\infty} x^{k} \left[ (k+2)(k+1)c_{k+2} - kc_{k} - c_{k} \right]\\
+		  &= (2)(1)c_{2}(1) - c_{0}(1) + \sum_{k=1}^{\infty} x^{k} \left[ (k+2)(k+1)c_{k+2} - (k+1)c_{k} \right]\\
+		  &= 2c_{2} - c_{0} + \sum_{k=1}^{\infty} x^{k} \left[ (k+2)(k+1)c_{k+2} - (k+1)c_{k} \right]\\
+	\end{aligned}
+	\end{equation*}\begin{equation*}
+	\begin{aligned}
+		2c_{2} - c_{0} &= 0\\
+		2c_{2} &= c_{0}\\
+		c_{2} &= \frac{c_{0}}{2}\\
+		(k+2)(k+1)c_{k+2} - (k+1)c_{k} &= 0\\
+		(k+2)(k+1)c_{k+2} &= (k+1)c_{k}\\
+		c_{k+2} &= \frac{(k+1)c_{k}}{(k+2)(k+1)}\\
+				&= \frac{c_{k}}{k+2}\\
+	\end{aligned}
+	\end{equation*}}
+	\problem Use the method of Laplace Transforms to solve the following initial value problem. \[ y'' + 2y' - 3y = 4,\ \ \ \ y(0)=1,\ \ \ \ y'(0)=-2 \]
+	\problem Find the indicated Laplace Transforms or Inverse Laplace Transforms. If you need to make a partial fraction expansion, you may leave your final answer in terms of the ``unknown'' constants $A$, $B$, $C$, etc. (i.e., you do not need to solve for the constants in the expansion).
+	\begin{problems}
+		\subproblem \[ \laplace^{-1}\left\{ t^{5} - 4\cos(5t) + 2e^{-6t} + 7 \right\} \]
+		\subproblem \[ \laplace^{-1}\left\{ \frac{3s+2}{s^{3}(s^{2} + 9)} \right\} \]
+	\end{problems}
+	\problem Use the definition of the Laplace transform to find the Laplace transform of the function $f(t)$ defined by \[ f(t) = \left\{ \begin{array}{cl}
+		2 & \mbox{if } 0 \leq t < 1\\
+		3 & \mbox{if } t \geq 1\\
+	\end{array} \right. \] \answer{\begin{equation*}
+	\begin{aligned}
+		\laplace \{ f(t) \} &= \int e^{-st}f(t)dt\\
+							&= \int_{0}^{1} e^{-st}(2)dt + \int_{1}^{\infty} e^{-st}(3)dt\\
+							&= 2\int_{0}^{1} e^{-st}dt + 3\int_{1}^{\infty} e^{-st}dt\\
+							&= 2\int_{0}^{1} e^{-st} + 3\int_{1}^{\infty} e^{-st}dt\\
+							&= 2 \times\frac{e^{-st}}{-s} \bigg|_{0}^{1} + 3\times\frac{e^{-st}}{-s} \bigg|_{1}^{\infty} \\
+							&= 2\left( \frac{e^{-s(1)}}{-s} - \frac{e^{-s(0)}}{-s} \right) + 3\left( \lim_{b\rightarrow\infty}\frac{e^{-s(b)}}{-s} - \frac{e^{-s(1)}}{-s} \right)\\
+							&= 2\left( \frac{e^{-s} - e^{0}}{-s} \right) + 3\left( - \frac{e^{-s}}{-s} + \lim_{b\rightarrow\infty}\frac{1}{-se^{sb}} \right)\\
+							&= 2\left( \frac{e^{0} - e^{-s}}{s} \right) + 3\left( - \frac{e^{-s}}{-s} + 0\right)\\
+							&= 2\left( \frac{e^{0} - e^{-s}}{s} \right) + \frac{3e^{-s}}{s}\\
+							&= \frac{2(1) - 2e^{-s}}{s} + \frac{3e^{-s}}{s}\\
+							&= \frac{2(1) - 2e^{-s} + 3e^{-s}}{s}\\
+							&= \frac{2 + e^{-s}}{s}\\
+	\end{aligned}
+	\end{equation*}}
+\end{problems}
+
+\end{document}
