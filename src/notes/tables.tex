@@ -2,19 +2,46 @@
 %! Date = 10/06/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Textbook Tables}]{math252notes}
+\documentclass[title={Textbook Tables}]{math252notes}
 
 % Document
 \begin{document}
+
+\setcounter{chapter}{3}
+\chapter[Higher Order DE{s}]{Higher Order Differential Equations}\label{ch:higher-order-differential-equations}
+\section{Method of Undetermined Coefficients}\label{sec:method-of-undetermined-coefficients}
+%<*Section-4.4-table>
+\begin{table}[H] % TODO: Add coloring
+    \centering
+    \begin{threeparttable}
+		\caption{Particular Solutions for Undetermined Coefficients}
+		\label{tab:undetermined-coefficients}
+		\begin{tabular}{rll}
+			\toprule
+			\multicolumn{2}{l}{$\mathbf{g(x)}$} & \textbf{Form of } $\mathbf{y_{p}}$\\
+			\midrule
+			\textbf{1.} & $ 1 $ (any constant) 	& $A \label{eq:particular-solution-1}$\\
+			\textbf{2.} & $ 5x + 7 $ 			& $Ax + B \label{eq:particular-solution-2}$\\
+			\textbf{3.} & $ 3x^{2} - 2 $ 		& $Ax^{2} + Bx + C \label{eq:particular-solution-3}$\\
+			\textbf{4.} & $ x^{3} - x + 1 $ 	& $Ax^{3} + Bx^{2} + Cx + E \label{eq:particular-solution-4}$\\
+			\textbf{5.} & $ \sin 4x $ 			& $A\cos 4x + B\sin 4x \label{eq:particular-solution-5}$\\
+			\textbf{6.} & $ \cos 4x $ 			& $A\cos 4x + B\sin 4x \label{eq:particular-solution-6}$\\
+			\textbf{7.} & $ e^{5x} $ 			& $Ae^{5x} \label{eq:particular-solution-7}$\\
+			\textbf{8.} & $ (9x-2)e^{5x} $ 		& $(Ax+B)e^{5x} \label{eq:particular-solution-8}$\\
+			\textbf{9.} & $ x^{2}e^{5x} $ 		& $(Ax^{2} + Bx + C)e^{5x} \label{eq:particular-solution-9}$\\
+			\textbf{10.} & $ e^{3x}\sin 4x $ 	& $Ae^{3x}\cos 4x + Be^{3x}\sin4x \label{eq:particular-solution-10}$\\
+			\textbf{11.} & $ 5x^{2}\sin 4x $ 	& $(Ax^{2} + Bx + C)\cos4x + (Ex^{2} + Fx + G)\sin4x \label{eq:particular-solution-11}$\\
+			\textbf{12.} & $ xe^{3x}\cos 4x $ 	& $(Ax+B)e^{3x}\cos 4x + (Cx+E)e^{3x}\sin 4x \label{eq:particular-solution-12}$\\
+			\bottomrule
+		\end{tabular}
+	\end{threeparttable}
+\end{table}
+%</Section-4.4-table>
 
 \setcounter{chapter}{5}
 \chapter{Series Solutions of Linear Equations}\label{ch:series-solutions-of-linear-equations}
 \section{Solving Linear DE's without constant coefficients}\label{sec:solving-linear-de's-without-constant-coefficients}
 %<*Section-6.1-table>
-
 \begin{table}[H]
     \centering
     \begin{threeparttable}
@@ -36,8 +63,33 @@
 		\end{tabular}
 	\end{threeparttable}
 \end{table}
-
-
 %</Section-6.1-table>
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+\section{Definition of Laplace Transform}\label{sec:laplace-transform-definition}
+%<*Section-7.1-table>
+\begin{table}[H]
+    \centering
+    \begin{threeparttable}
+		\caption{Transforms of Some Basic Functions}
+		\label{tab:laplace-transform-functions}
+		\begin{tabular}{|l|}
+			\toprule
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ 1 \right\} = \frac{1}{s} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ t^{n} \right\} = \frac{n!}{s^{n+1}} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ e^{at} \right\} = \frac{1}{s-a} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ \sin kt \right\} = \frac{k}{s^{2} + k^{2}} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ \cos kt \right\} = \frac{s}{s^{2} + k^{2}} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ \sinh kt \right\} = \frac{k}{s^{2} - k^{2}} \end{equation}\end{minipage}\\
+			\begin{minipage}{0.475\textwidth}\begin{equation} \laplace\left\{ \cosh kt \right\} = \frac{s}{s^{2} - k^{2}} \end{equation}\end{minipage}\\
+			\bottomrule
+		\end{tabular}
+	\end{threeparttable}
+\end{table}
+%</Section-7.1-table>
+
+\section{Solving I.V.T by using Laplace Transform}\label{sec:solving-i.v.t-by-using-laplace-transform}
+
 
 \end{document}

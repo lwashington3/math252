@@ -2,10 +2,7 @@
 %! Date = 09/27/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Sep 27, 2023 Notes}]{math252notes}
+\documentclass[title={Sep 27, 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -19,7 +16,7 @@
 
 \subsection{1st Step: General solution of complementary DE}
 \[ y = c_{1}y_{1} + c_{2}y_{2} \]
-Guess a solution to the non-homogeneous of the form \[ y = u_{1}(x)y_{1}(x) + u_{2}(x)y_{2}(x) \] where $u_{1}$ and $u_{2}$ are functions of $x$.
+Guess a solution to the non-homogeneous of the form \[ y = u_{1}(x)y_{1}(x) + u_{2}(x)y_{2}(x) \] where $u_{1}$ and $u_{2}$ are functions of $x$.\\\\
 
 This theory produces \[ u_{1}' = \frac{W_{1}}{W} \mbox{ and } u_{2}' = \frac{W_{2}}{W} \] where \[ W = \bigg| \begin{array}{cc}
 	y_{1} & y_{2}\\
@@ -100,7 +97,7 @@ Guess \[ y_{p} = u_{1}y_{1} + u_{2}y_{2} \]
 \end{equation*}\begin{equation*}
 \begin{aligned}
 	u_{1}' = \frac{W_{1}}{W} \sep u_{2}' = \frac{W_{2}}{W}\\
-	u_{1}' = \frac{-frac{1}{4}}{3} \sep u_{2}' = \frac{\frac{1}{4}\cot(3x)}{3}\\
+	u_{1}' = \frac{-\frac{1}{4}}{3} \sep u_{2}' = \frac{\frac{1}{4}\cot(3x)}{3}\\
 	u_{1}' = -\frac{1}{12} \sep u_{2} = \frac{1\cot(3x)}{12}\\
 	u_{1}' = -\frac{1}{12} \sep u_{2} = \frac{1\cos(3x)}{12\sin(3x)}\\
 	u_{1} = \int -\frac{1}{12} dx \sep u_{2} = \int \frac{1\cos(3x)}{12\sin(3x)}dx\\

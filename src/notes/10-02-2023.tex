@@ -2,10 +2,7 @@
 %! Date = 10/02/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Oct 02, 2023 Notes}]{math252notes}
+\documentclass[title={Oct 02, 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -61,7 +58,7 @@ where $\beta$ is the drag coefficient. If we substitute $2\lambda = \frac{\beta}
 \end{aligned}
 \end{equation*}
 
-\subsubsection{Case 1: $\lambda^{2} - \omega^{2} > 0$}\label{subsubsec:spring-mass-case-1} then there are two distinct real solutions where $n_{1} < 0$ and $n_{2} < 0$.
+\subsubsection{Case 1: $\lambda^{2} > \omega^{2}$}\label{subsubsec:spring-mass-case-1} then there are two distinct real solutions where $n_{1} < 0$ and $n_{2} < 0$.
 \begin{equation*}
 \begin{aligned}
 	n_{1} &= -\lambda + \sqrt{\lambda^{2} - \omega^{2}}\\
@@ -76,9 +73,9 @@ where $\beta$ is the drag coefficient. If we substitute $2\lambda = \frac{\beta}
 General solution: \begin{equation}
 \begin{aligned}
 	x &= c_{1}e^{t\left( -\lambda + \sqrt{\lambda^{2} - \omega^{2}} \right)} + c_{2}e^{t\left( -\lambda - \sqrt{\lambda^{2} - \omega^{2}} \right)}\\
-	  &= c_{1}e^{-t\lambda}e^{t\sqrt{\lambda^{2} - \omega^{2}} } + c_{2}e^{-\lambda}e^{-t\sqrt{\lambda^{2} - \omega^{2}}}\\
-	  &= e^{-\lambda t}\left( c_{1}e^{-t\lambda}e^{t\sqrt{\lambda^{2} - \omega^{2}} } + c_{2}e^{-t\sqrt{\lambda^{2} - \omega^{2}}} \right)\\
-\end{aligned}
+	  &= c_{1}e^{-t\lambda}e^{t\sqrt{\lambda^{2} - \omega^{2}} } + c_{2}e^{-t\lambda}e^{-t\sqrt{\lambda^{2} - \omega^{2}}}\\
+	  &= e^{-\lambda t}\left( c_{1}e^{t\sqrt{\lambda^{2} - \omega^{2}} } + c_{2}e^{-t\sqrt{\lambda^{2} - \omega^{2}}} \right)\\
+\end{aligned}\label{eq:spring-case-1}
 \end{equation}
 
 \subsubsection{Case 2: $\lambda = \omega$}\label{subsubsec:spring-mass-case-2}
@@ -99,10 +96,10 @@ General solution:
 \begin{aligned}
 	x &= c_{1}e^{-\lambda t} + c_{2}te^{-\lambda t}\\
 	  &= e^{-\lambda t}\left( {1} + c_{2}t \right)\\
-\end{aligned}
+\end{aligned}\label{eq:spring-case-2}
 \end{equation}
 
-\subsubsection{Case 3: $0 < \lambda < \omega$}\label{subsubsec:spring-mass-case-3} then
+\subsubsection{Case 3: $\lambda^{2} < \omega^{2}$}\label{subsubsec:spring-mass-case-3} then
 \begin{equation*}
 \begin{aligned}
 	x_{1} = e^{-\lambda t}\cos\left( \sqrt{\omega^{2} - \lambda^{2}}t \right) \sep x_{2} = e^{-\lambda t}\sin\left( \sqrt{\omega^{2} - \lambda^{2}}t \right)\\
@@ -113,20 +110,20 @@ General solution:
 	x &= c_{1}e^{-\lambda t}\cos\left( \sqrt{\omega^{2} - \lambda^{2}}t \right) + c_{2}e^{-\lambda t}\sin\left( \sqrt{\omega^{2} - \lambda^{2}}t \right)\\
 	  &= e^{-\lambda t}\left( c_{1}\cos\left( \sqrt{\omega^{2} - \lambda^{2}}t \right) + c_{2}\sin\left( \sqrt{\omega^{2} - \lambda^{2}}t \right) \right)\\
 	  &= e^{-\lambda t}\left( A\sin\left( \sqrt{\omega^{2} - \lambda^{2}}t \right) + \phi \right)\\
-\end{aligned}
+\end{aligned}\label{eq:spring-case-3}
 \end{equation}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.2\textwidth,height=3in]{5.1.graphs}
-	\caption{}
-	\label{fig:}
+	\includegraphics[width=1.2\textwidth,height=3in]{5.1.graphs} % TODO: Make this fit on the sheet
+	\caption{Graphs depicting each type of motion of a spring.}
+	\label{fig:5.1.graphs}
 \end{figure}
 
 \subsection[Driven Motion]{Driven Motion (not Free Motion)}\label{subsec:driven-motion}
 Can be both damped or \hyperref[subsubsec:undamped-driven-motion]{undamped}.\\
 
-Imagine the support is oscillating up and down due to an external force.
+Imagine the support is oscillating up and down due to an external force.\\\\
 If the motion is:
 \subsubsection{Undamped}\label{subsubsec:undamped-driven-motion} Assume that $\gamma \neq \omega$
 \begin{equation*}
@@ -176,7 +173,7 @@ General solution:
 If $\gamma$ is almost equal to $\omega$, then $\frac{F_{0}}{\omega^{2} - \gamma^{2}}$ is a large constant. This situation is called Resonance\label{dfn:resonance}.
 
 \example{Driven, Damped, Spring-Mass}
-\[ \frac{1}{5}\frac{d^{2}x}{dt^{2}} + 1.2\frac{dx}{dt} + 2x = 5\cos(4t), x(0)=\frac{1}{2}, x'(0)=0 \]
+\[ \frac{1}{5}\frac{d^{2}x}{dt^{2}} + 1.2\frac{dx}{dt} + 2x = 5\cos(4t),\ \ x(0)=\frac{1}{2},\ \ x'(0)=0 \]
 \begin{equation*}
 \begin{aligned}
 	\frac{d^{2}x}{dt^{2}} + 6\frac{dx}{dt} + 10x = 25\cos(4t)\\

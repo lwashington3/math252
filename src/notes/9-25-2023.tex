@@ -2,10 +2,7 @@
 %! Date = 9/25/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Sep 25, 2023 Notes}]{math252notes}
+\documentclass[title={Sep 25, 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -15,7 +12,6 @@
 \setcounter{section}{3}
 \section{Nonhomogeneous, Linear DE with Constant Coefficients}\label{sec:nonhomogeneous-linear-de-with-constant-coefficients}
 %<*Section-4.4-2>
-\setcounter{section}{3}
 \subsection{Method of Undetermined Coefficients 2}\label{subsec:method-of-undetermined-coefficients-2}
 For Solving Linear, Non-homogeneous DE with constant coefficients \[ a_{2}y'' + a_{1}y' + a_{0}y = f(x) \]
 Standard Form: \[ y'' + a_{1}y' + a_{0}y = g(x) \]
@@ -113,7 +109,9 @@ If we try: \begin{equation*}
 	y_{p} = Ae^{x}\\
 	Ae^{x} - 5Ae^{x} + 4Ae^{x} &= 8e^{x}\\
 	e^{x}(A - 5A + 4) &= 8e^{x}\\
-	0 &= 8e^{x} \mbox{ has no solution.}
+	A - 5A + 4 &= 8\\
+	A - 5A - 4 &= 0\\
+	&\mbox{ has no solution.}
 \end{aligned}
 \end{equation*}
 
@@ -157,8 +155,10 @@ If
     \item $g(x) = e^{3x} \Rightarrow y_{p} = Axe^{3x}$ (because $e^{3x}$ is in $y_{c}$)
     \item $g(x) = 5e^{2x}\sin(x) \Rightarrow y_{p} = \left( Ae^{2x}\cos(x) + Be^{2x}\sin(x) \right)x$
     \item $g(x) = 6x^{2}e^{4x} \Rightarrow y_{p} = \left( Ax^{2} + Bx + C \right)e^{4x}$
-    \item $g(x) = x^{2}e^{3x} \Rightarrow y_{p} = \left( Ax^{2} + Bx + C \right)e^{3x}x\\\left( Ax^{2} + Bx + C \right)e^{3x}$
+    \item $g(x) = x^{2}e^{3x} \Rightarrow y_{p} = \left( Ax^{2} + Bx + C \right)e^{3x}x\\\left( Ax^{2} + Bx + C \right)e^{3x}$ % FIXME: Check which is correct
 \end{enumerate}
+
+\ExecuteMetaData[tables]{Section-4.4-table}
 
 %</Section-4.4-2>
 

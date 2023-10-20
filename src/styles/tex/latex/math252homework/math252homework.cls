@@ -55,27 +55,6 @@
 \newcommand{\ontemplate}[1]{\ifthenelse{\boolean{istemplate}}{#1}{}}
 \newcommand{\onhomework}[1]{\ifthenelse{\boolean{istemplate}}{}{#1}}
 
-\newlist{problems}{enumerate}{2}
-\setlist[problems, 1]
-{label=\textbf{\arabic{problemsi}.},
-leftmargin=\parindent,
-}
-
-\setlist[problems, 2]
-{label=\textbf{(\alph{problemsii})},
-leftmargin=30pt,}
-
-\newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
-
-\newcommand{\problem}[1][prb:\number\value{problemsi}]{\pdfbookmark[2] % Level
-{Problem \the\numexpr\value{problemsi}+1} % Text
-{#1}\item\label{#1}} % Name/Label
-
-\newcommand{\subproblem}{\pdfbookmark[3] % Level
-{Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
-{prb:\number\value{problemsi}\makeAlph{problemsii}}
-\item\label{prb:\number\value{problemsi}\alph{problemsii}}} % Name/Label
-
 %\newcommand{\subproblem}[1]{\pdfbookmark[3]{Problem \the\numexpr\value{enumi}.{\symbol{\numexpr97+\number\value{enumii}}}}{#1}\item\label{#1}}
 
 \newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{0.5em}}

@@ -1,9 +1,11 @@
-%! Package = math252notes
+%! PackagClass = math252notes
 %! Author = Len Washington III
 %! Date = 8/23/2023
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{math252notes}[2023/08/23 Len Washington III's Package]
+\ProvidesClass{math252notes}[2023/08/23 Len Washington III's Package]
+
+\LoadClass[12pt]{report}
 
 \RequirePackage{titling}
 \RequirePackage{xkeyval}

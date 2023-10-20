@@ -2,10 +2,7 @@
 %! Date = 09/29/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Sep 29, 2023 Notes}]{math252notes}
+\documentclass[title={Sep 29, 2023 Notes}]{math252notes}
 \usepackage{amssymb}
 % Document
 \begin{document}
@@ -26,8 +23,8 @@ Suppose that there are no forces affecting the motion other than the gravitation
 
 
 In Equilibrium, mass doesn't move.
-\[ F_{g} = -F_{spring} \rightarrow mg = -F_{spring} \rightarrow -mg = -kx (\mbox{Hooke's Law})\]
-where $g\approx 9.8 m/s^{2}$ if m is in kg, else $g\approx 32.1 ft/sec^{2}$.\\
+\begin{equation}F_{g} = -F_{spring} \rightarrow mg = -F_{spring} \rightarrow -mg = -kx (\mbox{Hooke's Law})\label{eq:hookes=law}\end{equation}
+where $g\approx 9.8 m/s^{2}$ if m is in kg, else $g\approx 32.1 ft/sec^{2}\rightarrow 32 ft/sec^{2}$.\\
 
 In equilibrium: \[ F_{net} = mg - ks = 0 \], so \[ k = \frac{mg}{s} \]
 
@@ -66,13 +63,7 @@ Guess: \[ x = e^{lt} \]
 \begin{aligned}
 	x_{1} &= e^{0t}\cos\left( \frac{k}{m}t \right) \sep x_{2} &= e^{0t}\sin\left( \frac{k}{m}t \right) \\
 	x_{1} &= \cos\left( \frac{k}{m}t \right) \sep x_{2} &= \sin\left( \frac{k}{m}t \right) \\
-\end{aligned}
-\end{equation*}
-
-Let $\omega = \sqrt{\frac{k}{m}}$
-
-\begin{equation*}
-\begin{aligned}
+	& \mbox{Let } \omega &= \sqrt{\frac{k}{m}}\\
 	x_{1} &= \cos\left( \omega^{2}t \right) \sep x_{2} &= \sin\left( \omega^{2}t \right) \\
 \end{aligned}
 \end{equation*}

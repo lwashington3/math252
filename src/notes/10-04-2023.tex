@@ -2,10 +2,7 @@
 %! Date = 10/04/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Oct 04, 2023 Notes}]{math252notes}
+\documentclass[title={Oct 04, 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -19,13 +16,13 @@
 \[ y'' + P(x)y' + Q(x)y = F(x) \]
 
 \subsection{Review of Infinite Series Facts}\label{subsec:review-of-infinite-series-facts}
-\subsubsection{Maclaurin Series}
+\subsubsection{Maclaurin Series}\label{subsubsec:maclaurin-series}
 \[ \sum_{n=0}^{\infty} a_{n}x^{n}  \]
 Power series centered at 0
 
-\subsubsection{Taylor Series}
+\subsubsection{Taylor Series}\label{subsubsec:taylor-series}
 \[ \sum_{n=0}^{\infty} a_{n}(x-a)^{n}  \]
-Centered at a = 0
+Centered at a = 0\\\\
 
 It's a theorem that power series either
 \begin{enumerate}[label=(\arabic*)]
@@ -41,7 +38,7 @@ The 3 cases of the ratio test are:
 \begin{itemize}
 	\item[$L < 1$], the series converges
 	\item[$L > 1$], the series diverges
-	\item[$L = 1$],
+	\item[$L = 1$], the series could converge or diverge (you have to check)
 \end{itemize}
 
 \example

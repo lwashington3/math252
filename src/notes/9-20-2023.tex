@@ -2,10 +2,7 @@
 %! Date = 9/20/2023
 
 % Preamble
-\documentclass[12pt]{report}
-
-% Packages
-\usepackage[title={Sep 20, 2023 Notes}]{math252notes}
+\documentclass[title={Sep 20, 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -44,10 +41,10 @@ $y=c_{1}e^{\frac{4}{5}x}$ is the general solution of the DE
 	(m+6)(m-1) &= 0\\
 	m+6=0 \sep m-1= 0\\
 	m=-6 \sep m=1\\
-	y_{1}=e^{-6x} \sep y_{2}e^{x}\mbox{ These are \hyperref[dfn:linear-independent]{Linearly Independent (L.I)}}\\
+	y_{1}=e^{-6x} \sep y_{2}=e^{x}\\
 \end{aligned}
 \end{equation*}
-Therefore: \[ y=c_{1}e^{-6x} + c_{2}e^{x} \]
+These are \hyperref[dfn:linear-independent]{Linearly Independent (L.I)}, Therefore: \[ y=c_{1}e^{-6x} + c_{2}e^{x} \]
 
 \example
 \begin{equation*}
@@ -83,7 +80,7 @@ Always works out for this solution\label{dfn:higher-order-lienar-homog-const-coe
 	m &= \sqrt{-9} \mbox{ No real solutions}\\
 	m &= \pm \sqrt{-9}\\
 	m &= \pm 3i\\
-	y &= c_{1}e^{3ix} + c_{2}e^{-3ix} \mbox{ where } c_{1} \& c_{2} \mbox{ arbitrary complex numbers }
+	y &= c_{1}e^{3ix} + c_{2}e^{-3ix} \mbox{ where } c_{1}\ \&\ c_{2} \mbox{ arbitrary complex numbers }
 \end{aligned}
 \end{equation*}
 We'd rather only deal with real-valued solutions.
@@ -145,7 +142,7 @@ General solution: \begin{equation*}
 \end{aligned}
 \end{equation*} So the general solution is \[ y = c_{1}e^{-x}\cos(\sqrt{5}x) + c_{2}e^{-x}\sin(\sqrt{5}x) \]
 
-In general, if $m_{1} = \alpha + i\beta, m_{2} = \alpha - i\beta$ are roots of the auxiliary equation, then $\begin{array}{cc}
+In general, if $m_{1} = \alpha + i\beta,\ m_{2} = \alpha - i\beta$ are roots of the auxiliary equation, then $\begin{array}{cc}
 		y_{1} &= e^{\alpha x}\cos(\beta x)\\
 		y_{2} &= e^{\alpha x}\sin(\beta x)\\
 	\end{array}$ are solutions.
