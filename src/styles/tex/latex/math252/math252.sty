@@ -64,6 +64,7 @@ leftmargin=30pt,}
 
 \RequirePackage{mathrsfs}
 \newcommand{\laplace}{\mathscr{L}}
+\newcommand{\unitstep}{\mathscr{U}}
 
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
@@ -88,8 +89,12 @@ leftmargin=30pt,}
 
 \newcommand{\subproblem}{\pdfbookmark[3] % Level
 {Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
-{prb:\number\value{problemsi}\makeAlph{problemsii}}
-\item\label{prb:\number\value{problemsi}\alph{problemsii}}} % Name/Label
+{prb:\number\value{problemsi}\makeAlph{problemsii}} % Name/Label
+\item\label{prb:\number\value{problemsi}\alph{problemsii}}}
 
 \setlength{\parindent}{0pt}
 \newcommand{\sep}{\mbox{{ }{ }{ }} & \mbox{{ }{ }{ }}}
+
+\RequirePackage{caption}
+%\DeclareCaptionType[deeq][][List of Equations]
+%\captionsetup[deeq]{labelformat=empty}

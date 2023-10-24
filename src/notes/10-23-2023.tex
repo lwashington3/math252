@@ -1,0 +1,104 @@
+%! Author = Len Washington III
+%! Date = 10/23/2023
+
+% Preamble
+\documentclass[title={Oct 23, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+\setcounter{section}{2}
+%<*Section-7.3>
+\section{Operational Rules Part 1}\label{sec:operational-rules-part-1}
+Even with the reuses we know, a problem like \[ \laplace \left\{ e^{4t}t^{3} \right\} \] would require us to go to the definition until we learn some rules.
+
+\begin{equation*}
+\begin{aligned}
+	\laplace\left\{ e^{4t}t^{3} \right\} &= \int_{0}^{\infty}e^{-st}e^{4t}t^{3}dt\\
+										 &= \int_{0}^{\infty}e^{-(s-4)t}t^{3}dt\\
+\end{aligned}
+\end{equation*}
+
+Compare with \[ \laplace\left\{ t^{3} \right\} = \int_{0}^{\infty} e^{-st}t^{3}dt = F(s)  \] where $f(t)=t^{3}$
+
+\pdfbookmark[3]
+{Operational Rule \#1}
+{subsec:operational-rule-1}
+%\begin{deeq}[H]
+%	\caption{Operational Rule \#1}
+	\begin{equation} \laplace \left\{ e^{at}f(t) \right\} = F(s-a)\label{eq:laplace-operational-rule-1}\end{equation} where $F(s) = \laplace \left\{ f(t) \right\}$
+%\end{deeq}
+
+\begin{equation*}
+\begin{aligned}
+	\laplace\left\{ e^{4t}t^{3} \right\} &= \frac{3!}{(s-4)^{4}}
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ e^{-3t}\sin(5t) \right\} &= \laplace \left\{ \sin(5t) \right\} \bigg|_{s\rightarrow s+3}\\
+											  &= \frac{5}{s^{2} + 25} \bigg|_{s\rightarrow s+3}\\
+											  &= \frac{5}{(s+3)^{2} + 25} \bigg|_{s\rightarrow s+3}\\
+											  &= \frac{5}{s^{2} + 6s + 9 + 25}\\
+											  &= \frac{5}{s^{2} + 6s + 34}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ e^{-2t}\cos(6t) \right\} &= F(s+2)\\
+											  &= \frac{s+2}{(s+2)^{2} + 36}\\
+											  &= \frac{s+2}{s^{2} + 4s + 4 + 36}\\
+											  &= \frac{s+2}{s^{2} + 4s + 40}\\
+\end{aligned}
+\end{equation*}
+
+\example
+Find \[ \laplace^{-1}\left\{ \frac{s+3}{s^{2}-8s + 97} \right\} \]
+\begin{equation*}
+\begin{aligned}
+	\laplace^{-1}\left\{ \frac{s+3}{s^{2}-8s + 97} \right\} &= \laplace^{-1}\left\{ \frac{s+3}{s^{2} - 8s + 16 + 81} \right\}\\
+															 &= \laplace^{-1}\left\{ \frac{s+3}{(s-4)^{2} + 81} \right\}\\
+															 &= \laplace^{-1}\left\{ \frac{s+3+4-4}{(s-4)^{2} + 81} \right\}\\
+															 &= \laplace^{-1}\left\{ \frac{s-4}{(s-4)^{2} + 81} \right\} + \laplace^{-1}\left\{ \frac{3+4}{(s-4)^{2} + 81} \right\}\\
+															 &= \laplace^{-1}\left\{ \frac{s-4}{(s-4)^{2} + 81} \right\} + \laplace^{-1}\left\{ \frac{7}{(s-4)^{2} + 81} \right\}\\
+															 &= \laplace^{-1}\left\{ \frac{s-4}{(s-4)^{2} + 9^{2}} \right\} + \laplace^{-1}\left\{ \frac{7}{(s-4)^{2} + 9^{2}} \right\}\\
+															 &= e^{4t}\cos(9t) + \frac{7}{9}\laplace^{-1}\left\{ \frac{9}{(s-4)^{2} + 9^{2}} \right\}\\
+															 &= e^{4t}\cos(9t) + \frac{7}{9}e^{4t}\sin(9t)\\
+\end{aligned}
+\end{equation*}
+
+\pdfbookmark[3]
+{Operational Rule \#2}
+{subsec:operational-rule-2}
+Involves taking the Laplace transform of a function shifted on the $t$-axis.
+
+This can be written in terms of the Heavyside Function\label{dfn:heavyside-function} (or Unit Step function) \[ U(t) = \left\{ \begin{array}{cl}
+	0 & \mbox{ if } t < 0\\
+	1 & \mbox{ if } t \geq 0\\
+\end{array} \right. \]
+
+\[ f(t-2)\times U(t-2) \] is ``off when $t<2$ and on when $t \geq 2$.
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace \left\{ f(t-2)U(t-2) \right\} &= \int_{0}^{\infty} e^{-st}f(t-2)U(t-2)dt\\
+										   &= \int_{0}^{2} e^{-st}f(t-2)U(t-2)dt + \int_{2}^{\infty} e^{-st}f(t-2)U(t-2)dt\\
+										   &= \int_{0}^{2} e^{-st}f(t-2)(0)dt + \int_{2}^{\infty} e^{-st}f(t-2)(1)dt\\
+										   &= \int_{0}^{2} 0dt + \int_{2}^{\infty} e^{-st}f(t-2)dt\\
+										   &= \int_{2}^{\infty} e^{-st}f(t-2)dt\\
+	(\mbox{ Let } v=t-2,\ dv=dt)\ \ \ 	   &= \int_{0}^{\infty} e^{-s(v+2)}f(v)dv\\
+										   &= \int_{0}^{\infty} e^{-sv}e^{-2s}f(v)dv\\
+										   &= e^{-2s}\int_{0}^{\infty} e^{-sv}f(v)dv\\
+\end{aligned}
+\end{equation*}
+
+%</Section-7.3>
+
+\end{document}

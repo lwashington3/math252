@@ -1,5 +1,5 @@
 %! Author = Len Washington III
-%! Date = 8/21/2023
+%! Date = 10/23/2023
 
 % Preamble
 \documentclass[chapter=7,section=3]{math252homework}
@@ -7,8 +7,75 @@
 % Document
 \begin{document}
 
-\begin{problems}
-	\problem
+In Problems 1--20 find either $F(t)$ or $f(t)$, as indicated.
+\begin{problems}[start=3]
+	\problem \[ \laplace\left\{ t^{3}e^{-2t} \right\} \]						% TODO: Problem 3
+	\setcounter{problemsi}{6}
+	\problem \[ \laplace\left\{ e^{t}\sin(3t) \right\} \]						% TODO: Problem 7
+	\problem \[ \laplace\left\{ e^{-2t}\cos(4t) \right\} \]						% TODO: Problem 8
+	\setcounter{problemsi}{10}
+	\problem \[ \laplace^{-1}\left\{ \frac{1}{(s+2)^{3}} \right\} \]			% TODO: Problem 11
+	\setcounter{problemsi}{14}
+	\problem \[ \laplace\left\{ \frac{s}{s^{2} + 4s + 5} \right\} \]			% TODO: Problem 15
+	\setcounter{problemsi}{16}
+	\problem \[ \laplace\left\{ \frac{s}{(s+1)^{2}} \right\} \]					% TODO: Problem 17
+	\problem \[ \laplace\left\{ \frac{5s}{(s-2)^{2}} \right\} \]				% TODO: Problem 18
+\end{problems}
+
+In Problems 21--30 use the Laplace transform to solve the given initial-value problem.
+\begin{problems}[start=23]
+	\problem \[ y'' + 2y' + y = 0,\ \ y(0)=1,\ \ y'(0)=1 \]			% TODO: Problem 23
+	\setcounter{problemsi}{26}
+	\problem \[ y'' - 6y' + 13y = 0,\ \ y(0)=0, y'(0)=-3 \]			% TODO: Problem 27
+\end{problems}
+
+In Problems 37--48 find either $F(s)$ or $f(t)$, as indicated.
+\begin{problems}[start=37]
+	\problem \[ \laplace\left\{ (t-1)\unitstep(t-1) \right\} \] 			% TODO: Problem 37
+	\problem \[ \laplace\left\{ e^{2-t}\unitstep(t-2) \right\} \]			% TODO: Problem 38
+	\setcounter{problemsi}{42}
+	\problem \[ \laplace^{-1}\left\{ \frac{e^{-2s}}{s^{3}} \right\} \]			% TODO: Problem 43
+	\setcounter{problemsi}{46}
+	\problem \[ \laplace^{-1}\left\{ \frac{e^{-s}}{s(s+1)} \right\} \]			% TODO: Problem 47
+\end{problems}
+
+In Problems 55--62 write each function in terms of unit step functions.
+Find the Laplace transform of the given function.
+\begin{problems}[start=55]
+	\problem \[ f(t) = \left\{ \begin{array}{lr}
+		2, & 0 \leq t < 3 \\
+		-2, & t \geq 3
+	\end{array} \right. \]			% TODO: Problem 55
+	\problem \[ f(t) = \left\{ \begin{array}{lr}
+		1, & 0 \leq t < 4 \\
+		0, & 4 \leq t < 5 \\
+		1, & t \geq 5
+	\end{array} \right. \]			% TODO: Problem 56
+	\setcounter{problemsi}{58}
+	\problem \[ f(t) = \left\{ \begin{array}{lr}
+		t, & 0 \leq t < 2 \\
+		0, & t \geq 2
+	\end{array} \right. \]			% TODO: Problem 59
+\end{problems}
+
+In Problems 63--70 use the Laplace transform to solve the given initial-value problem.
+\begin{problems}[start=65]
+	\problem \begin{equation*}
+	\begin{aligned}
+		y' + 2y = f(t),\ \ y(0) = 0, \mbox{ where}\\f(t) = \left\{ \begin{array}{cr}
+		t, & 0 \leq t < 1\\
+		0, & t \geq 1
+	\end{array} \right.
+	\end{aligned}
+	\end{equation*}			% TODO: Problem 65
+	\problem \begin{equation*}
+	\begin{aligned}
+		y'' + 4y = f(t),\ \ y(0) = 0,\ \ y'(0) = -1, \mbox{ where}\\f(t) = \left\{ \begin{array}{cr}
+		1, & 0 \leq t < 1\\
+		0, & t \geq 1
+	\end{array} \right.
+	\end{aligned}
+	\end{equation*}			% TODO: Problem 66
 \end{problems}
 
 \end{document}
