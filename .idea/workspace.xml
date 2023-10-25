@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Submitted Homework 7.2, created template for Homework 7.3.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Worked on Homework 7.2.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/washington-homework-7.3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/washington-homework-7.3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-7.3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.3.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="private" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -104,7 +107,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 7.3">
+  <component name="RunManager" selected="LaTeX.Homework 7.3 Template">
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -2310,7 +2313,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command />
+        <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.3.tex</main-file>
@@ -3051,7 +3054,7 @@
         <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3636,7 +3639,7 @@
     <configuration name="10-23-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4311,7 +4314,7 @@
     <configuration name="Oct 23, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4995,15 +4998,7 @@
       <option name="project" value="LOCAL" />
       <updated>1698121592143</updated>
     </task>
-    <task id="LOCAL-00032" summary="Submitted Homework 7.2, created template for Homework 7.3.">
-      <option name="closed" value="true" />
-      <created>1698124017049</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1698124017049</updated>
-    </task>
-    <option name="localTasksCounter" value="33" />
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -5021,6 +5016,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Worked on homework-3.1.pdf." />
     <MESSAGE value="Finished 9/13 lecture." />
     <MESSAGE value="Added Homework 4.1, moved similar commands for the notes and homework packages to an overhead package, `math252.sty`." />
     <MESSAGE value="Added Homework 4.2." />
@@ -5045,8 +5041,7 @@
     <MESSAGE value="Merged main into private." />
     <MESSAGE value="Updated all notes to work off of a notes class instead of notes package. Added some tables to tables.pdf, and those tables were linked to notes.pdf." />
     <MESSAGE value="Worked on Homework 7.2." />
-    <MESSAGE value="Submitted Homework 7.2, created template for Homework 7.3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Submitted Homework 7.2, created template for Homework 7.3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on Homework 7.2." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1695773102536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
