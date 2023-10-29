@@ -63,7 +63,8 @@ leftmargin=30pt,}
 \makeindex{}
 
 \RequirePackage{mathrsfs}
-\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\laplace}[1][]{\mathscr{L}\ifx#1\empty\else\left\{ #1 \right\}\fi}
+\newcommand{\laplacei}[1][]{\mathscr{L}^{-1}\ifx#1\empty\else\left\{ #1 \right\}\fi}
 \newcommand{\unitstep}{\mathscr{U}}
 
 \RequirePackage{fancyhdr}

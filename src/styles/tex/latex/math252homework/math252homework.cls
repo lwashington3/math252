@@ -8,7 +8,6 @@
 \LoadClass[12pt]{report}
 
 \RequirePackage{alphalph}
-\RequirePackage{titling}
 \RequirePackage{xkeyval}
 
 \DeclareOptionX{chapter}{

@@ -1,0 +1,186 @@
+%! Author = Len Washington III
+%! Date = 10/27/2023
+
+% Preamble
+\documentclass[title={Oct 27, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+\setcounter{section}{2}
+%<*Section-7.4>
+\section{Operational Rules Part 2}\label{sec:operational-rules-part-2}
+Three More Rules
+
+\subsection{Rule 1}\label{subsec:additional-rule-1}
+\begin{equation} \laplace[tf(t)] = -\frac{d}{ds}F(s) \Rightarrow \laplace[t^{n}f(t)] = (-1)^{n}\frac{d^{n}}{ds^{n}} F(s) \label{eq:additional-rule-1}\end{equation}
+
+\subsection{Rule 2}\label{subsec:additional-rule-2}
+Is there a way to break up $\laplace$ over a product of functions?
+\begin{equation*}
+\begin{aligned}
+	\laplace[f(t)g(t)] ?&= \laplace[f(t)]\times\laplace[g(t)]\\
+	\laplace[t^{2}\times t^{3}] ?&= \laplace[t^{2}]\times\laplace[t^{3}]\\
+	\laplace[t^{5}] ?&= \frac{2!}{s^{2+1}}\times\frac{3!}{s^{3+1}}\\
+	\frac{5!}{s^{5+1}} ?&= \frac{2}{s^{3}}\times\frac{6}{s^{4}}\\
+	\frac{120}{s^{6}} &\neq \frac{12}{s^{7}}\\
+\end{aligned}
+\end{equation*}
+If we define the convolution production of $f(t)$ and $g(t)$ as \[ (f\times g)(t) = \int_{0}^{t} f(\tau)g(t-\tau)d\tau \] then \begin{equation} \laplace[(f\times g)(t)] = \laplace[f(t)]\laplace[g(t)] \label{eq:convolution-product}\end{equation}
+
+\subsection{Rule 3}\label{subsec:additional-rule-3}
+If $f(t)$ is periodic with period $T$, then \begin{equation} \laplace[f(t)] = \frac{\int_{0}^{t} e^{-st}f(t)dt}{1-e^{-sT}} \label{eq:additional-rule-3}\end{equation}
+
+\example
+\[ \laplace[t\times\sin(kt)] \]
+\begin{equation*}
+\begin{aligned}
+	\laplace[t\times\sin(kt)] &= \hyperref[eq:additional-rule-1]{-\frac{d}{ds}}\laplace[\sin(kt)]\\
+							  &= -\frac{d}{ds}\left( \frac{k}{s^{2} + k^{2}} \right)\\
+							  &= -\frac{\frac{d}{ds}k\times\left( s^{2} + k^{2} \right) - k\frac{d}{ds}\left( s^{2} + k^{2} \right)}{\left( s^{2} + k^{2} \right)^{2}}\\
+							  &= -\frac{0\left( s^{2} + k^{2} \right) - k(2s)}{\left( s^{2} + k^{2} \right)^{2}}\\
+							  &= -\frac{-2sk}{\left( s^{2} + k^{2} \right)^{2}}\\
+							  &= \frac{2sk}{\left( s^{2} + k^{2} \right)^{2}}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\[ x'' + 16x = \cos(4t),\ \ x(0)=0,\ \ x'(0)=1 \]
+\begin{equation*}
+\begin{aligned}
+	x'' + 16x &= \cos(4t)\\
+	\laplace[x''] + 16\laplace[x] &= \laplace[\cos(4t)]\\
+	s^{2}X(s) - sx(0) - x'(0) + 16X(s) &= \frac{s}{s^{2} + 4^{2}}\\
+	X(s)\left( s^{2} + 16 \right) - s(0) - 1 &= \frac{s}{s^{2} + 16}\\
+	X(s)\left( s^{2} + 16 \right) - 1 &= \frac{s}{s^{2} + 16}\\
+	X(s)\left( s^{2} + 16 \right) &= \frac{s}{s^{2} + 16} + 1\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	X(s) &= \frac{s}{\left( s^{2} + 16 \right)^{2}} + \frac{1}{s^{2} + 16}\\
+	\laplacei[X(s)]	&= \laplacei[\frac{s}{\left( s^{2} + 16 \right)^{2}}] + \laplacei[\frac{1}{s^{2} + 16}]\\
+	x(t) &= \frac{1}{8}\laplacei[\frac{8s}{\left( s^{2} + 16 \right)^{2}}] + \frac{1}{4}\laplacei[\frac{4}{s^{2} + 4^{2}}]\\
+		 &= \frac{1}{8}t\sin(4t) + \frac{1}{4}\sin(4t)\\
+\end{aligned}
+\end{equation*}
+
+\example
+Find $e^{t}\sin(t)$
+
+\begin{equation*}
+\begin{aligned}
+	e^{t}\sin(t) &= \hyperref[eq:convolution-product]{\int_{0}^{t} e^{\tau}\sin(t-\tau)d\tau}\\
+\end{aligned}
+\end{equation*}
+\begin{table}[H]
+    \centering
+	\label{tab:7.4-example-sub-1}
+	\begin{tabular}{ll}
+		$u=e^{\tau}$ & $dv = \sin(t-\tau)d\tau$\\
+		$du=e^{\tau}d\tau$ & \begin{minipage}{0.3\textwidth}\begin{equation*}
+		\begin{aligned}
+			v &= \int\sin(t-\tau)d\tau\\
+			  &= \frac{\tau\cos(t-\tau)}{\tau}\\
+			  &= \cos(t-\tau)\\
+		\end{aligned}
+		\end{equation*}
+		\end{minipage}\\
+	\end{tabular}
+\end{table}
+
+\begin{equation*}
+\begin{aligned}
+	e^{t}\sin(t) &= \int_{0}^{t} e^{\tau}\sin(t-\tau)d\tau\\
+				 &= e^{\tau}\cos(t-\tau)\bigg|_{0}^{t} - \int_{0}^{t} e^{\tau}\cos(t-\tau)d\tau\\
+\end{aligned}
+\end{equation*}
+\begin{table}[H]
+    \centering
+	\label{tab:7.4-example-sub-2}
+	\begin{tabular}{ll}
+		$h=e^{\tau}$ & $dj = \sin(t-\tau)d\tau$\\
+		$dh=e^{\tau}d\tau$ & \begin{minipage}{0.3\textwidth}\begin{equation*}
+		\begin{aligned}
+			j &= \int\cos(t-\tau)d\tau\\
+			  &= \frac{\sin(t-\tau)}{-1}\\
+			  &= -\sin(t-\tau)\\
+		\end{aligned}
+		\end{equation*}
+		\end{minipage}\\
+	\end{tabular}
+\end{table}
+
+\begin{equation*}
+\begin{aligned}
+	\int_{0}^{t}e^{\tau}\sin(t-\tau) &= e^{\tau}\cos(t-\tau)\bigg|_{\tau=0}^{t} - \left( -e^{\tau}\sin(t-\tau)\bigg|_{\tau=0}^{t} - \int_{0}^{t}e^{\tau}(-\sin(t-\tau))d\tau \right)\\
+		&= e^{t}\cos(1) - e^{0}\cos(t) + e^{t}(0) - e^{0}\sin(t) - \int_{0}^{t} e^{\tau}\sin(t-\tau)d\tau\\
+	2\int_{0}^{t}e^{\tau}\sin(t-\tau)d\tau &= e^{t} - \cos(t) - sin(t)\\
+\end{aligned}
+\end{equation*}
+So \[ e^{t}\sin(t) = \frac{e^{t} - \cos(t) - \sin(t)}{2} \]
+\begin{equation*}
+\begin{aligned}
+	\laplace[e^{t}\sin(t)] &= \laplace[\frac{e^{t} - \cos(t) - \sin(t)}{2}]\\
+						   &= \frac{1}{2}\laplace[e^{t} - \cos(t) - \sin(t)]\\
+						   &= \frac{1}{2}\left( \frac{1}{s - 1} - \frac{s}{s^{2} + 1^{2}} - \frac{1}{s^{2} + 1^{2}} \right)\\
+						   &= \frac{1}{2}\left( \frac{s^{2} + 1}{(s - 1)(s^{2} + 1)} - \frac{s(s - 1)}{(s - 1)(s^{2} + 1)} - \frac{s - 1}{(s - 1)(s^{2} + 1)} \right)\\
+						   &= \frac{1}{2}\left( \frac{s^{2} + 1 - s(s - 1) - s - 1}{(s - 1)(s^{2} + 1)} \right)\\
+						   &= \frac{s^{2} + 1 - s^{2} + s - s + 1}{2(s - 1)(s^{2} + 1)}\\
+						   &= \frac{s^{2} - s^{2} + s - s + 1 + 1}{2(s - 1)(s^{2} + 1)}\\
+						   &= \frac{1 + 1}{2(s - 1)(s^{2} + 1)}\\
+						   &= \frac{2}{2(s - 1)(s^{2} + 1)}\\
+						   &= \frac{1}{(s - 1)(s^{2} + 1)}\\
+\end{aligned}
+\end{equation*}
+
+\example
+\begin{equation*}
+\begin{aligned}
+	\laplace[(f\times g)(t)] &= \laplace[f(t)]\times\laplace[g(t)]\\
+	(f\times g)(t) &= \laplacei[F(s)\times G(s)]\\
+\end{aligned}
+\end{equation*}
+
+Determine \[ \laplacei[\frac{1}{\left( s^{2} + k^{2} \right)^{2}}] \] using the Convolution Theorem.
+
+\begin{equation*}
+\begin{aligned}
+	\laplacei[\frac{1}{\left( s^{2} + k^{2} \right)^{2}}] &= \laplacei[\frac{1}{s^{2} + k^{2}}]\\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	\sin(A)\sin(B) &= \frac{1}{2}\left( \cos(A-B) + \cos(A+B) \right)\\
+				   &= \frac{1}{k^{2}}\laplace[ \frac{1\times k}{s^{2}+k^{2}} ]
+\end{aligned}
+\end{equation*}
+
+\example
+Solve the Integral Equation \[ f(t) = 3t^{2} - e^{-t} - \int_{0}^{t} f(\tau)e^{t-\tau}d\tau\ \mbox{ for } f(t) \]
+Don't forget that the $\int_{0}^{t} f(\tau)e^{t-\tau}d\tau$ is $f(t)\times e^{t}$. Take $\laplace$ of both sides
+\begin{equation*}
+\begin{aligned}
+	F(s) &= 3\frac{2!}{s^{2+1}} - \frac{1}{s - (-1)} - F(s)\frac{1}{s-1}\\
+		 &= \frac{6}{s^{3}} - \frac{1}{s + 1} - F(s)\frac{1}{s-1}\\
+	F(s) + F(s)\frac{1}{s-1} &= \frac{6}{s^{3}} - \frac{1}{s + 1}\\
+	F(s)\left( 1 + \frac{1}{s-1} \right) &= \frac{6}{s^{3}} - \frac{1}{s + 1}\\
+	F(s)\left( \frac{s-1}{s-1} + \frac{1}{s-1} \right) &= \frac{6}{s^{3}} - \frac{1}{s + 1}\\
+	F(s)\left( \frac{s-1+1}{s-1} \right) &= \frac{6}{s^{3}} - \frac{1}{s + 1}\\
+	F(s)\left( \frac{s}{s-1} \right) &= \frac{6}{s^{3}} - \frac{1}{s + 1}\\
+\end{aligned}
+\end{equation*}
+\begin{equation*}
+\begin{aligned}
+	F(s) &= \frac{6(s-1)}{s^{3}s} - \frac{s-1}{(s + 1)s}\\
+		 &= \frac{6s - 6}{s^{4}} - \frac{s-1}{s^{2} + s}\\
+		 &= \dots\\
+		 &= \frac{6s + 6 - s^{3}}{s^{3}(s+1)}\\
+\end{aligned}
+\end{equation*}
+
+%</Section-7.4>
+
+\end{document}

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Worked on Homework 7.2.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Uploaded template for Homework 7.4.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/homework/washington-homework-7.3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/washington-homework-7.3.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-7.3.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.3.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +54,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="private" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,7 +104,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 7.3 Template">
+  <component name="RunManager" selected="LaTeX.Homework 7.4 Template">
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -2401,7 +2398,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command />
+        <viewer-command>opener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
@@ -3066,6 +3063,48 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Oct 25, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-25-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 27, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>opener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.10-27-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Practice Exam #1 Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exam Templates">
       <texify>
         <compiler>PDFLATEX</compiler>
@@ -3640,6 +3679,24 @@
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-25-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="10-27-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4320,6 +4377,24 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Oct 25, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 27, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Practice Exam #1 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Exams">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -4584,6 +4659,8 @@
       <item itemvalue="LaTeX.Oct 13, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 16, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 23, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 25, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 27, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -4636,6 +4713,8 @@
       <item itemvalue="Makeindex.Oct 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 11, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 13, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 25, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 27, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -4644,6 +4723,8 @@
       <item itemvalue="Makeindex.Sep 20, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 22, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 25, 2023 Makeindex" />
+      <item itemvalue="Makeindex.10-27-2023 makeindex" />
+      <item itemvalue="Makeindex.10-25-2023 makeindex" />
       <item itemvalue="Makeindex.10-23-2023 makeindex" />
       <item itemvalue="Makeindex.10-04-2023 makeindex" />
       <item itemvalue="Makeindex.10-06-2023 makeindex" />
@@ -4749,6 +4830,11 @@
       <workItem from="1697784875927" duration="1035000" />
       <workItem from="1697785923261" duration="79000" />
       <workItem from="1698078724860" duration="6017000" />
+      <workItem from="1698251292793" duration="4521000" />
+      <workItem from="1698264390050" duration="1237000" />
+      <workItem from="1698423840033" duration="145000" />
+      <workItem from="1698424120079" duration="4358000" />
+      <workItem from="1698599527490" duration="2246000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -4998,7 +5084,55 @@
       <option name="project" value="LOCAL" />
       <updated>1698121592143</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Fixed an error in problems 15, 17 and 18 on Homework 7.3.">
+      <option name="closed" value="true" />
+      <created>1698194302809</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1698194302809</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Worked on more of Homework 7.3.">
+      <option name="closed" value="true" />
+      <created>1698197337841</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1698197337841</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Uploaded Notes for Section 7.3 part 2. Redid the laplace command to take the function as a variable.">
+      <option name="closed" value="true" />
+      <created>1698260390491</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1698260390491</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Tried working on Homework 7.3.">
+      <option name="closed" value="true" />
+      <created>1698265320144</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1698265320144</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Worked on even more of Homework 7.3.">
+      <option name="closed" value="true" />
+      <created>1698436866732</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1698436866732</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Uploaded template for Homework 7.4.">
+      <option name="closed" value="true" />
+      <created>1698601757088</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1698601757088</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -5016,12 +5150,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Worked on homework-3.1.pdf." />
-    <MESSAGE value="Finished 9/13 lecture." />
-    <MESSAGE value="Added Homework 4.1, moved similar commands for the notes and homework packages to an overhead package, `math252.sty`." />
-    <MESSAGE value="Added Homework 4.2." />
-    <MESSAGE value="Added templates for Homework 4.1 and 4.2." />
-    <MESSAGE value="Began writing and working on Practice Exam 1." />
     <MESSAGE value="Created the template for Homework 4.3." />
     <MESSAGE value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
     <MESSAGE value="Uploading Lecture Notes for 4.6." />
@@ -5041,9 +5169,16 @@
     <MESSAGE value="Merged main into private." />
     <MESSAGE value="Updated all notes to work off of a notes class instead of notes package. Added some tables to tables.pdf, and those tables were linked to notes.pdf." />
     <MESSAGE value="Worked on Homework 7.2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on Homework 7.2." />
+    <MESSAGE value="Fixed an error in problems 15, 17 and 18 on Homework 7.3." />
+    <MESSAGE value="Worked on more of Homework 7.3." />
+    <MESSAGE value="Uploaded Notes for Section 7.3 part 2. Redid the laplace command to take the function as a variable." />
+    <MESSAGE value="Tried working on Homework 7.3." />
+    <MESSAGE value="Worked on even more of Homework 7.3." />
+    <MESSAGE value="Uploaded template for Homework 7.4." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploaded template for Homework 7.4." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$homework.coverage" NAME="homework Coverage Results" MODIFIED="1698599625169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1695773102536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
