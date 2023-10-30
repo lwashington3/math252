@@ -1,0 +1,54 @@
+%! Author = Len Washington III
+%! Date = 10/30/2023
+
+% Preamble
+\documentclass[title={Oct 30, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{6}
+\chapter[The Laplace Transform]{Method of Laplace Transforms for Solving DE's}\label{ch:method-of-laplace-transforms-for-solving-de's}
+\setcounter{section}{2}
+%<*Section-7.5>
+\section{The Dirac Delta Function}\label{sec:the-dirac-delta-function}
+\[ \delta_{a}(t-t_{0}) = \left\{ \begin{array}{cl}
+	0 & \mbox{if } t < t_{0} - a\\
+	\frac{1}{2a} & \mbox{if } t_{0} - a \leq t \leq  t_{0} + a\\
+	0 & \mbox{if } t > t_{0} + a\\
+\end{array} \right. \]
+
+\begin{equation} \int_{0}^{\infty} f(t)\delta(t-t_{0})dt = f(t_{0})  \label{eq:dirac-crucial-property}\end{equation}
+
+So \begin{equation}
+\begin{aligned}
+	\laplace[\delta(t-t_{0})] &= \int_{0}^{\infty}e^{-st}\delta(t-t_{0})dt\\
+							  &= e^{-st_{0}}
+\end{aligned}\label{eq:dirac-laplace}
+\end{equation}
+
+\example
+\[ y'' + y = 4\delta(t-2\pi) \]
+\begin{equation*}
+\begin{aligned}
+	y(0)=1 \ &\ y'(0)=0\\
+	y'' + y &= 4\delta(t-2\pi)\\
+	\laplace[y''] + \laplace[y] &= 4\laplace[\delta(t-2\pi)]\\
+	s^{2}Y(s) - sy(0) - y'(0) + Y(s) &= 4e^{-s(2\pi)}\\
+	Y(s)(s^{2} + 1) - s(1) - 0 &= 4e^{-2\pi s}\\
+	Y(s)(s^{2} + 1) - s &= 4e^{-2\pi s}\\
+	Y(s)(s^{2} + 1) &= 4e^{-2\pi s} + s\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	Y(s) &= \frac{4e^{-2\pi s} + s}{s^{2} + 1}\\
+		 &= \frac{4e^{-2\pi s}}{s^{2} + 1} + \frac{s}{s^{2} + 1}\\
+		 &= 4e^{-2\pi}\frac{e^{s}}{s^{2} + 1^{2}} + \frac{s}{s^{2} + 1}\\
+	y(t) &= \laplacei[4e^{-2\pi s}\frac{1}{s^{2} + 1^{2}}] + \laplacei[\frac{s}{s^{2} + 1}]\\
+		 &= 4\sin(t-2\pi)\unitstep(t-2\pi) + \cos(t)\\
+\end{aligned}
+\end{equation*}
+
+%</Section-7.5>
+
+\end{document}
