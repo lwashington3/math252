@@ -1,5 +1,5 @@
 %! Author = Len Washington III
-%! Date = 8/21/2023
+%! Date = 10/31/2023
 
 % Preamble
 \documentclass[chapter=7,section=6]{math252homework}
@@ -7,8 +7,83 @@
 % Document
 \begin{document}
 
-\begin{problems}
-	\problem
+\customsection{7.6}{sec:7.6}
+
+In Problems 1--12 use the Laplace transform to solve the given system of differential equations.
+\begin{problems}[start=3] % 3, 4, 7, 8
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{dx}{dt} &= x-2y\\
+		\frac{dy}{dt} &= 5x-y\\
+		x(0)=-1, \sep y(0)=2
+	\end{aligned}
+	\end{equation*}
+	% TODO: Problem 3
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{dx}{dt} + 3&x + \frac{dy}{dt} &= 1\\
+		\frac{dx}{dt} -  &x + \frac{dy}{dt} - y &= e^{t}\\
+		x(0)=0, \sep y(0)=0
+	\end{aligned}
+	\end{equation*}
+	% TODO: Problem 4
+	\setcounter{problemsi}{6}
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{d^{2}x}{dt^{2}} + x - y = 0\\
+		\frac{d^{2}y}{dt^{2}} + y - x = 0\\
+		x(0)=0, \sep x'(0)=-2,\\
+		y(0)=0, \sep y'(0)=1
+	\end{aligned}
+	\end{equation*}
+	% TODO: Problem 7
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{d^{2}x}{dt^{2}} + \frac{dx}{dt} + &\frac{dy}{dt} = 0\\
+		\frac{d^{2}y}{dt^{2}} + \frac{dy}{dt} - &4\frac{dx}{dt} = 0\\
+		x(0)=1, \sep x'(0)=0,\\
+		y(0)=-1, \sep y'(0)=5
+	\end{aligned}
+	\end{equation*}
+	% TODO: Problem 8
+\end{problems}
+
+\customsection{4.9}{sec:4.9}
+\setcounter{chapter}{4}
+\setcounter{section}{9}
+
+In Problems 1--20 solve the given system of differential equations by systematic elimination.
+\begin{problems}[start=5]
+	\problem \begin{equation*}
+	\begin{aligned}
+	(D^{2}+5)&x - &2y = 0\\
+			-2&x + (D^{2} + 2)&y = 0\\
+	\end{aligned}
+	\end{equation*}
+	% TODO: Problem 5
+	\setcounter{problemsi}{6}
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{d^{2}x}{dt^{2}} &= 4y + e^{t}\\
+		\frac{d^{2}y}{dt^{2}} &= 4x - e^{t}\\
+	\end{aligned}
+	\end{equation*}
+	% TODO Problem 7
+	\problem \begin{equation*}
+	\begin{aligned}
+		\frac{d^{2}x}{dt^{2}} + \frac{dy}{dt} &= -5x\\
+		\frac{dx}{dt} + \frac{dy}{dt} &= -x + 4y\\
+	\end{aligned}
+	\end{equation*}
+	% TODO Problem 8
+	\setcounter{problemsi}{13}
+	\problem \begin{equation*}
+	\begin{aligned}
+		&\frac{dx}{dt} + \frac{dy}{dt}		&= e^{t}\\
+		-&\frac{d^{2}x}{dt^{2}} + \frac{dx}{dt}	+ x + y	&= 0\\
+	\end{aligned}
+	\end{equation*}
+	% TODO Problem 14
 \end{problems}
 
 \end{document}

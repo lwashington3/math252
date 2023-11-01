@@ -56,5 +56,10 @@
 
 %\newcommand{\subproblem}[1]{\pdfbookmark[3]{Problem \the\numexpr\value{enumi}.{\symbol{\numexpr97+\number\value{enumii}}}}{#1}\item\label{#1}}
 
-\newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{\Large\bfseries Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{0.5em}}
+\newcommand{\customsection}[2]{\vspace*{0.2em}\pdfbookmark[1]{Section #1}{#2}{\Large\textbf{Section #1}}\vspace*{0.5em}}
+\newcommand{\customsubsection}[1]{\textcolor{textbook-blue}{\vspace*{0.2em}\pdfbookmark[2]{#1}{subsec:#1}{\large\textbf{#1}}\vspace*{0.5em}}}
 \newcommand{\ivpsep}{\mbox{{ }{ }}}
+
+\captionsetup[figure]{labelfont={bf},labelformat={default},name={FIGURE },labelsep=space}
+\renewcommand\thefigure{\arabic{chapter}.\arabic{section}.\arabic{problemsi}}
+

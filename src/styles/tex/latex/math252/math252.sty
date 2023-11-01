@@ -76,6 +76,7 @@ leftmargin=30pt,}
 
 \RequirePackage[x11names]{xcolor}
 \definecolor{url-blue}{RGB}{0, 0, 238}
+\definecolor{textbook-blue}{HTML}{0d7fae}
 
 \RequirePackage{etoolbox}%
 \RequirePackage{xstring}%
@@ -84,11 +85,13 @@ leftmargin=30pt,}
 
 \newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
 
-\newcommand{\problem}[1][prb:\number\value{problemsi}]{\pdfbookmark[2] % Level
+\newcommand{\problem}[1][prb:\number\value{problemsi}]{%
+\pdfbookmark[3] % Level
 {Problem \the\numexpr\value{problemsi}+1} % Text
 {#1}\item\label{#1}} % Name/Label
 
-\newcommand{\subproblem}{\pdfbookmark[3] % Level
+\newcommand{\subproblem}{%
+\pdfbookmark[4] % Level
 {Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
 {prb:\number\value{problemsi}\makeAlph{problemsii}} % Name/Label
 \item\label{prb:\number\value{problemsi}\alph{problemsii}}}
