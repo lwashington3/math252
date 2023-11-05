@@ -8,10 +8,7 @@ def create_tex_file(date:date, datefmt:str, file:str):
 %! Date = {date:%#m/%d/%Y}
 
 % Preamble
-\documentclass[12pt]{{report}}
-
-% Packages
-\usepackage[title={{{date.strftime(datefmt)} Notes}}]{{math252notes}}
+\documentclass[title={{{date.strftime(datefmt)} Notes}}]{{math252notes}}
 
 % Document
 \begin{{document}}
@@ -28,20 +25,21 @@ def create_tex_file(date:date, datefmt:str, file:str):
 
 
 def create_notes_conf(root:ElementTree, date:date, datefmt, month, texfile):
+	conf_name = date.strftime(f"{datefmt} Notes")
+
 	manager = root.find("./component[@name='RunManager']")
 
-	notes = ElementTree.SubElement(manager, "configuration", attrib={"name": date.strftime(f"{datefmt} Notes"),
+	notes = ElementTree.SubElement(manager, "configuration", attrib={"name": conf_name,
 																	 "type": "LATEX_RUN_CONFIGURATION",
 																	 "factoryName": "LaTeX configuration factory",
-																	 "folderName": f"{month} Notes"}
-	)
+																	 "folderName": f"{month} Notes"})
 
 	texify = ElementTree.SubElement(notes, "texify")
 	ElementTree.SubElement(texify, "compiler").text = "PDFLATEX"
 	ElementTree.SubElement(texify, "compiler-path")
 	ElementTree.SubElement(texify, "sumatra-path")
 	ElementTree.SubElement(texify, "pdf-viewer").text = "NONE"
-	ElementTree.SubElement(texify, "viewer-command").text = "opener"
+	ElementTree.SubElement(texify, "viewer-command").text = "pdfopener"
 	ElementTree.SubElement(texify, "compiler-arguments")
 	ElementTree.SubElement(texify, "envs")
 	ElementTree.SubElement(texify, "main-file").text = f"$PROJECT_DIR$/src/notes/{texfile}"
@@ -56,6 +54,8 @@ def create_notes_conf(root:ElementTree, date:date, datefmt, month, texfile):
 
 	ElementTree.SubElement(notes, "method", attrib={"v": "2"})
 
+	manager.attrib["selected"] = f"LaTeX.{conf_name}"
+
 
 def create_makeindex_conf(root:ElementTree, date:date, datefmt, month, texfile):
 	manager = root.find("./component[@name='RunManager']")
@@ -63,8 +63,7 @@ def create_makeindex_conf(root:ElementTree, date:date, datefmt, month, texfile):
 	notes = ElementTree.SubElement(manager, "configuration", attrib={"name": date.strftime(f"{datefmt} Makeindex"),
 																	 "type": "MAKEINDEX_RUN_CONFIGURATION",
 																	 "factoryName": "LaTeX configuration factory",
-																	 "folderName": f"{month} Notes"}
-	)
+																	 "folderName": f"{month} Notes"})
 
 	makeindex = ElementTree.SubElement(notes, "texify-makeindex")
 	ElementTree.SubElement(makeindex, "program").text = "MAKEINDEX"

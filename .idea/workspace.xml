@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Worked on Homework 7.4.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/homework/washington-homework-7.5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/washington-homework-7.5.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-7.5.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.5.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +60,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="private" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -86,7 +92,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/d/Academic/math252/src/exams&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/mnt/d/Academic/math252/.idea/workspace.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -104,7 +110,7 @@
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.Homework 7.4 Template">
+  <component name="RunManager" selected="LaTeX.All Notes">
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -120,7 +126,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/notes.tex</main-file>
@@ -1785,7 +1791,7 @@
         <envs>
           <env name="Template" value="yes" />
         </envs>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -1806,7 +1812,7 @@
         <viewer-command />
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -1870,7 +1876,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
@@ -1891,7 +1897,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-5.1.tex</main-file>
@@ -1958,7 +1964,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
@@ -1979,7 +1985,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.1.tex</main-file>
@@ -2046,7 +2052,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-6.2.tex</main-file>
@@ -2222,7 +2228,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.2.tex</main-file>
@@ -2310,7 +2316,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.3.tex</main-file>
@@ -2398,7 +2404,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.4.tex</main-file>
@@ -2486,7 +2492,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command />
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.5.tex</main-file>
@@ -2574,7 +2580,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command />
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/homework/washington-homework-7.6.tex</main-file>
@@ -2874,13 +2880,55 @@
       </texify>
       <method v="2" />
     </configuration>
+    <configuration name="Nov 01, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>pdfopener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/11-01-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.11-01-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Nov 03, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>pdfopener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/11-03-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.11-03-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <configuration name="Oct 02, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify>
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-02-2023.tex</main-file>
@@ -2901,7 +2949,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
@@ -2922,7 +2970,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
@@ -2943,7 +2991,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
@@ -2964,7 +3012,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
@@ -2985,7 +3033,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-11-2023.tex</main-file>
@@ -3006,7 +3054,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-13-2023.tex</main-file>
@@ -3027,7 +3075,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-16-2023.tex</main-file>
@@ -3048,7 +3096,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
@@ -3069,10 +3117,10 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-25-2023.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3090,10 +3138,10 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-27-2023.tex</main-file>
         <output-path>$PROJECT_DIR$/out/notes</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
         <compile-twice>false</compile-twice>
@@ -3102,6 +3150,27 @@
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[Makeindex.10-27-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 30, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>pdfopener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/10-30-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Oct 30, 2023 Makeindex]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -3199,7 +3268,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments>--jobname=practice-exam2-blank</compiler-arguments>
         <envs>
           <env name="Template" value="yes" />
@@ -3222,7 +3291,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/exams/practice-exam2.tex</main-file>
@@ -3537,7 +3606,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/9-25-2023.tex</main-file>
@@ -3579,7 +3648,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/9-27-2023.tex</main-file>
@@ -3600,7 +3669,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/9-29-2023.tex</main-file>
@@ -3621,7 +3690,7 @@
         <compiler-path />
         <sumatra-path />
         <pdf-viewer>NONE</pdf-viewer>
-        <viewer-command>opener</viewer-command>
+        <viewer-command>pdfopener</viewer-command>
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/notes/tables.tex</main-file>
@@ -3657,46 +3726,10 @@
       </texify>
       <method v="2" />
     </configuration>
-    <configuration name="10-04-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <configuration name="11-03-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file>$PROJECT_DIR$/src/notes/10-04-2023.tex</main-file>
-        <command-line-args />
-        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="10-06-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file>$PROJECT_DIR$/src/notes/10-06-2023.tex</main-file>
-        <command-line-args />
-        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="10-23-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file>$PROJECT_DIR$/src/notes/10-23-2023.tex</main-file>
-        <command-line-args />
-        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="10-25-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file />
-        <command-line-args />
-        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
-      </texify-makeindex>
-      <method v="2" />
-    </configuration>
-    <configuration name="10-27-2023 makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-      <texify-makeindex>
-        <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/11-03-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4083,7 +4116,7 @@
     <configuration name="Homework 4.9 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -4314,6 +4347,24 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="Nov 01, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/11-01-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Nov 03, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/11-03-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
     <configuration name="Oct 04, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -4380,7 +4431,7 @@
     <configuration name="Oct 25, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-25-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4389,7 +4440,16 @@
     <configuration name="Oct 27, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file />
+        <main-file>$PROJECT_DIR$/src/notes/10-27-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Oct 30, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="October Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/10-30-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4584,6 +4644,50 @@
       </texify-makeindex>
       <method v="2" />
     </configuration>
+    <configuration name="homework" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/homework" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/homework/homework.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="notes" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="MATH 252 - Introduction to Differential Equations" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="LaTeX.Aug 23, 2023 Notes" />
       <item itemvalue="LaTeX.Aug 25, 2023 Notes" />
@@ -4652,6 +4756,8 @@
       <item itemvalue="LaTeX.Homework 8.2 Template" />
       <item itemvalue="LaTeX.Homework 8.3 Template" />
       <item itemvalue="LaTeX.Homework 8.4 Template" />
+      <item itemvalue="LaTeX.Nov 01, 2023 Notes" />
+      <item itemvalue="LaTeX.Nov 03, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 02, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 04, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 06, 2023 Notes" />
@@ -4661,6 +4767,7 @@
       <item itemvalue="LaTeX.Oct 23, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 25, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 27, 2023 Notes" />
+      <item itemvalue="LaTeX.Oct 30, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 01, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 06, 2023 Notes" />
       <item itemvalue="LaTeX.Sep 08, 2023 Notes" />
@@ -4708,6 +4815,8 @@
       <item itemvalue="Makeindex.Homework 8.2 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.3 Makeindex" />
       <item itemvalue="Makeindex.Homework 8.4 Makeindex" />
+      <item itemvalue="Makeindex.Nov 01, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Nov 03, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 23, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 04, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 06, 2023 Makeindex" />
@@ -4715,6 +4824,7 @@
       <item itemvalue="Makeindex.Oct 13, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 25, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 27, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Oct 30, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 06, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 08, 2023 Makeindex" />
@@ -4723,15 +4833,14 @@
       <item itemvalue="Makeindex.Sep 20, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 22, 2023 Makeindex" />
       <item itemvalue="Makeindex.Sep 25, 2023 Makeindex" />
-      <item itemvalue="Makeindex.10-27-2023 makeindex" />
-      <item itemvalue="Makeindex.10-25-2023 makeindex" />
-      <item itemvalue="Makeindex.10-23-2023 makeindex" />
-      <item itemvalue="Makeindex.10-04-2023 makeindex" />
-      <item itemvalue="Makeindex.10-06-2023 makeindex" />
+      <item itemvalue="Makeindex.11-03-2023 makeindex" />
       <item itemvalue="Makeindex.notes makeindex" />
+      <item itemvalue="Python.notes" />
+      <item itemvalue="Python.homework" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.homework" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
@@ -4834,7 +4943,11 @@
       <workItem from="1698264390050" duration="1237000" />
       <workItem from="1698423840033" duration="145000" />
       <workItem from="1698424120079" duration="4358000" />
-      <workItem from="1698599527490" duration="2246000" />
+      <workItem from="1698599527490" duration="1938000" />
+      <workItem from="1698618584938" duration="7353000" />
+      <workItem from="1698686537090" duration="692000" />
+      <workItem from="1698856040788" duration="5411000" />
+      <workItem from="1699028984756" duration="4045000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -5124,13 +5237,13 @@
       <option name="project" value="LOCAL" />
       <updated>1698436866732</updated>
     </task>
-    <task id="LOCAL-00037" summary="Uploaded template for Homework 7.4.">
+    <task id="LOCAL-00037" summary="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7.">
       <option name="closed" value="true" />
-      <created>1698601757088</created>
+      <created>1698862370753</created>
       <option name="number" value="00037" />
       <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1698601757088</updated>
+      <updated>1698862370753</updated>
     </task>
     <option name="localTasksCounter" value="38" />
     <servers />
@@ -5174,12 +5287,12 @@
     <MESSAGE value="Uploaded Notes for Section 7.3 part 2. Redid the laplace command to take the function as a variable." />
     <MESSAGE value="Tried working on Homework 7.3." />
     <MESSAGE value="Worked on even more of Homework 7.3." />
-    <MESSAGE value="Uploaded template for Homework 7.4." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploaded template for Homework 7.4." />
+    <MESSAGE value="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$homework.coverage" NAME="homework Coverage Results" MODIFIED="1698599625169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />
-    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1695773102536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$notes.coverage" NAME="notes Coverage Results" MODIFIED="1696264008021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/math252$conf.coverage" NAME="conf Coverage Results" MODIFIED="1695314782016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$conf.coverage" NAME="conf Coverage Results" MODIFIED="1694627412707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$home.coverage" NAME="home Coverage Results" MODIFIED="1692818270194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />

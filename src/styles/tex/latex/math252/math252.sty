@@ -36,7 +36,7 @@
 \RequirePackage{enumerate}
 \RequirePackage{threeparttable}
 \RequirePackage{amsfonts}
-\RequirePackage{catchfilebetweentags}
+\RequirePackage{catchfile}
 \RequirePackage{float}
 \RequirePackage{amsmath}
 \RequirePackage{booktabs}
@@ -80,8 +80,15 @@ leftmargin=30pt,}
 
 \RequirePackage{etoolbox}%
 \RequirePackage{xstring}%
-\RequirePackage{catchfile}
 \RequirePackage{graphics}%
+
+\RequirePackage{catchfilebetweentags}
+\RequirePackage{etoolbox}
+\makeatletter
+\patchcmd{\CatchFBT@Fin@l}{\endlinechar\m@ne}{}
+  {}{\typeout{Unsuccessful patch!}}
+\makeatother
+
 
 \newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
 
