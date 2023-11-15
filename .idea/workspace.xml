@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7.">
+    <list default="true" id="a095c7b6-2ae0-4226-89b1-618f7de3e825" name="Changes" comment="Added the list of homeworks for Test #3, made some small changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/notes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/homework/washington-homework-7.5.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/homework/washington-homework-7.5.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/notes/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/notes/notes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework/washington-homework-7.5.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/washington-homework-7.5.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notes/notes.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/notes.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework/homework.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework/homework.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tex/latex/math252/math252.sty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +61,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,33 +82,33 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;private&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/mnt/d/Academic/math252/.idea/workspace.xml&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;TexifyConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/mnt/d/Academic/math252/src/homework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/exams" />
       <recent name="$PROJECT_DIR$/src/homework" />
+      <recent name="$PROJECT_DIR$/src/exams" />
       <recent name="D:\Academic\math252\src\notes" />
       <recent name="D:\Academic\math252\src\homework" />
       <recent name="D:\Academic\math252\src\styles\tex\latex" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.All Notes">
+  <component name="RunManager" selected="LaTeX.Homework Appendix B">
     <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-makeindex>
         <program>MAKEINDEX</program>
@@ -1791,7 +1789,7 @@
         <envs>
           <env name="Template" value="yes" />
         </envs>
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -1812,7 +1810,7 @@
         <viewer-command />
         <compiler-arguments />
         <envs />
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <output-path>$PROJECT_DIR$/out/homework</output-path>
         <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
         <compile-twice>false</compile-twice>
@@ -2877,6 +2875,50 @@
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[Makeindex.Homework 8.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework Appendix B Template" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework Templates">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--jobname=math_252_homework_templates/homework-appendix-b</compiler-arguments>
+        <envs>
+          <env name="Template" value="yes" />
+        </envs>
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-appendix-b.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[Makeindex.Homework 8.4 Makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Homework Appendix B" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>pdfopener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/homework/washington-homework-appendix-b.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/homework</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/homework</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -2919,6 +2961,27 @@
         <has-been-run>true</has-been-run>
         <bib-run-config>[]</bib-run-config>
         <makeindex-run-config>[Makeindex.11-03-2023 makeindex]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Nov 15, 2023 Notes" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command>pdfopener</viewer-command>
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/notes/11-15-2023.tex</main-file>
+        <output-path>$PROJECT_DIR$/out/notes</output-path>
+        <auxil-path>$PROJECT_DIR$/auxil/notes</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
       </texify>
       <method v="2" />
     </configuration>
@@ -4116,7 +4179,7 @@
     <configuration name="Homework 4.9 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="Homework">
       <texify-makeindex>
         <program>MAKEINDEX</program>
-        <main-file>$PROJECT_DIR$/src/homework/washington-homework-4.9.tex</main-file>
+        <main-file />
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/homework</work-dir>
       </texify-makeindex>
@@ -4360,6 +4423,15 @@
       <texify-makeindex>
         <program>MAKEINDEX</program>
         <main-file>$PROJECT_DIR$/src/notes/11-03-2023.tex</main-file>
+        <command-line-args />
+        <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+    <configuration name="Nov 15, 2023 Makeindex" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="November Notes">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file>$PROJECT_DIR$/src/notes/11-15-2023.tex</main-file>
         <command-line-args />
         <work-dir>$PROJECT_DIR$/auxil/notes</work-dir>
       </texify-makeindex>
@@ -4652,8 +4724,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (math252)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/homework" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -4727,6 +4800,7 @@
       <item itemvalue="LaTeX.Homework 8.2" />
       <item itemvalue="LaTeX.Homework 8.3" />
       <item itemvalue="LaTeX.Homework 8.4" />
+      <item itemvalue="LaTeX.Homework Appendix B" />
       <item itemvalue="LaTeX.Homework 4.9 Template" />
       <item itemvalue="LaTeX.Homework 1.1 Template" />
       <item itemvalue="LaTeX.Homework 1.2 Template" />
@@ -4756,8 +4830,10 @@
       <item itemvalue="LaTeX.Homework 8.2 Template" />
       <item itemvalue="LaTeX.Homework 8.3 Template" />
       <item itemvalue="LaTeX.Homework 8.4 Template" />
+      <item itemvalue="LaTeX.Homework Appendix B Template" />
       <item itemvalue="LaTeX.Nov 01, 2023 Notes" />
       <item itemvalue="LaTeX.Nov 03, 2023 Notes" />
+      <item itemvalue="LaTeX.Nov 15, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 02, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 04, 2023 Notes" />
       <item itemvalue="LaTeX.Oct 06, 2023 Notes" />
@@ -4817,6 +4893,7 @@
       <item itemvalue="Makeindex.Homework 8.4 Makeindex" />
       <item itemvalue="Makeindex.Nov 01, 2023 Makeindex" />
       <item itemvalue="Makeindex.Nov 03, 2023 Makeindex" />
+      <item itemvalue="Makeindex.Nov 15, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 23, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 04, 2023 Makeindex" />
       <item itemvalue="Makeindex.Oct 06, 2023 Makeindex" />
@@ -4841,8 +4918,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.homework" />
-        <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
-        <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
         <item itemvalue="LaTeX.Aug 21, 2023 Notes" />
       </list>
     </recent_temporary>
@@ -4948,6 +5023,10 @@
       <workItem from="1698686537090" duration="692000" />
       <workItem from="1698856040788" duration="5411000" />
       <workItem from="1699028984756" duration="4045000" />
+      <workItem from="1699638426591" duration="1075000" />
+      <workItem from="1699739171700" duration="14000" />
+      <workItem from="1700069142158" duration="80000" />
+      <workItem from="1700069263513" duration="3942000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -5252,6 +5331,21 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="public/main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -5263,7 +5357,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created the template for Homework 4.3." />
     <MESSAGE value="Adding template files for homeworks after 4.3 so PyCharm can see the files." />
     <MESSAGE value="Uploading Lecture Notes for 4.6." />
     <MESSAGE value="Uploaded Homework 4.6 Template." />
@@ -5288,7 +5381,8 @@
     <MESSAGE value="Tried working on Homework 7.3." />
     <MESSAGE value="Worked on even more of Homework 7.3." />
     <MESSAGE value="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Lecture Notes for 3.3 and Homework Templates for 7.5/3.3 and 7.6/4.9? Fixed some mistakes in the lecture notes for Chapter 7." />
+    <MESSAGE value="Added the list of homeworks for Test #3, made some small changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the list of homeworks for Test #3, made some small changes." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MATH_252___Introduction_to_Differential_Equations$homework.coverage" NAME="homework Coverage Results" MODIFIED="1698599625169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/homework" />

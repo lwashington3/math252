@@ -1,0 +1,261 @@
+%! Author = Len Washington III
+%! Date = 11/15/2023
+
+% Preamble
+\documentclass[title={Nov 15, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\appendix
+\setcounter{chapter}{1}
+\chapter{B}\label{appendix:b}
+%<*Section->
+\section{Eigenvalues \& Eigenvectors of a Square Matrix}\label{sec:eigenvalues-&-eigenvectors-of-a-square-matrix}
+
+Given a square matrix $A$, we look for a non-zero column vector $k$ and a number $\lambda$ such that $A_{n\times n}k_{n\times1}=\lambda k_{n\times1}$.\\
+
+If such $\lambda$ and $k$ exist, $\lambda$ is called an eigenvalue\label{dfn:eigenvalue} for the matrix $A$ and $k$ is the corresponding eigenvector\label{dfn:eigenvector}.
+
+\example
+Verify that \[ k=\left[ \begin{array}{c}
+	1\\
+	-1\\
+	1
+\end{array} \right] \] is an eigenvector for the matrix \[ A = \left[ \begin{array}{ccc}
+	0 & -1 & -3 \\
+	2 & 3 & 3\\
+	-2 & 1 & 1
+\end{array} \right] \] and determine the corresponding eigenvalue.
+
+Calculate \[ Ak = \left[ \begin{array}{ccc}
+	0 & -1 & -3 \\
+	2 & 3 & 3\\
+	-2 & 1 & 1
+\end{array} \right]\left[ \begin{array}{c}
+	1\\
+	-1\\
+	1
+\end{array} \right] \]
+
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{ccc}
+		0 & -1 & -3 \\
+		2 & 3 & 3\\
+		-2 & 1 & 1
+	\end{array} \right]\left[ \begin{array}{c}
+		1\\
+		-1\\
+		1
+	\end{array} \right] &= \left[ \begin{array}{c}
+		0(1) + -1(-1) + -3(1)\\
+		2(1) + 3(-1) + 3(1)\\
+		-2(1) + 1(-1) + 1(1)
+	\end{array} \right]\\
+	&= \left[ \begin{array}{c}
+		0 + 1 - 3\\
+		2 - 3 + 3\\
+		-2 - 1 + 1
+	\end{array} \right]\\
+	&= \left[ \begin{array}{c}
+		-2\\
+		2\\
+		-2
+	\end{array} \right]\\
+	&= -2\left[ \begin{array}{c}
+		1\\
+		-1\\
+		1
+	\end{array} \right]\\
+	&= 2k
+\end{aligned}
+\end{equation*}
+
+Therefore $k$ is an eigenvector corresponding to eigenvalue $\lambda=-2$.\\
+
+Notice that any non-zero multiple of $k$ would also be an eigenvector corresponding to $\lambda=-2$.
+
+Proof: \begin{equation*}
+\begin{aligned}
+	A(5k) &= 5Ak\\
+		&= 5(-2)k\\
+		&= (-2)(5k)\\
+\end{aligned}
+\end{equation*}
+
+\example
+Find the eigenvalues, and for each, a corresponding eigenvector for \[ A = \left[ \begin{array}{ccc}
+	1 & 2 & 1\\
+	6 & -1 & 0\\
+	-1 & -2 & -1\\
+\end{array} \right] \]
+
+Theory: If $Ak=\lambda k$ for a non-zero $k$, then $Ak-\lambda k=0\Rightarrow (A-\lambda)k=0$ for a non-zero $k$.
+However, we cannot subtract a number from a matrix.
+Instead, the equation would be $(A-\lambda I)k=0$.
+
+This would mean that the matrix $A-\lambda I$ is singular (not invertible).
+This can be checked by ensuring that $\det(A-\lambda I)=0$
+
+\begin{equation*}
+\begin{aligned}
+	A-\lambda I &= \left[ \begin{array}{ccc}
+		1 & 2 & 1\\
+		6 & -1 & 0\\
+		-1 & -2 & -1\\
+	\end{array} \right] - \lambda\left[ \begin{array}{ccc}
+		1 & 0 & 0\\
+		0 & 1 & 0\\
+		0 & 0 & 1\\
+	\end{array} \right]\\
+	&= \left[ \begin{array}{ccc}
+		1 & 2 & 1\\
+		6 & -1 & 0\\
+		-1 & -2 & -1\\
+	\end{array} \right] - \left[ \begin{array}{ccc}
+		\lambda & 0 & 0\\
+		0 & \lambda & 0\\
+		0 & 0 & \lambda\\
+	\end{array} \right]\\\\
+	&= \left[ \begin{array}{ccc}
+		1-\lambda & 2 & 1\\
+		6 & -1-\lambda & 0\\
+		-1 & -2 & -1-\lambda\\
+	\end{array} \right]\\
+	\det(A-\lambda I) &= \bigg|\begin{array}{ccc}
+	 	1-\lambda & 2 & 1\\
+		6 & -1-\lambda & 0\\
+		-1 & -2 & -1-\lambda\\
+	  \end{array}\bigg|\\
+	&= 1\bigg|\begin{array}{cc}
+		6 & -1-\lambda\\
+		-1 & -2\\
+	\end{array}\bigg| - 0 \bigg|\begin{array}{cc}
+		1-\lambda & 2\\
+		-1 & -2\\
+	\end{array}\bigg| + (-1-\lambda) \bigg|\begin{array}{cc}
+			1-\lambda & 2\\
+			6 & -1-\lambda\\
+		\end{array}\bigg|\\
+	&= 1\left[ (6)(-2) - (-1)(-1-\lambda) \right] - 0 + (-1-\lambda)\left[ (1-\lambda)(-1-\lambda) - (2)(6) \right]\\
+	&= 1\left[ -12 + - 1 - \lambda \right] + (-1-\lambda)\left[ -1 - \lambda + \lambda + \lambda^{2}  - 12 \right]\\
+	&= 1\left[ -13 - \lambda \right] + (-1-\lambda)\left[ \lambda^{2} - 1 - 12 \right]\\
+	&= -13 - \lambda + (-1-\lambda)\left[ \lambda^{2} - 13 \right]\\
+	&= -13 - \lambda - \lambda^{2} + 13 - \lambda^{3} + 13\lambda\\
+	&= -\lambda - \lambda^{2} - \lambda^{3} + 13\lambda\\
+	&= -\lambda^{3} - \lambda^{2} + 13\lambda - \lambda \\
+	&= -\lambda^{3} - \lambda^{2} + 12\lambda\\
+	&= -\lambda\left( \lambda^{2} + \lambda - 12 \right)\\
+	&= -\lambda\left( \lambda + 4\right)\left( \lambda - 3 \right)\\
+\end{aligned}
+\end{equation*}
+
+When this is 0, $\lambda$ is an eigenvalue.
+\begin{equation*}
+\begin{aligned}
+	-\lambda\left( \lambda + 4\right)\left( \lambda - 3 \right) &= 0\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	-\lambda_{1} &= 0 & \lambda_{2} + 4 &= 0 & \lambda_{3} - 3 &= 0\\
+	\lambda_{1} &= 0 & \lambda_{2} &= -4 & \lambda_{3} &= 3\\
+\end{aligned}
+\end{equation*}
+
+Next, for each eigenvalue $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$, find a corresponding eigenvalue $k_{1}$, $k_{2}$, $k_{3}$.
+
+For $\lambda_{1}=0$
+\begin{equation*}
+\begin{aligned}
+	0 &= (A-\lambda_{1}I)k_{1}\\
+	  &= \left[ \begin{array}{ccc}
+		1-\lambda_{1} & 2 & 1\\
+		6 & -1-\lambda_{1} & 0\\
+		-1 & -2 & -1-\lambda_{1}\end{array} \right]\left[ \begin{array}{c}
+			k_{1}\\
+			k_{2}\\
+			k_{3}
+		\end{array} \right]\\
+	  &= \left[ \begin{array}{ccc}
+		1-0 & 2 & 1\\
+		6 & -1-0 & 0\\
+		-1 & -2 & -1-0\\
+	\end{array} \right]\left[ \begin{array}{c}
+		k_{1}\\
+		k_{2}\\
+		k_{3}
+	\end{array} \right]\\
+	  &= \left[ \begin{array}{ccc}
+		1 & 2 & 1\\
+		6 & -1 & 0\\
+		-1 & -2 & -1\\
+	\end{array} \right]\left[ \begin{array}{c}
+		k_{1}\\
+		k_{2}\\
+		k_{3}
+	\end{array} \right]
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{ccc|c}
+		1 & 2 & 1 & 0\\
+		6 & -1 & 0 & 0\\
+		-1 & -2 & -1 & 0\\
+	\end{array} \right] &= \left[ \begin{array}{ccc|c}
+		1 & 2 & 1 & 0\\
+		6 & -1 & 0 & 0\\
+		0 & 0 & 0 & 0\\
+	\end{array} \right] (r_{3}\gets r_{3} + r_{1})\\
+	&= \left[ \begin{array}{ccc|c}
+		1 & 2 & 1 & 0\\
+		0 & -13 & -6 & 0\\
+		0 & 0 & 0 & 0\\
+	\end{array} \right] (r_{2}\gets r_{2} - 6r_{1})\\
+	&= \dots\\
+	&= \left[ \begin{array}{ccc|c}
+		1 & 0 & 0 & 0\\
+		0 & 1 & 0 & 0\\
+		0 & 0 & 0 & 0\\
+	\end{array} \right]\\
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{ccc}
+		1 & 2 & 1\\
+		0 & -13 & -6\\
+		0 & 0 & 0\\
+	\end{array} \right]\left[ \begin{array}{c}
+		k_{1}\\
+		k_{2}\\
+		k_{3}
+	\end{array} \right] &= \left[ \begin{array}{c}
+		0\\
+		0\\
+		0
+	\end{array} \right]
+\end{aligned}
+\end{equation*}
+
+\begin{equation*}
+\begin{aligned}
+	k_{1} &+2k_{2} + 1k_{3} &= 0\\
+		  &-13k_{2} - 6k_{3} &= 0\\
+\end{aligned}
+\end{equation*}
+
+Let $k_{3}=1$, then $k_{2}=\frac{-6}{13}k_{3}=-\frac{6}{13}$ and $k_{1}=-2k_{2}-k_{3}=\frac{12}{13}-1=-\frac{1}{13}$
+
+\[ k_{1} = \left[ \begin{array}{c}
+	-\frac{1}{13}\\
+	-\frac{6}{13}\\
+	1\\
+\end{array} \right] \]
+
+%</Section->
+
+\end{document}

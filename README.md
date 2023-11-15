@@ -23,3 +23,13 @@ View my combined lecture notes at [/out/notes/notes.pdf](/out/notes/notes.pdf). 
 - [6.1](/out/homework/math_252_homework_templates/homework-6.1.pdf)
 - [6.2](/out/homework/math_252_homework_templates/homework-6.2.pdf)
 - [7.1](/out/homework/math_252_homework_templates/homework-7.1.pdf)
+- 
+- ### HW Sections on Test 3
+- [7.1](/out/homework/math_252_homework_templates/homework-7.1.pdf)
+- [7.2](/out/homework/math_252_homework_templates/homework-7.2.pdf)
+- [7.3](/out/homework/math_252_homework_templates/homework-7.3.pdf)
+- [7.4](/out/homework/math_252_homework_templates/homework-7.4.pdf)
+- [7.5](/out/homework/math_252_homework_templates/homework-7.5.pdf)
+- [7.6](/out/homework/math_252_homework_templates/homework-7.6.pdf)
+- [3.3](/out/homework/math_252_homework_templates/homework-7.5.pdf)
+- [4.9](/out/homework/math_252_homework_templates/homework-7.6.pdf)

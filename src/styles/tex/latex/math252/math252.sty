@@ -83,7 +83,6 @@ leftmargin=30pt,}
 \RequirePackage{graphics}%
 
 \RequirePackage{catchfilebetweentags}
-\RequirePackage{etoolbox}
 \makeatletter
 \patchcmd{\CatchFBT@Fin@l}{\endlinechar\m@ne}{}
   {}{\typeout{Unsuccessful patch!}}
@@ -92,15 +91,16 @@ leftmargin=30pt,}
 
 \newcommand*\makeAlph[1]{\alphalph{\the\numexpr\value{#1}+1}}
 
-\newcommand{\problem}[1][prb:\number\value{problemsi}]{%
+\newcommand{\problem}[1][prb:\the\numexpr\value{chapter}.\the\numexpr\value{section}.\number\value{problemsi}]{%
 \pdfbookmark[3] % Level
 {Problem \the\numexpr\value{problemsi}+1} % Text
-{#1}\item\label{#1}} % Name/Label
+{#1}% Name/Label
+\item\label{#1}}
 
 \newcommand{\subproblem}{%
-\pdfbookmark[4] % Level
-{Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}} % Text
-{prb:\number\value{problemsi}\makeAlph{problemsii}} % Name/Label
+\pdfbookmark[4]% Level
+{Problem \the\numexpr\value{problemsi}\makeAlph{problemsii}}% Text
+{prb:\the\numexpr\value{chapter}.\the\numexpr\value{section}.\number\value{problemsi}\makeAlph{problemsii}}% Name/Label
 \item\label{prb:\number\value{problemsi}\alph{problemsii}}}
 
 \setlength{\parindent}{0pt}
@@ -109,3 +109,11 @@ leftmargin=30pt,}
 \RequirePackage{caption}
 %\DeclareCaptionType[deeq][][List of Equations]
 %\captionsetup[deeq]{labelformat=empty}
+
+\RequirePackage{environ}
+\NewEnviron{newanswer}{
+	\colorlet{saved}{.}
+	\color{blue}
+	\BODY
+	\color{saved}
+}

@@ -6,5 +6,6 @@ def main(*problems):
 		print(f"\t\\problem\t\t\t% TODO: Problem {i}")
 		last = i
 
+
 if __name__ == "__main__":
-	main(1, 4, 7, 8)
+	main(3, 4, 9, 11, 14, 15, 16, 19, 23, 29, 31, 32, 39, 41, 42, 47, 48, 51, 52, 55)
