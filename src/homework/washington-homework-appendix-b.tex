@@ -49,7 +49,6 @@
 		\subproblem $(\mathbf{A}\mathbf{B})^{T}$						% TODO: Problem 9a
 		\subproblem $\mathbf{B}^{T}\mathbf{A}^{T}$						% TODO: Problem 9b
 	\end{problems}
-
 \end{problems}
 
 In Problems 11--14 write the given sum as a single column matrix.
@@ -57,33 +56,148 @@ In Problems 11--14 write the given sum as a single column matrix.
 	\problem \[ 4 \left[ \begin{array}{c}
 		-1\\
 		 2
+	\end{array} \right] - 2\left[ \begin{array}{c}
+		2\\
+		8
+	\end{array} \right] + 3\left[ \begin{array}{c}
+		-2\\
+		3
 	\end{array} \right] \]						% TODO: Problem 11
 	\setcounter{problemsi}{13}
-	\problem						% TODO: Problem 14
-	\problem						% TODO: Problem 15
-	\problem						% TODO: Problem 16
+	\problem \[ \left[ \begin{array}{ccc}
+		1 & -3 & 4\\
+		2 & 5 & -1\\
+		0 & -4 & -2\\
+	\end{array} \right]\left[ \begin{array}{c}
+		t\\
+		2t-1\\
+		-t
+	\end{array} \right] + \left[ \begin{array}{c}
+		-t\\
+		1\\
+		4
+	\end{array} \right] - \left[ \begin{array}{c}
+		2\\
+		8\\
+		-6
+	\end{array} \right] \]						% TODO: Problem 14
+\end{problems}
+
+In Problems 15--22 determine whether the given matrix is singular or non-singular.
+If it is non-singular, find $\mathbf{A}^{-1}$ using Theorem B.2.
+\begin{problems}[start=15]
+	\problem \[ \mathbf{A} = \left[ \begin{array}{cc}
+		-3 & 6\\
+		-2 & 4
+	\end{array} \right] \]						% TODO: Problem 15
+	\problem \[ \mathbf{A} = \left[ \begin{array}{cc}
+		2 & 5\\
+		1 & 4
+	\end{array} \right] \]						% TODO: Problem 16
 	\setcounter{problemsi}{18}
-	\problem						% TODO: Problem 19
-	\setcounter{problemsi}{22}
-	\problem						% TODO: Problem 23
-	\setcounter{problemsi}{28}
-	\problem						% TODO: Problem 29
-	\setcounter{problemsi}{30}
-	\problem						% TODO: Problem 31
-	\problem						% TODO: Problem 32
-	\setcounter{problemsi}{38}
-	\problem						% TODO: Problem 39
-	\setcounter{problemsi}{40}
-	\problem						% TODO: Problem 41
-	\problem						% TODO: Problem 42
-	\setcounter{problemsi}{46}
-	\problem						% TODO: Problem 47
-	\problem						% TODO: Problem 48
+	\problem \[ \mathbf{A} = \left[ \begin{array}{ccc}
+		2 & 1 & 0\\
+		-1 & 2 & 1\\
+		1 & 2 & 1\\
+	\end{array} \right] \]						% TODO: Problem 19
+\end{problems}
+
+In Problems 23 and 24 show that the given matrix is non-singular for every real value of $t$.
+Find $\mathbf{A}^{-1}(t)$ using Theorem B.2.
+\begin{problems}[start=23]
+	\problem \[ \mathbf{A}(t) = \left[ \begin{array}{cc}
+		2e^{-t} & e^{4t}\\
+		4e^{-t} & 3e^{4t}\\
+	\end{array} \right] \]						% TODO: Problem 23
+\end{problems}
+
+\begin{problems}[start=29]
+	\problem Let $\mathbf{A}(t) = \left[ \begin{array}{cc}
+		e^{4t} & \cos(\pi t)\\
+		2t & 3t^{2} - 1\\
+	\end{array} \right]$.
+	Find
+	\begin{problems}
+		\subproblem \[ \frac{d\mathbf{A}}{dt} \]						% TODO: Problem 29a
+		\subproblem \[ \int_{0}^{2} \mathbf{A}(t)dt \]					% TODO: Problem 29b
+		\subproblem \[ \int_{0}^{t} \mathbf{A}(s)ds \]					% TODO: Problem 29c
+	\end{problems}
+\end{problems}
+
+In Problems 31--38 solve the given system of equations by either Gaussian elimination or Gauss-Jordan elimination.
+\begin{problems}[start=31]
+	\problem \begin{equation*}
+	\begin{aligned}
+		 x &+  y &- 2z &= 14\\
+		2x &-  y &+  z &= 0\\
+		6x &+ 3y &+ 4z &= 1\\
+	\end{aligned}
+	\end{equation*}					% TODO: Problem 31
+	\problem \begin{equation*}
+	\begin{aligned}
+		5x &- 2y &+ 4z &= 10\\
+		 x &+  y &+  z &= 9\\
+		4x &- 3y &+ 3z &= 1\\
+	\end{aligned}
+	\end{equation*}					% TODO: Problem 32
+\end{problems}
+
+In Problems 39 and 40 use Gauss-Jordan elimination to demonstrate that the given system of equations has not solution.
+\begin{problems}[start=39]
+	\problem \begin{equation*}
+	\begin{aligned}
+		 x &+ 2y &+ 4z &= 2\\
+		2x &+ 4y &+ 3z &= 1\\
+		 x &+ 2y &-  z &= 7\\
+	\end{aligned}
+	\end{equation*}						% TODO: Problem 39
+\end{problems}
+
+In Problems 41--46 use Theorem B.3 to find $\mathbf{A}^{-1}$ for the given matrix or show that no inverse exists.
+If it is non-singular, find $\mathbf{A}^{-1}$ using Theorem B.2.
+\begin{problems}[start=41]
+	\problem \[ \mathbf{A} = \left[ \begin{array}{ccc}
+		4 & 2 & 3\\
+		2 & 1 & 0\\
+		-1 & -2 & 0
+	\end{array} \right] \]						% TODO: Problem 41
+	\problem \[ \mathbf{A} = \left[ \begin{array}{ccc}
+		2 & 4 & -2\\
+		4 & 2 & -2\\
+		8 & 10 & -6
+	\end{array} \right] \]						% TODO: Problem 42
+\end{problems}
+
+In Problems 47--54 find the eigenvalues and eigenvectors of the given matrix.
+\begin{problems}[start=47]
+	\problem \[ \left[ \begin{array}{cc}
+		-1 & 2\\
+		-7 & 8
+	\end{array} \right] \]						% TODO: Problem 47
+	\problem \[ \left[ \begin{array}{cc}
+		2 & 1\\
+		2 & 1
+	\end{array} \right] \]						% TODO: Problem 48
 	\setcounter{problemsi}{50}
-	\problem						% TODO: Problem 51
-	\problem						% TODO: Problem 52
-	\setcounter{problemsi}{54}
-	\problem						% TODO: Problem 55
+	\problem \[ \left[ \begin{array}{ccc}
+		5 & -1 & 0\\
+		0 & -5 & 9\\
+		5 & -1 & 0
+	\end{array} \right] \]						% TODO: Problem 51
+	\problem \[ \left[ \begin{array}{ccc}
+		3 & 0 & 0\\
+		0 & 2 & 0\\
+		4 & 0 & 1\\
+	\end{array} \right] \]						% TODO: Problem 52
+\end{problems}
+
+In Problems 55 and 56 show that the given matrix has complex eigenvalues.
+Find the eigenvectors of the matrix.
+\begin{problems}[start=55]
+	\problem \[ \left[ \begin{array}{cc}
+		-1 & 2\\
+		-5 & 1\\
+	\end{array} \right] \]						% TODO: Problem 55
 \end{problems}
 
 \end{document}
