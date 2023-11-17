@@ -1,0 +1,74 @@
+%! Author = Len Washington III
+%! Date = 11/17/2023
+
+% Preamble
+\documentclass[title={Nov 17, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{7}
+\chapter[Systems of DEs]{Systems of Linear First-Order Differential Equations}\label{ch:systems-of-linear-first-order-differential-equations}
+%<*Section-8.1>
+\section{Preliminary Theory -- Linear Systems}\label{sec:preliminary-theory-linear-systems}
+In this chapter, we assume the system can be put in the form
+\begin{equation*}
+\begin{aligned}
+	\frac{dx_{1}}{dt} &= g_{1}(t, x_{1}, x_{2}, \dots, x_{n})\\
+	\frac{dx_{2}}{dt} &= g_{2}(t, x_{1}, x_{2}, \dots, x_{n})\\
+	& \vdots\\
+	\frac{dx_{n}}{dt} &= g_{n}(t, x_{1}, x_{2}, \dots, x_{n})\\
+\end{aligned}
+\end{equation*}
+Further assume $g_{1}, g_{2},\dots,g_{n}$ are linear with respect to $x_{1}$, $x_{2}$, $\dots$, $x_{n}$.
+\begin{equation*}
+\begin{aligned}
+	\frac{dx_{1}}{dt} &= a_{11}(t)x_{1} + a_{12}(t)x_{2} + \dots + a_{1n}(t)x_{n} + f_{1}(t)\\
+	\frac{dx_{2}}{dt} &= a_{21}(t)x_{1} + a_{22}(t)x_{2} + \dots + a_{2n}(t)x_{n} + f_{2}(t)\\
+	& \vdots\\
+	\frac{dx_{n}}{dt} &= a_{n1}(t)x_{1} + a_{n2}(t)x_{2} + \dots + a_{nn}(t)x_{n} + f_{n}(t)\\
+\end{aligned}
+\end{equation*}
+
+In matrix notation: \[ X' = AX + F \]
+
+where \[ X = \left[ \begin{array}{c}
+	x_{1}\\
+	x_{2}\\
+	\vdots\\
+	x_{n}\\
+\end{array} \right], \]
+\[ F = \left[ \begin{array}{c}
+	f_{1}(t)\\
+	f_{2}(t)\\
+	\vdots\\
+	f_{n}(t)\\
+\end{array} \right], \]
+\[ A = \left[ \begin{array}{cccc}
+	a_{11}(t) & a_{12}(t) & \dots & a_{1n}(t)\\
+	a_{21}(t) & a_{22}(t) & \dots & a_{2n}(t)\\
+	\vdots & \vdots & \ddots & \vdots\\
+	a_{n1}(t) & a_{n2}(t) & \dots & a_{nn}(t)\\
+\end{array} \right] = \left[ a_{ij}(t) \right]_{\begin{array}{c}
+	i=1,2,\dots,n\\
+	j=1,2,\dots,n\\
+\end{array}} \]
+
+In general, if all the $a_{ij}(t)$'s and $f_{i}(t)$'s are continuous on an interval $I$, then the IVP $X'=AX+F$ has a unique solution: \begin{equation*}
+\begin{aligned}
+	x_{1}(t_{0}) &= w_{1}\\
+	x_{2}(t_{0}) &= w_{2}\\
+	&\dots\\
+	x_{n}(t_{0}) &= w_{n}\\
+\end{aligned}
+\end{equation*}
+where $w_{1}, w_{2},\dots,w_{n}$ are just numbers.\\
+
+If the initial conditions aren't given, then we want the general solution \[ X = c_{1}X_{1} + c_{2}X_{2} + \dots + c_{n}X_{n} \] where each $X_{i}$ is a solution of $X'=Ax$ and $\{ X_{1}(t), X_{2}(t), \dots, X_{n}(t) \}$\footnote{For a system of $n$ equations} is a linearly independent collection of solutions.
+This will be true iff the Wronskian($X_{1},X_{2},\dots,X_{n}$) is non-zero%
+\footnote{Wronskian($X_{1},X_{2},\dots,X_{n}$) = $\det\left( X_{1}, X_{2}, \dots, X_{n} \right)$}.
+The set $\{ X_{1},X_{2},\dots,X_{n} \}$ is called a fundamental set\label{dfn:fundamental-set}.
+
+%</Section-8.1>
+
+\end{document}
