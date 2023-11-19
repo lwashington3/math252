@@ -41,12 +41,10 @@
 
 \IfSubStr{\Template}{yes}{
 	\setboolean{istemplate}{true}
-	\newcommand{\answer}[1]{}
 	\newcommand{\correction}[1]{}
 	\fancyhead[R]{\thepage}
 }{
 	\setboolean{istemplate}{false}
-	\newcommand{\answer}[1]{\textcolor{blue}{#1}}
 	\newcommand{\correction}[1]{\textcolor{red}{#1}}
 	\fancyhead[R]{\theauthor\ - \thepage}
 }
@@ -63,3 +61,14 @@
 \captionsetup[figure]{labelfont={bf},labelformat={default},name={FIGURE },labelsep=space}
 \renewcommand\thefigure{\arabic{chapter}.\arabic{section}.\arabic{problemsi}}
 
+\RequirePackage{environ}
+\NewEnviron{newanswer}{
+	\ifistemplate%
+	\else
+	\colorlet{saved}{.}
+		\color{blue}
+		\BODY
+		\color{saved}
+	\fi
+}
+\newcommand{\answer}[1]{\begin{newanswer}#1\end{newanswer}}

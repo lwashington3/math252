@@ -109,11 +109,3 @@ leftmargin=30pt,}
 \RequirePackage{caption}
 %\DeclareCaptionType[deeq][][List of Equations]
 %\captionsetup[deeq]{labelformat=empty}
-
-\RequirePackage{environ}
-\NewEnviron{newanswer}{
-	\colorlet{saved}{.}
-	\color{blue}
-	\BODY
-	\color{saved}
-}
