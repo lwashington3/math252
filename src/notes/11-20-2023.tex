@@ -1,0 +1,231 @@
+%! Author = Len Washington III
+%! Date = 11/20/2023
+
+% Preamble
+\documentclass[title={Nov 20, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{7}
+\chapter[Systems of Linear DEs]{Systems of Linear First-Order Differential Equations}\label{ch:systems-of-linear-first-order-differential-equations}
+%<*Section-8.2>
+\setcounter{section}{1}
+\section{Solving Homogenous Systems}\label{sec:solving-homogenous-systems}
+
+\[ \mathbf{X'} = A\mathbf{X} \] where $A$ is a constant matrix.\\
+
+Look for solutions of the form \[ \mathbf{X} = \mathbf{k}e^{\lambda t} \] where $\lambda$ is an eigenvalue and the $k$ vector is the corresponding eigenvector.\\
+
+Plug this into the Matrix Equation to get \begin{equation*}
+\begin{aligned}
+	\mathbf{k}\lambda e^{\lambda t} &= A\mathbf{k}e^{\lambda t}\\
+	0 &= A\mathbf{k}e^{\lambda t} - \mathbf{k}\lambda e^{\lambda t}\\
+	  &= (A\mathbf{k} - \mathbf{k}\lambda) e^{\lambda t}\\
+	  &= A\mathbf{k} - \mathbf{k}\lambda\\
+	  &= (A - \lambda I)\mathbf{k}\\
+\end{aligned}
+\end{equation*}
+which would have either $\mathbf{k}=\mathbf{0}$ (trivial solution) or $\mathbf{k}$ is an eigenvector of $\mathbf{A}$ and $\lambda$ is a corresponding eigenvalue, there are linearly-independent.
+
+\example
+\[ \frac{dx}{dt} = 2x + 3y \ \ \ \ \frac{dy}{dt} = 2x + y \]
+Write as \[ \mathbf{X'} = \left[ \begin{array}{cc}
+	2 & 3\\
+	2 & 1
+\end{array} \right]\mathbf{X}.\]
+Find eigenvalues and eigenvectors of \[ A = \left[ \begin{array}{cc}
+	2 & 3\\
+	2 & 1
+\end{array} \right] \]
+
+Real distinct eigenvalues \begin{equation*}
+\begin{aligned}
+	0 &=\det(A - \lambda I)\\
+	  &= \left[ \begin{array}{cc}
+		2 - \lambda & 3\\
+		2 & 1 - \lambda
+	\end{array} \right]\\
+	&= (2-\lambda)(1-\lambda) - (3)(2)\\
+	&= \lambda^{2} - 3\lambda + 2 - 6\\
+	&= \lambda^{2} - 3\lambda - 4\\
+	&= (\lambda - 4)(\lambda + 1)\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	\lambda_{1} - 4 &= 0 \sep \lambda_{2} + 1 &= 0\\
+	\lambda_{1} &= 4 \sep \lambda_{2} &= -1\\
+\end{aligned}
+\end{equation*}
+
+For $\lambda_{1} = 4$ $(\mathbf{A}-4I)\mathbf{k} = 0$
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{cc|c}
+		2 - \lambda_{1} & 3 & 0\\
+		2 & 1 - \lambda_{1} & 0
+	\end{array} \right] &= \left[ \begin{array}{cc|c}
+		2 - 4 & 3 & 0\\
+		2 & 1 - 4 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		-2 & 3 & 0\\
+		2 & -3 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		-2 & 3 & 0\\
+		-2 & 3 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		-2 & 3 & 0\\
+		0 & 0 & 0
+	\end{array} \right]\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	-2k_{1} + 3k_{2} &= 0\\
+	3k_{2} &= 2k_{1}\\
+	3(2) &= 2k_{1}\\
+	6 &= 2k_{1}\\
+	3 &= k_{1}\\
+	\mathbf{k_{1}} = \left[ \begin{array}{c}
+		3\\2
+	\end{array} \right]
+\end{aligned}
+\end{equation*}
+
+For $\lambda_{2} = -1$ $(\mathbf{A}+I)\mathbf{k} = 0$
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{cc|c}
+		2 - \lambda_{2} & 3 & 0\\
+		2 & 1 - \lambda_{2} & 0
+	\end{array} \right] &= \left[ \begin{array}{cc|c}
+		2 - (-1) & 3 & 0\\
+		2 & 1 - (-1) & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		3 & 3 & 0\\
+		2 & 2 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		3 & 3 & 0\\
+		1 & 1 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		3 & 3 & 0\\
+		0 & 0 & 0
+	\end{array} \right]\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	3k_{1} + 3k_{2} &= 0\\
+	3k_{1} &= -3k_{2}\\
+	k_{1} &= -k_{2}\\
+	k_{1} &= -(-1)\\
+	k_{1} &= 1\\
+	\mathbf{k_{2}} = \left[ \begin{array}{c}
+		1\\-1
+	\end{array} \right]
+\end{aligned}
+\end{equation*}
+
+\[ \mathbf{X_{1}} = \left[ \begin{array}{c}
+	3\\2
+\end{array} \right]e^{4t}\ \ \ \ \mathbf{X_{2}} = \left[ \begin{array}{r}
+	1\\-1
+\end{array} \right]e^{-t} \] are both solutions and by a Theorem, $\mathbf{X_{1}}$ and $\mathbf{X_{2}}$ are linearly independent.
+
+The general solution is \begin{equation}X = c_{1}\mathbf{X_{1}} + c_{2}\mathbf{X_{2}} \end{equation} for particular constants $c_{1}$ and $c_{2}$.
+
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{c}
+		x\\y
+	\end{array} \right] = \left[ \begin{array}{c}
+		3c_{1}e^{4t} + c_{2}e^{-t}\\
+		2c_{1}e^{4t} - c_{2}e^{-t}\\
+	\end{array} \right]
+\end{aligned}
+\end{equation*}%
+These values come from the matrix of eigenvectors, in this case \[ \left[ \begin{array}{cr}
+	3 & 1\\
+	2 & -1\\
+\end{array} \right]\left[ \begin{array}{c}
+	c_{1}e^{\lambda_{1}t}\\c_{2}e^{\lambda_{2}t}
+\end{array} \right] \Rightarrow \left[ \begin{array}{cr}
+	3 & 1\\
+	2 & -1\\
+\end{array} \right]\left[ \begin{array}{c}
+	c_{1}e^{4t}\\c_{2}e^{-t}
+\end{array} \right] \]
+
+\example
+\[ \mathbf{X'} = \left[ \begin{array}{cl}
+	3 & -18\\
+	2 & -9
+\end{array} \right]\mathbf{X} \]
+
+Eigenvalues: \begin{equation*}
+\begin{aligned}
+	0 &= \det(A-\lambda I)\\
+	  &= \left[ \begin{array}{cl}
+		3-\lambda & -18\\
+		2 & -9-\lambda
+	\end{array} \right]\\
+	&= (3-\lambda)(-9-\lambda) - (2)(-18)\\
+	&= \lambda^{2} + 6\lambda - 27 + 36\\
+	&= \lambda^{2} + 6\lambda + 9\\
+	&= (\lambda + 3)^{2}\\
+\end{aligned}
+\end{equation*}
+The multiplicity of $(\lambda+3)^{2}=0$ is 2, so \[ \lambda_{1} = -3 \ \ \ \  \lambda_{2} = -3 \]
+Eigenvectors: \begin{equation*}
+\begin{aligned}
+	[ A-\lambda_{1}I | 0  ] &= \left[ \begin{array}{cl}
+		3-\lambda_{1} & -18\\
+		2 & -9-\lambda_{1}
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cl}
+		3 - (-3) & -18\\
+		2 & -9 - (-3)
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cl}
+		6 & -18\\
+		2 & -6
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc}
+		2 & -6\\
+		2 & -6
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc}
+		2 & -6\\
+		0 & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc}
+		1 & -3\\
+		0 & 0
+	\end{array} \right]\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	1k_{1} - 3k_{2} &= 0\\
+	k_{1} &= 3k_{2}\\
+	k_{1} &= 3(1)\\
+	k_{1} &= 3\\
+	\mathbf{k_{1}} &= \left[ \begin{array}{c}
+		3\\1
+	\end{array} \right]
+\end{aligned}
+\end{equation*}
+
+The 2nd, Linear Independent solution is
+\begin{equation*}
+\begin{aligned}
+	\mathbf{k_{2}} &= \mathbf{k_{1}}te^{\lambda_{1}t} + Pe^{\lambda_{1}}
+\end{aligned}
+\end{equation*} $(A-\lambda I)P=K$
+
+%</Section-8.2>
+
+\end{document}

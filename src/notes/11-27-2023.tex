@@ -1,0 +1,120 @@
+%! Author = Len Washington III
+%! Date = 11/27/2023
+
+% Preamble
+\documentclass[title={Nov 27, 2023 Notes}]{math252notes}
+
+% Document
+\begin{document}
+
+\setcounter{chapter}{7}
+\chapter[Systems of Linear DEs]{Systems of Linear First-Order Differential Equations}\label{ch:systems-of-linear-first-order-differential-equations}
+%<*Section-8.2>
+\setcounter{section}{1}
+\section{Solving Homogenous Systems}\label{sec:solving-homogenous-systems}
+\setcounter{subsection}{2}
+\subsection{Complex EigenValues}\label{subsec:complex-eigenvalues}
+\example
+\[ \mathbf{A} = \left[ \begin{array}{cr}
+	6 & -1 \\ 5 & 4
+\end{array} \right] \]
+
+\begin{equation*}
+\begin{aligned}
+	0 &= \det(A - \lambda I)\\
+	&= \bigg|\begin{array}{cc}
+		6 - \lambda & -1\\
+		5 & 4-\lambda \\
+	\end{array}\bigg|\\
+	&= (6-\lambda)(4-\lambda) - (-1)(5)\\
+	&= 24 - 6\lambda - 4\lambda + \lambda^{2} + 5\\
+	&= \lambda^{2} - 10\lambda + 29\\
+	&= (\lambda-5)^{2} + 4\\
+\end{aligned}
+\end{equation*}\begin{equation*}
+\begin{aligned}
+	(\lambda-5)^{2} &= -4\\
+	\lambda-5 &= \pm2i\\
+	\lambda &= 5\pm2i\\
+\end{aligned}
+\end{equation*}
+
+For $\lambda_{1} = 5+2i$
+\begin{equation*}
+\begin{aligned}
+	\left[ \begin{array}{cc|c}
+		6 - \lambda_{1} & -1 & 0\\
+		5 & 4-\lambda_{1} & 0
+	\end{array} \right] &= \left[ \begin{array}{cc|c}
+		6 - 5 - 2i & -1 & 0\\
+		5 & 4-5 - 2i & 0
+	\end{array} \right]\\
+	&= \left[ \begin{array}{cc|c}
+		1 - 2i & -1 & 0\\
+		5 & -1 - 2i & 0
+	\end{array} \right]\\
+	&= \left( r_{1}\gets\frac{r_{1}}{1-2i} \right)\left[ \begin{array}{cc|c}
+		1 & -\frac{1}{1 - 2i} & 0\\
+		5 & -1 - 2i & 0
+	\end{array} \right]\\
+	&= \left( r_{1}\gets r_{1}\times\frac{1+2i}{1+2i} \right)\left[ \begin{array}{cc|c}
+		1 & -\frac{1}{5} - \frac{2}{5}i\footnotemark & 0\\
+		5 & -1 - 2i & 0
+	\end{array} \right]\\
+	&= \left( r_{2}\gets r_{2} - 5r_{1} \right)\left[ \begin{array}{cc|c}
+		1 & -\frac{1}{5} - \frac{2}{5}i & 0\\
+		0 & 0 & 0
+	\end{array} \right]\\
+\end{aligned}
+\end{equation*}\footnotetext{\[ -\frac{1}{1 - 2i}\times\frac{1+2i}{1+2i} = -\frac{1+2i}{(1-2i)(1+2i)} = -\frac{1+2i}{1 - 4i^{2}} = -\frac{1+2i}{1 - (-4)} = -\frac{1+2i}{1 + 4} = -\frac{1+2i}{5} \]}
+\begin{equation*}
+\begin{aligned}
+	k_{1} + \left( -\frac{1}{5} - \frac{2}{5}i \right)k_{2} &= 0\\
+	\mbox{Let } k_{2} &= 1-2i\\
+	k_{1} + \left( -\frac{1}{5} - \frac{2}{5}i \right)(1-2i) &= 0\\
+	k_{1} + (-1)\footnotemark &= 0\\
+	k_{1} &= 1\\
+	\mathbf{k}_{1} &= \left[ \begin{array}{c}
+		1 \\ 1-2i
+	\end{array} \right]
+\end{aligned}
+\end{equation*}\footnotetext{Essesntially undid the complex conjgate multiplication.}
+
+This, along with an eigenvector $\mathbf{k_{2}}$ for $\lambda_{2}=5-2i$, can be expressed in terms of Real Matrices as \begin{equation}
+\begin{aligned}
+	\mathbf{X_{1}} &= \left[ \beta_{1}\cos(\beta t) - \beta_{2}\sin(\beta t) \right]e^{\alpha t}\\
+	\mathbf{X_{2}} &= \left[ \beta_{2}\cos(\beta t) - \beta_{1}\sin(\beta t) \right]e^{\alpha t}\\
+\end{aligned}\label{eq:complex-eigen-matrix}
+\end{equation}
+where $\alpha$ is the real part of the eigen value, $\beta$ is the coefficient of the imaginary part of the eigen value,\\
+$\beta_{1}=$ Real Part $(k_{1}) = Re \left[ \begin{array}{c}
+	1 \\ 1-2i
+\end{array} \right]\Rightarrow\left[ \begin{array}{c}
+	1 \\ 1
+\end{array} \right]$,\\
+$\beta_{2}=$ Imaginary Part $(k_{1}) = Im \left[ \begin{array}{c}
+	1 \\ 1-2i
+\end{array} \right]\Rightarrow\left[ \begin{array}{c}
+	0 \\ -2
+\end{array} \right]$
+%</Section-8.2>
+
+%<*Section-8.3>
+\setcounter{section}{2}
+\section{General Ideas}\label{sec:general-ideas}
+
+(Don't worry about detailed calculation)
+
+Non-homogenous system: \[ \mathbf{X'} = \mathbf{AX} + \mathbf{F} \]
+where $\mathbf{F}$ is a non-0 column vector.
+
+\subsection{1st Solve the Complimentary DE}\label{subsec:1st-solve-the-complimentary-de}
+\[ \mathbf{X'} = \mathbf{AX}, \]
+General solution: \[ \mathbf{X} = c_{1}\mathbf{X_{1}} + c_{2}\mathbf{X_{2}} + \dots + c_{n}\mathbf{X_{n}} \]
+
+\subsection{Next, find one particular solution}\label{subsec:next-find-one-particular-solution}
+
+The general solution of $\mathbf{X'} = \mathbf{AX} + \mathbf{F}$ is \[ \mathbf{X} = \mathbf{X_{c}} + \mathbf{X_{p}} \]
+%</Section-8.3>
+
+\end{document}
