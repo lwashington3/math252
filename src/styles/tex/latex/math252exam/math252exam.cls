@@ -8,18 +8,24 @@
 \LoadClass[12pt]{report}
 
 \RequirePackage{alphalph}
-\RequirePackage{xkeyval}
-\newcounter{exam}
+\RequirePackage{kvoptions}
 
-\DeclareOptionX{exam}{
-	\setcounter{exam}{#1}
+\SetupKeyvalOptions{
+	family=mathexam,
+	prefix=mathexam@
 }
-\ProcessOptionsX\relax
+
+\DeclareStringOption{exam}
+
+\ProcessKeyvalOptions
+
+\newcounter{exam}
+\setcounter{exam}{\mathexam@exam}
 \RequirePackage[title={Practice Test \#\arabic{exam}}]{math252}
 
 \titleformat{\section}[block]
 {\normalfont\Large\bfseries}	% format
-{\thetitle}	% label
+{\math@title}	% label
 {0em}	% sec
 {}	% before-code
 
@@ -45,7 +51,7 @@
 	\setboolean{istemplate}{false}
 	\newcommand{\answer}[1]{\textcolor{blue}{#1}}
 	\newcommand{\correction}[1]{\textcolor{red}{#1}}
-	\fancyhead[R]{\theauthor\ - \thepage}
+	\fancyhead[R]{\math@author\ - \thepage}
 }
 
 \newcommand{\ontemplate}[1]{\ifthenelse{\boolean{istemplate}}{#1}{}}
@@ -53,6 +59,6 @@
 
 \renewcommand{\maketitle}{\begin{center}
 	\textbf{MATH 252.01 \hfill Differential Equations \hfill Test \#\arabic{exam}}\\
-	Date: \thedate \hfill Name: \ifthenelse{\boolean{istemplate}}{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}{\underline{\theauthor}}
+	Date: \math@date \hfill Name: \ifthenelse{\boolean{istemplate}}{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}{\underline{\math@author}}
 	\vspace{0.15em}
 \end{center}}

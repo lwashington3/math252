@@ -8,15 +8,20 @@
 \LoadClass[12pt]{report}
 
 \RequirePackage{alphalph}
-\RequirePackage{xkeyval}
+\RequirePackage{kvoptions}
 
-\DeclareOptionX{chapter}{
-	\setcounter{chapter}{#1}
+\SetupKeyvalOptions{
+	prefix=mathhomework,
+	family=mathhomework@
 }
-\DeclareOptionX{section}{
-	\setcounter{section}{#1}
-}
-\ProcessOptionsX\relax
+
+\DeclareStringOption{chapter}
+\DeclareStringOption{section}
+
+\ProcessKeyvalOptions*
+
+\setcounter{chapter}{\mathhomework@chapter}
+\setcounter{section}{\mathhomework@section}
 
 \RequirePackage[title={HW Section \arabic{chapter}.\arabic{section}}]{math252}
 
@@ -46,7 +51,7 @@
 }{
 	\setboolean{istemplate}{false}
 	\newcommand{\correction}[1]{\textcolor{red}{#1}}
-	\fancyhead[R]{\theauthor\ - \thepage}
+	\fancyhead[R]{\math@author\ - \thepage}
 }
 
 \newcommand{\ontemplate}[1]{\ifthenelse{\boolean{istemplate}}{#1}{}}

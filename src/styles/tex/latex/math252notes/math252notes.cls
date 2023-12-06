@@ -7,16 +7,18 @@
 
 \LoadClass[12pt]{report}
 
-\RequirePackage{titling}
-\RequirePackage{xkeyval}
+\RequirePackage{kvoptions}
 
-\DeclareOptionX{title}{
-	\title{#1}
+\SetupKeyvalOptions{
+	family=mathnotes,
+	prefix=mathnotes@
 }
-\ProcessOptionsX\relax
 
-\RequirePackage{math252}
-%\title{\thesubject\ Notes}
+\DeclareStringOption[\math@subject\ Notes]{title}
+
+\ProcessKeyvalOptions*
+
+\RequirePackage[title=\mathnotes@title]{math252}
 
 \fancyhead[L]{\leftmark}
 
@@ -41,3 +43,23 @@
 
 \newcommand{\example}{\subsection{Example}}
 \newcommand{\answer}[1]{\textcolor{blue}{#1}}
+
+\renewcommand{\maketitle}{\begin{titlepage}%
+	\let\footnotesize\small
+	\let\footnoterule\relax
+	\null\vfil
+	\vskip 60\p@
+	\begin{center}%
+		{\LARGE \math@title \par}%
+		\vskip 3em%
+		{\large
+			\lineskip .75em%
+			\begin{tabular}[t]{c}%
+			\math@author
+			\end{tabular}\par}%
+		\vskip 1.5em%
+		{\large \@date \par}%       % Set date in \large size.
+		\end{center}\par
+	\vfil\null
+	\end{titlepage}%
+}

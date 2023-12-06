@@ -5,18 +5,19 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{math252}[2023/09/14 Len Washington III's Package]
 
-\RequirePackage{titling}
-\RequirePackage{xkeyval}
+\RequirePackage{kvoptions}
 
-\DeclareOptionX{title}{
-	\title{#1}
-	\let\mytitle\thetitle
+\SetupKeyvalOptions{
+	family=math,
+	prefix=math@
 }
-\ProcessOptionsX\relax
 
-\author{Len Washington III}
-\date{\today}
-\newcommand{\thesubject}{MATH 252 - Introduction to Differential Equations}
+\DeclareStringOption{title}
+\DeclareStringOption[Len Washington III]{author}
+\DeclareStringOption[\today]{date}
+\DeclareStringOption[MATH 252 - Introduction to Differential Equations]{subject}
+
+\ProcessKeyvalOptions*
 
 \RequirePackage{amsmath}
 \RequirePackage[pdftex,
@@ -27,9 +28,9 @@
 	pdfmenubar=true,
 	pdffitwindow=false,
 	pdfstartview={FitH},
-	pdfauthor={\theauthor},
-	pdftitle={\thetitle},
-	pdfsubject={\thesubject},
+	pdfauthor={\math@author},
+	pdftitle={\math@title},
+	pdfsubject={\math@subject},
 	colorlinks=true,
 	urlcolor=url-blue]{hyperref}
 \RequirePackage[margin=1in]{geometry}
@@ -70,8 +71,8 @@ leftmargin=30pt,}
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\thetitle}
-\fancyhead[R]{\theauthor\ - \thepage}
+\fancyhead[L]{\math@title}
+\fancyhead[R]{\math@author\ - \thepage}
 \setlength{\headheight}{14.49998pt}
 
 \RequirePackage[x11names]{xcolor}
