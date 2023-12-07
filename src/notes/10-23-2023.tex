@@ -2,7 +2,7 @@
 %! Date = 10/23/2023
 
 % Preamble
-\documentclass[title={Oct 23, 2023 Notes}]{math252notes}
+\documentclass[title={Oct 23{,} 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -77,12 +77,12 @@ Find \[ \laplace^{-1}\left\{ \frac{s+3}{s^{2}-8s + 97} \right\} \]
 \subsection{Operational Rules Part 2}\label{subsec:operational-rules-part-2}
 Involves taking the Laplace transform of a function shifted on the $t$-axis.
 
-This can be written in terms of the Heavyside Function\label{dfn:heavyside-function} (or Unit Step function) \[ U(t) = \left\{ \begin{array}{cl}
+This can be written in terms of the Heavyside Function\label{dfn:heavyside-function} (or Unit Step function) \[ \unitstep(t) = \left\{ \begin{array}{cl}
 	0 & \mbox{ if } t < 0\\
 	1 & \mbox{ if } t \geq 0\\
 \end{array} \right. \]
 
-\[ f(t-2)\times U(t-2) \] is ``off when $t<2$ and on when $t \geq 2$.
+\[ f(t-2)\times\unitstep(t-2) \] is ``off when $t<2$ and on when $t \geq 2$.
 
 \example
 \begin{equation*}

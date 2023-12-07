@@ -2,7 +2,7 @@
 %! Date = 11/17/2023
 
 % Preamble
-\documentclass[title={Nov 17, 2023 Notes}]{math252notes}
+\documentclass[title={Nov 17{,} 2023 Notes}]{math252notes}
 
 % Document
 \begin{document}
@@ -30,21 +30,21 @@ Further assume $g_{1}, g_{2},\dots,g_{n}$ are linear with respect to $x_{1}$, $x
 \end{aligned}
 \end{equation*}
 
-In matrix notation: \[ X' = AX + F \]
+In matrix notation: \[ \mathbf{X'} = \mathbf{AX} + \mathbf{F} \]
 
-where \[ X = \left[ \begin{array}{c}
+where \[ \mathbf{X} = \left[ \begin{array}{c}
 	x_{1}\\
 	x_{2}\\
 	\vdots\\
 	x_{n}\\
 \end{array} \right], \]
-\[ F = \left[ \begin{array}{c}
+\[ \mathbf{F} = \left[ \begin{array}{c}
 	f_{1}(t)\\
 	f_{2}(t)\\
 	\vdots\\
 	f_{n}(t)\\
 \end{array} \right], \]
-\[ A = \left[ \begin{array}{cccc}
+\[ \mathbf{A} = \left[ \begin{array}{cccc}
 	a_{11}(t) & a_{12}(t) & \dots & a_{1n}(t)\\
 	a_{21}(t) & a_{22}(t) & \dots & a_{2n}(t)\\
 	\vdots & \vdots & \ddots & \vdots\\
@@ -54,7 +54,7 @@ where \[ X = \left[ \begin{array}{c}
 	j=1,2,\dots,n\\
 \end{array}} \]
 
-In general, if all the $a_{ij}(t)$'s and $f_{i}(t)$'s are continuous on an interval $I$, then the IVP $X'=AX+F$ has a unique solution: \begin{equation*}
+In general, if all the $a_{ij}(t)$'s and $f_{i}(t)$'s are continuous on an interval $I$, then the IVP $\mathbf{X'}=\mathbf{AX}+\mathbf{F}$ has a unique solution: \begin{equation*}
 \begin{aligned}
 	x_{1}(t_{0}) &= w_{1}\\
 	x_{2}(t_{0}) &= w_{2}\\
@@ -64,7 +64,7 @@ In general, if all the $a_{ij}(t)$'s and $f_{i}(t)$'s are continuous on an inter
 \end{equation*}
 where $w_{1}, w_{2},\dots,w_{n}$ are just numbers.\\
 
-If the initial conditions aren't given, then we want the general solution \[ X = c_{1}X_{1} + c_{2}X_{2} + \dots + c_{n}X_{n} \] where each $X_{i}$ is a solution of $X'=Ax$ and $\{ X_{1}(t), X_{2}(t), \dots, X_{n}(t) \}$\footnote{For a system of $n$ equations} is a linearly independent collection of solutions.
+If the initial conditions aren't given, then we want the general solution \[ \mathbf{X} = c_{1}\mathbf{X_{1}} + c_{2}\mathbf{X_{2}} + \dots + c_{n}\mathbf{X_{n}} \] where each $X_{i}$ is a solution of $X'=Ax$ and $\{ X_{1}(t), X_{2}(t), \dots, X_{n}(t) \}$\footnote{For a system of $n$ equations} is a linearly independent collection of solutions.
 This will be true iff the Wronskian($X_{1},X_{2},\dots,X_{n}$) is non-zero%
 \footnote{Wronskian($X_{1},X_{2},\dots,X_{n}$) = $\det\left( X_{1}, X_{2}, \dots, X_{n} \right)$}.
 The set $\{ X_{1},X_{2},\dots,X_{n} \}$ is called a fundamental set\label{dfn:fundamental-set}.
